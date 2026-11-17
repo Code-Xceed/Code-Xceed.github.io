@@ -1,35 +1,120 @@
-# Aditya Rathore
+# Portfolio
 
-> Personal portfolio crafted with Japanese washi paper aesthetics, fluid physics, and high-performance media delivery.
+Personal portfolio for **Aditya Rathore** — full-stack developer and video editor.
+Built with React 19 and Vite, with a hand-drawn Japanese paper art direction and
+static entry points for each section.
 
-Live at [codex.is-a.dev](https://codex.is-a.dev)
+[![verify](https://github.com/Code-Xceed/portfolio/actions/workflows/verify.yml/badge.svg)](https://github.com/Code-Xceed/portfolio/actions/workflows/verify.yml)
 
----
+The site has five entry points, all pre-rendered as static HTML and then hydrated:
 
-### Tech Stack
+| Route | Content |
+|---|---|
+| `/` | Hero, selected work, creative pursuits, experience, footer |
+| `/interests/video-editing/` | Commission page: reels by niche, client contact, brief |
+| `/interests/minecraft/` | Speedrunning clip, Modrinth work, other games |
+| `/blogs/how-i-started/` | Written note |
+| `/blogs/how-i-got-my-first-client/` | Written note |
 
-- **Framework**: React 19 + Vite
-- **Styling**: Tailwind CSS v4
-- **Graphics**: WebGL & Canvas Shaders
-- **Typography**: Plus Jakarta Sans & JetBrains Mono
+## Stack
 
----
+- **React 19** with Vite 8 (rolldown) and five HTML entries
+- **Tailwind CSS v4** for styling, with a small set of paper/texture tokens in `src/index.css`
+- **lucide-react** for icons, tree-shaken
+- **Puppeteer** (dev only) for the repository's verification scripts
+- No runtime state library, no router package — routing is a small resolver in `src/App.jsx`
 
-### Development
+## Structure
 
-```bash
-# Install dependencies
-npm install
-
-# Start local dev server
-npm run dev
-
-# Build for production
-npm run build
+```
+.
+├── .github/workflows/verify.yml   # CI: build + static quality gates
+├── api/subscribe.js               # optional serverless newsletter endpoint
+├── blogs/*/index.html             # pre-rendered blog entries
+├── interests/*/index.html         # pre-rendered section entries
+├── public/                        # images, video, icons, sitemap, robots
+├── scripts/
+│   ├── verify.mjs                 # budgets and banned-content gate
+│   ├── check-assets.mjs           # every referenced asset must exist in dist
+│   └── send-blog-update.js        # manual newsletter send (Gmail SMTP)
+├── src/
+│   ├── components/                # one component per section or surface
+│   ├── App.jsx                    # route resolver, sheet, focus and scroll handling
+│   ├── index.css                  # tokens, texture, motion
+│   └── post.jsx                   # standalone blog entry
+├── index.html
+├── vite.config.js
+└── package.json
 ```
 
----
+## Development
 
-### License
+Requires Node 20+.
 
-MIT © [Aditya Rathore](https://github.com/Code-Xceed)
+```bash
+npm install
+npm run dev        # http://localhost:5173
+npm run build      # static output in dist/
+npm run preview    # serve the production build
+npm run verify     # quality gates (run after build)
+```
+
+## Quality gates
+
+`npm run verify` fails the build when any of these regress:
+
+| Gate | Budget |
+|---|---|
+| JavaScript | ≤ 120 kB gzip total, no separate icon chunk |
+| `public/` payload | ≤ 80 MB, no single asset over 20 MB |
+| Retracted claims | must not reappear in source or the SEO fallback |
+| Type floor | no text below 10px |
+| Primary action | must remain a real `mailto:` |
+| Video loading | `preload` required, unconditional `autoplay` forbidden |
+
+`node scripts/check-assets.mjs` additionally verifies that every asset referenced
+by the built HTML, CSS and JS actually exists in `dist/`.
+
+The same gates run on every push and pull request via `.github/workflows/verify.yml`.
+
+## Deployment
+
+The build is a plain static bundle and `public/CNAME` targets `codex.is-a.dev`.
+
+1. Enable **Settings → Pages → Source: GitHub Actions**.
+2. Add a deploy workflow that uploads `dist/` (build → `actions/upload-pages-artifact`
+   → `actions/deploy-pages`).
+3. The custom domain requires a record in the [`is-a-dev/register`](https://github.com/is-a-dev/register)
+   repository pointing at `<user>.github.io`. Until that record exists, the domain
+   does not resolve to this project.
+
+`api/subscribe.js` is only used if you deploy the newsletter endpoint on a
+serverless host and set `VITE_SUBSCRIBE_ENDPOINT`. Without it, the subscribe form
+reports the failure honestly and offers the email address instead.
+
+## Adding content
+
+| To add | Edit |
+|---|---|
+| A project card | `PROJECTS` in `src/components/SelectedWorks.jsx` |
+| A blog post | `POSTS` in `src/components/blogPosts.jsx` plus an entry HTML file |
+| A video or reel | `CATEGORIES` in `src/components/VideoEditingExplorePage.jsx` |
+| Experience or a hobby line | `EXPERIENCES` / card copy in `src/components/InterestsExperience.jsx` |
+| Navigation | `src/components/Nav.jsx` |
+
+Keep the claims on a card checkable. Every number should be traceable to the
+linked repository or removed.
+
+## Accessibility and performance
+
+- WCAG 2.2 AA contrast, measured; a 10px minimum type size; 24px minimum targets.
+- The section sheet is a real modal: the page behind it is `inert`, focus moves in
+  on open and returns to the trigger on close, and one Back press leaves the site.
+- `prefers-reduced-motion` stops every video, not only CSS animation.
+- No video bytes before intent; poster-first previews.
+- Images are WebP with `srcset` where it matters; decorative mobile art is
+  downscaled rather than shipped full size.
+
+## License
+
+[MIT](LICENSE) © Aditya Rathore

@@ -45,3 +45,8 @@ test_*.cjs
 # Review captures (large PNGs; keep the scripts and markdown)
 review/shots/
 
+
+# Local review and audit artefacts (kept on disk, not in the repo)
+review/
+qa/
+
