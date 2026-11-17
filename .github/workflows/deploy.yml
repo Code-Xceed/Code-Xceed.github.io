@@ -1,18 +1,14 @@
 name: deploy
 
-# Dispatch-only on purpose.
+# Publishes dist/ to GitHub Pages.
 #
-# `public/CNAME` makes GitHub Pages claim `codex.is-a.dev` as soon as Pages is
-# enabled, so a push-triggered deploy before the is-a.dev record exists would
-# serve a domain that does not resolve. Once `codex.is-a.dev` points at
-# `<owner>.github.io`, add:
-#
-#   push:
-#     branches: [main]
-#
-# and every push to main will publish.
+# Safe to run on every push while the site is served from <owner>.github.io.
+# Once the custom domain is attached, `public/CNAME` must exist again; GitHub
+# Pages will then serve codex.is-a.dev and keep redirecting the github.io URL.
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
