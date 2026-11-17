@@ -80,13 +80,21 @@ The same gates run on every push and pull request via `.github/workflows/verify.
 ## Deployment
 
 The build is a plain static bundle and `public/CNAME` targets `codex.is-a.dev`.
+`.github/workflows/deploy.yml` builds, runs the gates, and publishes `dist/` to
+GitHub Pages.
 
-1. Enable **Settings → Pages → Source: GitHub Actions**.
-2. Add a deploy workflow that uploads `dist/` (build → `actions/upload-pages-artifact`
-   → `actions/deploy-pages`).
-3. The custom domain requires a record in the [`is-a-dev/register`](https://github.com/is-a-dev/register)
-   repository pointing at `<user>.github.io`. Until that record exists, the domain
-   does not resolve to this project.
+Order matters, because `CNAME` makes Pages claim the custom domain immediately:
+
+1. **Claim the subdomain.** Copy `.github/is-a-dev/codex.json` to
+   `domains/codex.json` in a fork of [`is-a-dev/register`](https://github.com/is-a-dev/register)
+   and open a pull request. It points `codex.is-a.dev` at `code-xceed.github.io`.
+2. **Wait for the record to merge and resolve** (`nslookup codex.is-a.dev`).
+3. **Enable Pages:** Settings → Pages → Source: **GitHub Actions**.
+4. **Run the `deploy` workflow** from the Actions tab.
+
+Until step 2 completes, do not enable Pages: the `CNAME` file would point the
+site at a domain that does not resolve yet. Once the domain is live, add the
+`push` trigger to `deploy.yml` so every push to `main` publishes.
 
 `api/subscribe.js` is only used if you deploy the newsletter endpoint on a
 serverless host and set `VITE_SUBSCRIBE_ENDPOINT`. Without it, the subscribe form
