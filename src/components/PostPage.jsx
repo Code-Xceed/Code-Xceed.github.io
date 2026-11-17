@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { ArrowLeft, ArrowUpRight } from 'lucide-react';
 import { POSTS } from './blogPosts.js';
-import BlogSubscribeForm from './BlogSubscribeForm.jsx';
+import BlogNoteCTA from './BlogNoteCTA.jsx';
 
 /**
  * PostPage
@@ -379,8 +379,8 @@ export default function PostPage({ post, onNavigate }) {
                 </a>
               </div>
 
-              {/* Newsletter / Blog Subscription Engine */}
-              <BlogSubscribeForm source="blog-1-how-i-started" />
+              {/* Closing note: a mailto, not a fake subscribe form */}
+              <BlogNoteCTA subject="New portfolio notes" />
 
               <p className="pt-2 font-medium text-[#161514]">
                 See ya.
@@ -569,11 +569,11 @@ export default function PostPage({ post, onNavigate }) {
               </p>
 
               <p className="text-[#161514] font-medium">
-                So, stay connected. You can subscribe to my blogs and I'll notify you directly in your inbox whenever I publish something new. No BS.
+                So, stay connected. Email me and I'll tell you when something new goes up. No BS.
               </p>
 
-              {/* Blog Subscription Mechanism */}
-              <BlogSubscribeForm source="blog-2-how-i-got-my-first-client" />
+              {/* Closing note: a mailto, not a fake subscribe form */}
+              <BlogNoteCTA subject="New portfolio notes" />
 
               <p>
                 That's pretty much my experience with my first client. It was good, it was unexpected, and it was enough to get me started.

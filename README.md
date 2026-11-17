@@ -28,8 +28,7 @@ The site has five entry points, all pre-rendered as static HTML and then hydrate
 
 ```
 .
-├── .github/workflows/verify.yml   # CI: build + static quality gates
-├── api/subscribe.js               # optional serverless newsletter endpoint
+├── .github/workflows/             # CI: verify, and dispatch-only Pages deploy
 ├── blogs/*/index.html             # pre-rendered blog entries
 ├── interests/*/index.html         # pre-rendered section entries
 ├── public/                        # images, video, icons, sitemap, robots
@@ -96,9 +95,8 @@ Until step 2 completes, do not enable Pages: the `CNAME` file would point the
 site at a domain that does not resolve yet. Once the domain is live, add the
 `push` trigger to `deploy.yml` so every push to `main` publishes.
 
-`api/subscribe.js` is only used if you deploy the newsletter endpoint on a
-serverless host and set `VITE_SUBSCRIBE_ENDPOINT`. Without it, the subscribe form
-reports the failure honestly and offers the email address instead.
+There is no newsletter backend. Each note ends with a `mailto:` so the promise
+in the copy is one a static site can keep.
 
 ## Adding content
 
