@@ -8,11 +8,11 @@
     "build": "vite build",
     "preview": "vite preview",
     "verify": "node scripts/verify.mjs",
-    "send-update": "node scripts/send-blog-update.js"
+    "check:assets": "node scripts/check-assets.mjs",
+    "check:seo": "node scripts/check-seo.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.61.0",
-    "nodemailer": "^10.3.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

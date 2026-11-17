@@ -4,7 +4,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://codex.is-a.dev/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://codex.is-a.dev/blogs/how-i-started/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -24,7 +24,7 @@
   </url>
   <url>
     <loc>https://codex.is-a.dev/blogs/how-i-got-my-first-client/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://codex.is-a.dev/interests/minecraft/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -44,7 +44,7 @@
   </url>
   <url>
     <loc>https://codex.is-a.dev/interests/video-editing/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>

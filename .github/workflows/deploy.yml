@@ -37,6 +37,7 @@ jobs:
       - run: npm run build
       - run: node scripts/verify.mjs
       - run: node scripts/check-assets.mjs
+      - run: node scripts/check-seo.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -6,6 +6,8 @@ static entry points for each section.
 
 [![verify](https://github.com/Code-Xceed/portfolio/actions/workflows/verify.yml/badge.svg)](https://github.com/Code-Xceed/portfolio/actions/workflows/verify.yml)
 
+![Portfolio home page](.github/screenshot.webp)
+
 The site has five entry points, all pre-rendered as static HTML and then hydrated:
 
 | Route | Content |
@@ -28,7 +30,11 @@ The site has five entry points, all pre-rendered as static HTML and then hydrate
 
 ```
 .
-├── .github/workflows/             # CI: verify, and dispatch-only Pages deploy
+├── .github/
+│   ├── workflows/                 # CI: verify, and dispatch-only Pages deploy
+│   ├── is-a-dev/codex.json        # domain record for the is-a.dev pull request
+│   ├── screenshot.webp            # README preview
+│   └── social-preview.png         # 1280x640 repository social preview
 ├── blogs/*/index.html             # pre-rendered blog entries
 ├── interests/*/index.html         # pre-rendered section entries
 ├── public/                        # images, video, icons, sitemap, robots
@@ -73,6 +79,12 @@ npm run verify     # quality gates (run after build)
 
 `node scripts/check-assets.mjs` additionally verifies that every asset referenced
 by the built HTML, CSS and JS actually exists in `dist/`.
+
+`node scripts/check-seo.mjs` verifies, for all five entry points: title and
+description length, canonical and `og:url` agreement, `og:image`, a single `h1`,
+and the required JSON-LD types (`Person`, `ItemList`, `CollectionPage`,
+`BlogPosting`, `BreadcrumbList`). It also checks that `robots.txt` points at the
+sitemap and that every page appears in it.
 
 The same gates run on every push and pull request via `.github/workflows/verify.yml`.
 

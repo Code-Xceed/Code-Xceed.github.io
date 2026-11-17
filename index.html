@@ -129,6 +129,57 @@
         ]
       }
     </script>
+    <!-- Projects as a structured list, so search engines can read the work -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Selected works",
+        "url": "https://codex.is-a.dev/#projects",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Resolve-AIEdit",
+              "applicationCategory": "DeveloperApplication",
+              "description": "Model Context Protocol server for DaVinci Resolve Studio exposing 42 verified tools for timeline, colour, Fairlight audio, Fusion and render automation.",
+              "codeRepository": "https://github.com/Code-Xceed/Resolve-AIEdit",
+              "programmingLanguage": ["TypeScript", "Python"],
+              "author": { "@id": "https://codex.is-a.dev/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "WinPreview",
+              "applicationCategory": "UtilitiesApplication",
+              "operatingSystem": "Windows",
+              "description": "Native C++20 QuickLook and Apple Preview for Windows: about 40 ms warm launch, about 150 ms cold start to first preview, 25-40 MB private memory, Direct2D and Direct3D 11 rendering.",
+              "codeRepository": "https://github.com/Code-Xceed/WinPreview",
+              "programmingLanguage": "C++",
+              "author": { "@id": "https://codex.is-a.dev/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "CodeX Client",
+              "applicationCategory": "GameApplication",
+              "description": "Fabric utility client for Minecraft 1.21.4 with a custom rendering pipeline, event bus architecture and modern HUD.",
+              "codeRepository": "https://github.com/Code-Xceed/CodeX-Client-src",
+              "programmingLanguage": "Java",
+              "author": { "@id": "https://codex.is-a.dev/#person" }
+            }
+          }
+        ]
+      }
+    </script>
     <!-- Route artwork is warmed on intent (see App.jsx), not at parse time -->
   </head>
   <body class="bg-[#FAFAF8] text-[#161514] antialiased selection:bg-[#EAE5D9] selection:text-[#161514]">
