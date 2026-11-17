@@ -643,27 +643,6 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                     </button>
                   ))}
                 </div>
-
-                {/* Editorial Metadata Strip Below Active Reel */}
-                {activeCategory.reels[activeReelIndex] && (
-                  <div className="mt-2.5 px-1 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 border-t border-stone-200/70 pt-2">
-                    <div className="flex items-baseline gap-2">
-                      <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded border border-amber-200/80">
-                        {activeCategory.reels[activeReelIndex].badge}
-                      </span>
-                      <h3 className="text-xs sm:text-sm font-bold text-[#161514] tracking-tight">
-                        {activeCategory.reels[activeReelIndex].title}
-                      </h3>
-                      <span className="hidden sm:inline text-stone-300">•</span>
-                      <p className="hidden sm:inline text-[11px] sm:text-xs text-stone-500 font-mono">
-                        {activeCategory.reels[activeReelIndex].subtitle}
-                      </p>
-                    </div>
-                    <span className="text-[11px] font-mono text-stone-400 shrink-0">
-                      {activeCategory.reels[activeReelIndex].tool} • {activeCategory.reels[activeReelIndex].format}
-                    </span>
-                  </div>
-                )}
               </div>
             )}
 

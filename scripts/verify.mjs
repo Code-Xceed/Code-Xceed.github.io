@@ -65,7 +65,6 @@ const banned = [
   ['17 months', 'tenure counter conflicts with the dated rows'],
   ['cheat engine', 'removed from the project card'],
   ['Vibe &amp; Code', 'replaced with the actual stack'],
-  ['profile-placeholder', 'replaced by the WebP portrait'],
   ['spatial audio', 'claimed experience that does not exist on the site'],
 ];
 

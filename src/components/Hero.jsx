@@ -4,7 +4,6 @@ import {
   ChevronDown
 } from 'lucide-react';
 import ContactDealButton from './ContactDealButton';
-import HeroPortraitCard from './HeroPortraitCard';
 import HeroSkillsShelf from './HeroSkillsShelf';
 
 const SOCIAL_LINKS = [
@@ -67,8 +66,8 @@ export default function Hero({ onExploreClick, onNavigate }) {
         {/* LEFT COLUMN: Identity, Manifesto & Interactive Action Bar */}
         <div className="flex-1 flex flex-col items-start text-left w-full">
           
-          {/* Main Title Row (With Mobile Portrait Integration) */}
-          <div className="w-full flex items-start justify-between gap-4">
+          {/* Main Title Row */}
+          <div className="w-full">
             <div className="space-y-2">
               <h1 className="text-[32px] sm:text-5xl md:text-[56px] font-bold text-[#161514] tracking-[-0.035em] leading-[1.04]">
                 Aditya Rathore
@@ -80,11 +79,6 @@ export default function Hero({ onExploreClick, onNavigate }) {
                 <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-600 mt-[7px]" aria-hidden="true" />
                 <span>Available for freelance and <span className="whitespace-nowrap">full-time</span> roles</span>
               </p>
-            </div>
-
-            {/* Mobile-Only Compact Portrait Card (Hidden on md+) */}
-            <div className="md:hidden shrink-0">
-              <HeroPortraitCard compact={true} />
             </div>
           </div>
 
@@ -136,13 +130,6 @@ export default function Hero({ onExploreClick, onNavigate }) {
 
           {/* Core Technical Capabilities Shelf */}
           <HeroSkillsShelf />
-        </div>
-
-        {/* RIGHT COLUMN: Desktop Museum-Grade Tactile Portrait Plate (Uplifted & Compact) */}
-        <div 
-          className="hidden md:block relative shrink-0 pt-1 md:pt-1.5"
-        >
-          <HeroPortraitCard />
         </div>
 
       </div>
