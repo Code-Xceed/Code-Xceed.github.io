@@ -90,22 +90,38 @@ The same gates run on every push and pull request via `.github/workflows/verify.
 
 ## Deployment
 
-The build is a plain static bundle and `public/CNAME` targets `codex.is-a.dev`.
-`.github/workflows/deploy.yml` builds, runs the gates, and publishes `dist/` to
-GitHub Pages.
+The build is a plain static bundle. `public/CNAME` is intentionally **absent**
+until `codex.is-a.dev` resolves: with it present, GitHub Pages redirects the
+`github.io` URL to a domain that does not exist yet, so nothing is reachable.
 
-Order matters, because `CNAME` makes Pages claim the custom domain immediately:
+### 1. Publish on GitHub Pages
 
-1. **Claim the subdomain.** Copy `.github/is-a-dev/codex.json` to
-   `domains/codex.json` in a fork of [`is-a-dev/register`](https://github.com/is-a-dev/register)
-   and open a pull request. It points `codex.is-a.dev` at `code-xceed.github.io`.
-2. **Wait for the record to merge and resolve** (`nslookup codex.is-a.dev`).
-3. **Enable Pages:** Settings → Pages → Source: **GitHub Actions**.
-4. **Run the `deploy` workflow** from the Actions tab.
+The repository must be named `<owner>.github.io` for the site to serve at the
+domain root. Otherwise Pages serves at `/<repo>/` and every root-absolute asset
+path breaks.
 
-Until step 2 completes, do not enable Pages: the `CNAME` file would point the
-site at a domain that does not resolve yet. Once the domain is live, add the
-`push` trigger to `deploy.yml` so every push to `main` publishes.
+1. Settings → rename the repository to `Code-Xceed.github.io`.
+2. `git remote set-url origin https://github.com/Code-Xceed/Code-Xceed.github.io.git`
+3. Settings → Pages → Source: **GitHub Actions**.
+4. Actions → **deploy** → Run workflow.
+5. Confirm `https://code-xceed.github.io/` renders the full site.
+
+### 2. Claim the subdomain
+
+`.github/is-a-dev/codex.json` is the record to submit to
+[`is-a-dev/register`](https://github.com/is-a-dev/register) as
+`domains/codex.json`. Merge it before touching the custom domain.
+
+### 3. Attach the custom domain
+
+After the record resolves (`nslookup codex.is-a.dev` → `code-xceed.github.io`):
+
+1. Restore `public/CNAME` containing `codex.is-a.dev`.
+2. Rebuild and run the **deploy** workflow.
+3. Settings → Pages → Custom domain → `codex.is-a.dev`, then tick **Enforce HTTPS**.
+
+Until then the site stays reachable on `code-xceed.github.io`, which is what the
+domain application needs as its preview URL.
 
 There is no newsletter backend. Each note ends with a `mailto:` so the promise
 in the copy is one a static site can keep.
