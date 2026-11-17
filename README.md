@@ -102,9 +102,14 @@ path breaks.
 
 1. Settings → rename the repository to `Code-Xceed.github.io`.
 2. `git remote set-url origin https://github.com/Code-Xceed/Code-Xceed.github.io.git`
-3. Settings → Pages → Source: **GitHub Actions**.
-4. Actions → **deploy** → Run workflow.
+3. Settings → Pages → Source: **Deploy from a branch** → `gh-pages` / **(root)**.
+4. Push to `main`. `deploy.yml` builds, runs the gates, and force-pushes `dist/`
+   to `gh-pages`; Pages then rebuilds from that branch.
 5. Confirm `https://code-xceed.github.io/` renders the full site.
+
+Branch publishing is used instead of `upload-pages-artifact` because the Pages
+API refuses to create a site for a repository whose Pages came from a branch,
+and `GITHUB_TOKEN` cannot convert it.
 
 ### 2. Claim the subdomain
 

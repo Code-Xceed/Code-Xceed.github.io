@@ -1,10 +1,10 @@
 name: deploy
 
-# Publishes dist/ to GitHub Pages.
+# Publishes the built site to the `gh-pages` branch.
 #
-# Safe to run on every push while the site is served from <owner>.github.io.
-# Once the custom domain is attached, `public/CNAME` must exist again; GitHub
-# Pages will then serve codex.is-a.dev and keep redirecting the github.io URL.
+# This does not touch the Pages API, so it works regardless of whether the
+# repository's Pages site is in "workflow" or "branch" mode. Point Pages at
+# Settings -> Pages -> Source: Deploy from a branch -> gh-pages / (root).
 
 on:
   push:
@@ -12,16 +12,14 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: pages-publish
+  cancel-in-progress: true
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,21 +32,16 @@ jobs:
       - run: node scripts/verify.mjs
       - run: node scripts/check-assets.mjs
       - run: node scripts/check-seo.mjs
-      - uses: actions/configure-pages@v5
-        with:
-          # Converts a branch-based Pages site to a workflow build if it is not
-          # already one; harmless when the source is already GitHub Actions.
-          enablement: true
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Publish dist to gh-pages
+        run: |
+          cd dist
+          git init -q
+          git checkout -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "deploy ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
