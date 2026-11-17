@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Nav from './Nav';
+import { gmailCompose } from '../email';
 import { 
   ArrowUpRight,
   Play, 
@@ -716,7 +717,9 @@ export default function VideoEditingExplorePage({ onNavigate }) {
 
               {/* Primary action: a brief that does not require a phone call */}
               <a
-                href="mailto:aditya.rathore10101@gmail.com?subject=Video%20project%20brief"
+                href={gmailCompose('Video project brief')}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="pressable mt-3 flex w-full items-center justify-center gap-1.5 h-10 rounded-xl bg-[#161514] hover:bg-[#2B2927] text-white text-[13px] font-medium transition-colors"
               >
                 <span>Send a brief</span>
@@ -865,7 +868,7 @@ export default function VideoEditingExplorePage({ onNavigate }) {
             <a href="https://github.com/Code-Xceed" target="_blank" rel="noopener noreferrer" className="py-1 inline-block hover:text-[#161514] transition-colors">
               GitHub
             </a>
-            <a href="mailto:aditya.rathore10101@gmail.com" className="py-1 inline-block hover:text-[#161514] transition-colors">
+            <a href={gmailCompose()} target="_blank" rel="noopener noreferrer" className="py-1 inline-block hover:text-[#161514] transition-colors">
               Email
             </a>
           </div>

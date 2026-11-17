@@ -74,7 +74,7 @@ npm run verify     # quality gates (run after build)
 | `public/` payload | ≤ 80 MB, no single asset over 20 MB |
 | Retracted claims | must not reappear in source or the SEO fallback |
 | Type floor | no text below 10px |
-| Primary action | must remain a real `mailto:` |
+| Primary action | must open a compose window, not rely on a desktop mail client |
 | Video loading | `preload` required, unconditional `autoplay` forbidden |
 
 `node scripts/check-assets.mjs` additionally verifies that every asset referenced

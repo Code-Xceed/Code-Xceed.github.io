@@ -1,7 +1,6 @@
 import React from 'react';
 import { Mail, ArrowUpRight } from 'lucide-react';
-
-const EMAIL = 'aditya.rathore10101@gmail.com';
+import { EMAIL, gmailCompose } from '../email';
 
 /**
  * Closing block on each note. No form, no endpoint: a real mailto so the
@@ -25,7 +24,9 @@ export default function BlogNoteCTA({ subject = 'New portfolio notes' }) {
       </div>
 
       <a
-        href={`mailto:${EMAIL}?subject=${encodeURIComponent(subject)}`}
+        href={gmailCompose(subject)}
+        target="_blank"
+        rel="noopener noreferrer"
         className="pressable inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#161514] hover:bg-[#2B2927] text-white text-[13px] font-medium transition-colors"
       >
         <span>Email me</span>

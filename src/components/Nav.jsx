@@ -1,12 +1,12 @@
 import React from 'react';
 import { ArrowLeft } from 'lucide-react';
+import { gmailCompose } from '../email';
 
 /**
  * One navigation bar for every entry.
  * Home: brand + links. Sub-pages: back + links + section pill.
- * Contact is a real mailto so it works with no JavaScript.
+ * Contact opens Gmail compose so it works without a desktop mail client.
  */
-const EMAIL = 'aditya.rathore10101@gmail.com';
 
 export default function Nav({ onNavigate, back = false, label, labelIcon = null }) {
   const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
@@ -67,7 +67,7 @@ export default function Nav({ onNavigate, back = false, label, labelIcon = null 
           <a href="/interests/video-editing/" onClick={go('/interests/video-editing/')} className="py-1.5 hover:text-[#161514] transition-colors">
             Video
           </a>
-          <a href={`mailto:${EMAIL}`} className="py-1.5 hover:text-[#161514] transition-colors">
+          <a href={gmailCompose()} target="_blank" rel="noopener noreferrer" className="py-1.5 hover:text-[#161514] transition-colors">
             Contact
           </a>
         </nav>

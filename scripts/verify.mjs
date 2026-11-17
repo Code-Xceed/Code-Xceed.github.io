@@ -82,9 +82,11 @@ for (const file of sources) {
   }
 }
 
-// 4. The primary action must be a real mailto
-const hero = fs.readFileSync(path.join(root, 'src/components/ContactDealButton.jsx'), 'utf8');
-if (!/mailto:/.test(hero)) fail('ContactDealButton has no mailto: — the primary CTA cannot contact anyone');
+// 4. The primary action must reach an inbox without a desktop mail client
+const cta = fs.readFileSync(path.join(root, 'src/components/ContactDealButton.jsx'), 'utf8');
+if (!/gmailCompose|mail\.google\.com/.test(cta)) {
+  fail('ContactDealButton does not open a compose window — the primary CTA cannot contact anyone');
+}
 
 // 5. Video loading discipline
 for (const file of walk(path.join(root, 'src/components')).filter((f) => f.endsWith('.jsx'))) {
