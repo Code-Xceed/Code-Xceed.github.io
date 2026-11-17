@@ -200,12 +200,8 @@ export default function ContactDealButton() {
     // ensuring the outro transition runs to completion and cleanly settles into 'idle'.
   };
 
-  const handleClick = async () => {
-    // 1. Silent clipboard copy without throwing
-    if (navigator?.clipboard?.writeText) {
-      navigator.clipboard.writeText(EMAIL).catch(() => {});
-    }
-
+  // The anchor's mailto: does the real work. This handler only plays the flourish.
+  const handleClick = () => {
     // Cancel pending outro timers to immediately elevate to active
     if (outroResetTimerRef.current) clearTimeout(outroResetTimerRef.current);
     if (videoEndDismissTimerRef.current) clearTimeout(videoEndDismissTimerRef.current);
@@ -283,10 +279,10 @@ export default function ContactDealButton() {
             <video
               ref={videoRef}
               src="/cat-handshake.mp4"
-              poster="/cat-handshake-thumb.png"
+              poster="/cat-handshake-thumb.webp"
               muted
               playsInline
-              preload="auto"
+              preload="none"
               className="w-full h-full object-cover"
               onEnded={handleVideoEnded}
             />
@@ -294,7 +290,7 @@ export default function ContactDealButton() {
             {/* Static poster fallback overlay when not playing */}
             {!isPlaying && (
               <img 
-                src="/cat-handshake-thumb.png" 
+                src="/cat-handshake-thumb.webp" 
                 alt="Handshake Thumbnail"
                 className="absolute inset-0 w-full h-full object-cover pointer-events-none"
               />
@@ -303,13 +299,13 @@ export default function ContactDealButton() {
         </div>
       </div>
 
-      {/* FIXED GEOMETRY BUTTON (w-40 h-11, NO browser title tooltip) */}
-      <button
+      {/* FIXED GEOMETRY LINK (w-40 h-11) — a real mailto so the CTA always works */}
+      <a
         ref={buttonRef}
-        type="button"
+        href={`mailto:${EMAIL}?subject=Hello%20Aditya`}
         onClick={handleClick}
         className="pressable group relative h-11 w-40 px-3 rounded-full bg-[#161514] text-[#FAFAF8] text-sm font-medium hover:bg-[#2B2927] shadow-[0_2px_10px_rgba(22,21,20,0.08)] cursor-pointer overflow-hidden inline-flex items-center justify-center transition-colors duration-200 select-none"
-        aria-label="Connect via email"
+        aria-label="Email Aditya Rathore"
       >
         {/* STATE 1: "Get in touch" (Default) */}
         <div 
@@ -391,21 +387,26 @@ export default function ContactDealButton() {
             })}
           </div>
         </div>
-      </button>
+      </a>
 
-      {/* Visual Feedback Confirmation on Email Copy */}
+      {/* Confirmation that the mail client is opening — never claim a copy */}
       {buttonPhase === 'active' && (
         <div 
           className="absolute -top-9 left-1/2 -translate-x-1/2 px-2.5 py-1 rounded-full bg-[#161514] text-[#FAFAF8] text-[11px] font-mono flex items-center gap-1.5 shadow-lg animate-fade-in whitespace-nowrap z-50 pointer-events-none"
         >
           <Check className="w-3 h-3 text-emerald-400 shrink-0" />
-          <span>Email copied to clipboard!</span>
+          <span>Opening your mail app…</span>
         </div>
       )}
 
+      {/* Address in plain text, so it works even when mailto is blocked */}
+      <span className="sr-only">
+        aditya.rathore10101@gmail.com
+      </span>
+
       {/* Screen Reader Notification */}
       <div className="sr-only" role="status" aria-live="polite">
-        {buttonPhase === 'active' ? "Email address copied to clipboard." : ""}
+        {buttonPhase === 'active' ? "Opening your email app to message aditya.rathore10101@gmail.com." : ""}
       </div>
     </div>
   );

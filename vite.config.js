@@ -23,9 +23,9 @@ function resendDevApiPlugin(env) {
             const audienceId = env.RESEND_AUDIENCE_ID || process.env.RESEND_AUDIENCE_ID || '19edb32d-5a5d-4a09-9b6b-6de9106e78e5';
 
             if (!apiKey) {
-              res.statusCode = 200;
+              res.statusCode = 503;
               res.setHeader('Content-Type', 'application/json');
-              res.end(JSON.stringify({ success: true, message: 'Saved locally' }));
+              res.end(JSON.stringify({ error: 'Subscription is not available right now.' }));
               return;
             }
 
@@ -87,9 +87,6 @@ export default defineConfig(({ mode }) => {
         },
         output: {
           manualChunks(id) {
-            if (id.includes('node_modules/lucide-react')) {
-              return 'lucide-icons';
-            }
             if (id.includes('node_modules/react') || id.includes('node_modules/react-dom')) {
               return 'vendor-react';
             }

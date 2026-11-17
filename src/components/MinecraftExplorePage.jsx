@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import Nav from './Nav';
 import { 
-  ArrowLeft, 
   Play, 
   Pause, 
   Volume2, 
@@ -19,14 +19,19 @@ export default function MinecraftExplorePage({ onNavigate }) {
   const [copiedField, setCopiedField] = useState(null);
   const videoRef = useRef(null);
 
-  const handleBack = (e) => {
-    e.preventDefault();
-    if (onNavigate) {
-      onNavigate('/');
-    } else {
-      window.location.href = '/';
-    }
-  };
+  // Respect the OS motion preference.
+  const [reduceMotion, setReduceMotion] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    setReduceMotion(mq.matches);
+    const onChange = () => setReduceMotion(mq.matches);
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
+
+  useEffect(() => {
+    if (reduceMotion) videoRef.current?.pause();
+  }, [reduceMotion]);
 
   const copyToClipboard = (text, field) => {
     navigator.clipboard.writeText(text);
@@ -82,34 +87,18 @@ export default function MinecraftExplorePage({ onNavigate }) {
       />
 
       {/* 3. Header Navigation Bar */}
-      <header className="relative z-20 w-full max-w-5xl mx-auto px-5 sm:px-8 pt-4 sm:pt-6 pb-2 safe-top select-none">
-        <div className="flex items-center justify-between pb-3 border-b border-[rgba(22,21,20,0.08)]">
-          <a
-            href="/"
-            onClick={handleBack}
-            className="pressable group inline-flex items-center gap-1.5 px-3 py-1.5 -ml-2 rounded-lg text-xs font-mono text-[#57534E] hover:text-[#161514] hover:bg-black/[0.04] active:scale-95 transition-all duration-150 cursor-pointer touch-manipulation"
-            aria-label="Back to home page"
-          >
-            <ArrowLeft className="w-3.5 h-3.5 text-stone-400 group-hover:-translate-x-0.5 transition-transform duration-150" />
-            <span>Back</span>
-          </a>
-
-          {/* Section Breadcrumb Pill (Refined home page token, responsive label) */}
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 rounded-lg bg-black/[0.04] border border-black/[0.06] backdrop-blur-xs select-none">
-            <img 
-              src="/icons/minecraft-brand.svg" 
-              alt="Minecraft" 
-              className="w-3.5 h-3.5 object-contain shrink-0" 
-            />
-            <span className="text-[11px] font-mono font-medium text-[#161514] sm:hidden">
-              # Minecraft
-            </span>
-            <span className="text-[11px] font-mono font-medium text-[#161514] hidden sm:inline">
-              # Minecraft Speedrunner
-            </span>
-          </div>
-        </div>
-      </header>
+      <Nav
+        back
+        onNavigate={onNavigate}
+        label="# Minecraft Speedrunner"
+        labelIcon={
+          <img
+            src="/icons/minecraft-brand.svg"
+            alt=""
+            className="w-3.5 h-3.5 object-contain shrink-0"
+          />
+        }
+      />
 
       {/* Main Single-Viewport Layout (Matching VideoEditingExplorePage architecture) */}
       <main className="relative z-20 w-full max-w-5xl mx-auto px-5 sm:px-8 py-3 sm:py-4 flex flex-col gap-3.5 sm:gap-4 animate-fade-in" style={{ animationDuration: '280ms' }}>
@@ -128,7 +117,7 @@ export default function MinecraftExplorePage({ onNavigate }) {
                 ref={videoRef}
                 src="/gallery/videos/GixelMC.mp4"
                 poster="/gallery/videos/GixelMC-poster.webp"
-                autoPlay
+                autoPlay={!reduceMotion}
                 loop
                 muted={isMuted}
                 playsInline
@@ -164,14 +153,14 @@ export default function MinecraftExplorePage({ onNavigate }) {
             {/* Editorial Metadata Strip Below Video */}
             <div className="mt-2.5 px-1 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 border-t border-stone-200/70 pt-2 mb-2">
               <div className="flex items-baseline gap-2">
-                <span className="text-[10px] font-mono font-semibold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200/80">
+                <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200/80">
                   MCSR Clip
                 </span>
                 <h3 className="text-xs sm:text-sm font-bold text-[#161514] tracking-tight">
                   Minecraft Speedrunning Ranked Record
                 </h3>
               </div>
-              <span className="text-[10px] font-mono text-stone-400">
+              <span className="text-[11px] font-mono text-stone-400">
                 OnlyCodeX • 1080p60
               </span>
             </div>
@@ -190,7 +179,7 @@ export default function MinecraftExplorePage({ onNavigate }) {
                     href="https://mcsrranked.com/stats/OnlyCodeX"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-stone-100/80 hover:bg-stone-200/80 text-[10px] font-mono text-stone-600 hover:text-black border border-stone-200/80 font-medium transition-all shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+                    className="group inline-flex items-center gap-1.5 px-2 py-1.5 rounded-md bg-stone-100/80 hover:bg-stone-200/80 text-[11px] font-mono text-stone-600 hover:text-black border border-stone-200/80 font-medium transition-all shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
                     title="View OnlyCodeX stats on MCSR Ranked"
                     aria-label="View OnlyCodeX stats on MCSR Ranked"
                   >
@@ -288,7 +277,7 @@ export default function MinecraftExplorePage({ onNavigate }) {
                   # Modrinth Creator
                 </span>
                 <div className="flex-1 h-[1px] bg-stone-200/80" />
-                <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-stone-100/80 text-[10px] font-mono text-stone-600 border border-stone-200/80 font-medium">
+                <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-stone-100/80 text-[11px] font-mono text-stone-600 border border-stone-200/80 font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                   Available
                 </span>
@@ -314,7 +303,7 @@ export default function MinecraftExplorePage({ onNavigate }) {
                   >
                     <img src="/icons/modrinth.svg" alt="Modrinth" className="w-4 h-4 object-contain shrink-0" />
                     <div className="min-w-0">
-                      <div className="text-[10px] font-mono text-stone-400 leading-none">Modrinth</div>
+                      <div className="text-[11px] font-mono text-stone-400 leading-none">Modrinth</div>
                       <div className="text-xs font-mono font-semibold text-[#161514] truncate mt-0.5">CodeXceed</div>
                     </div>
                   </a>
@@ -357,7 +346,7 @@ export default function MinecraftExplorePage({ onNavigate }) {
                   >
                     <img src="/icons/discord.svg" alt="Discord" className="w-4 h-4 object-contain shrink-0" />
                     <div className="min-w-0">
-                      <div className="text-[10px] font-mono text-stone-400 leading-none">Discord</div>
+                      <div className="text-[11px] font-mono text-stone-400 leading-none">Discord</div>
                       <div className="text-xs font-mono font-semibold text-[#161514] truncate mt-0.5">@codexceed</div>
                     </div>
                   </a>
@@ -398,7 +387,7 @@ export default function MinecraftExplorePage({ onNavigate }) {
                   # Other Games
                 </span>
                 <div className="flex-1 h-[1px] bg-stone-200/80" />
-                <span className="px-2 py-0.5 rounded-md bg-stone-100/80 text-[10px] font-mono text-stone-600 border border-stone-200/80 font-medium">
+                <span className="px-2 py-0.5 rounded-md bg-stone-100/80 text-[11px] font-mono text-stone-600 border border-stone-200/80 font-medium">
                   Side Interests
                 </span>
               </div>
@@ -411,7 +400,7 @@ export default function MinecraftExplorePage({ onNavigate }) {
                     <div className="min-w-0">
                       <div className="text-xs font-mono font-semibold text-[#161514] flex items-center gap-2">
                         <span>BGMI</span>
-                        <span className="text-[9.5px] font-mono text-stone-400 font-normal">· casual</span>
+                        <span className="text-[11px] font-mono text-stone-400 font-normal">· casual</span>
                       </div>
                       <div className="text-[11px] font-mono text-stone-500 truncate mt-0.5">IGN: BGMHACKER112</div>
                     </div>
@@ -434,7 +423,7 @@ export default function MinecraftExplorePage({ onNavigate }) {
                     <div className="min-w-0">
                       <div className="text-xs font-mono font-semibold text-[#161514] flex items-center gap-2">
                         <span>Chess.com</span>
-                        <span className="text-[9.5px] font-mono text-emerald-700 font-semibold bg-emerald-500/10 border border-emerald-500/20 px-1.5 py-0.5 rounded">Casual · Rapid/Blitz</span>
+                        <span className="text-[11px] font-mono text-emerald-700 font-semibold bg-emerald-500/10 border border-emerald-500/20 px-1.5 py-0.5 rounded">Casual · Rapid/Blitz</span>
                       </div>
                       <div className="text-[11px] font-mono text-stone-500 truncate mt-0.5">IGN: codeXceed</div>
                     </div>
@@ -456,6 +445,30 @@ export default function MinecraftExplorePage({ onNavigate }) {
           </div>
 
         </div>
+
+        {/* Exit row: every sub-page must lead somewhere */}
+        <footer className="mt-4 border-t border-stone-200/80 pt-4 pb-2 flex flex-wrap items-center justify-between gap-3 text-[11px] font-mono text-[#6B6660]">
+          <span>Aditya Rathore · Minecraft</span>
+          <div className="flex items-center gap-4">
+            <button
+              type="button"
+              onClick={() => onNavigate && onNavigate('/')}
+              className="py-1 inline-block hover:text-[#161514] transition-colors"
+            >
+              All work
+            </button>
+            <button
+              type="button"
+              onClick={() => onNavigate && onNavigate('/interests/video-editing/')}
+              className="py-1 inline-block hover:text-[#161514] transition-colors"
+            >
+              Video work
+            </button>
+            <a href="https://github.com/Code-Xceed" target="_blank" rel="noopener noreferrer" className="py-1 inline-block hover:text-[#161514] transition-colors">
+              GitHub
+            </a>
+          </div>
+        </footer>
 
       </main>
     </div>

@@ -32,47 +32,52 @@ export default function BlogSubscribeForm({ source = 'blog-post' }) {
     setErrorMessage('');
 
     try {
-      // 1. Fallback / offline persistence: always save subscriber locally
+      // Deliver to the serverless endpoint. Success is only reported when the
+      // server actually accepts the address; a missing endpoint is a failure.
+      const endpoint = import.meta.env.VITE_SUBSCRIBE_ENDPOINT || '/api/subscribe';
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          email: trimmed,
+          source,
+          timestamp: new Date().toISOString(),
+        }),
+      });
+
+      if (!response.ok) {
+        const data = await response.json().catch(() => ({}));
+        setErrorMessage(
+          data?.error
+            ? data.error
+            : 'Subscription is not available right now. Email me at aditya.rathore10101@gmail.com and I will add you.'
+        );
+        setStatus('error');
+        return;
+      }
+
+      // Local backup only after the server confirms, so an email is never
+      // stored on a device for a subscription that did not happen.
       try {
         const stored = JSON.parse(localStorage.getItem('codex_subscribers') || '[]');
-        if (!stored.includes(trimmed)) {
+        if (!stored.some((entry) => entry.email === trimmed)) {
           stored.push({ email: trimmed, source, date: new Date().toISOString() });
           localStorage.setItem('codex_subscribers', JSON.stringify(stored));
         }
-      } catch (err) {
-        // LocalStorage error non-fatal
-      }
-
-      // 2. Network delivery to serverless API endpoint (/api/subscribe) or custom webhook
-      const endpoint = import.meta.env.VITE_SUBSCRIBE_ENDPOINT || '/api/subscribe';
-      try {
-        const response = await fetch(endpoint, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Accept: 'application/json',
-          },
-          body: JSON.stringify({
-            email: trimmed,
-            source,
-            timestamp: new Date().toISOString(),
-          }),
-        });
-
-        if (!response.ok && response.status !== 404) {
-          console.warn('Subscription API response status:', response.status);
-        }
-      } catch (networkErr) {
-        // In local Vite dev without a backend server, fallback gracefully
-        console.info('Local dev fallback: subscriber saved to localStorage');
+      } catch {
+        // LocalStorage is optional; the server already has the address.
       }
 
       setStatus('success');
       setEmail('');
-    } catch (err) {
-      console.warn('Subscription error:', err);
-      // Even if network fails, we saved locally
-      setStatus('success');
+    } catch {
+      setErrorMessage(
+        'Could not reach the subscription service. Email me at aditya.rathore10101@gmail.com and I will add you.'
+      );
+      setStatus('error');
     }
   };
 

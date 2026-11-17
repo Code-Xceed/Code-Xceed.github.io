@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-  Sparkles,
+  ArrowUpRight,
   ChevronDown
 } from 'lucide-react';
 import ContactDealButton from './ContactDealButton';
@@ -52,9 +52,9 @@ const SOCIAL_LINKS = [
   },
 ];
 
-export default function Hero({ onExploreClick }) {
+export default function Hero({ onExploreClick, onNavigate }) {
   return (
-    <section className="relative w-full min-h-[92vh] sm:min-h-screen flex flex-col justify-between pt-16 pb-4 sm:pt-24 sm:pb-6 px-6 sm:px-8 max-w-3xl mx-auto">
+    <section className="relative w-full min-h-[calc(92svh-56px)] sm:min-h-[calc(100svh-64px)] flex flex-col justify-between pt-6 pb-4 sm:pt-10 sm:pb-6 px-6 sm:px-8 max-w-3xl mx-auto">
       {/* Subtle Ambient Light Bloom */}
       <div 
         className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[340px] sm:w-[520px] h-[340px] sm:h-[440px] rounded-full ambient-glow blur-3xl opacity-80 z-0"
@@ -68,13 +68,17 @@ export default function Hero({ onExploreClick }) {
         <div className="flex-1 flex flex-col items-start text-left w-full">
           
           {/* Main Title Row (With Mobile Portrait Integration) */}
-          <div className="w-full flex items-start justify-between gap-4 animate-fade-in-up" style={{ animationDelay: '60ms' }}>
+          <div className="w-full flex items-start justify-between gap-4">
             <div className="space-y-2">
-              <h1 className="text-[38px] sm:text-5xl md:text-[56px] font-bold text-[#161514] tracking-[-0.035em] leading-[1.04]">
+              <h1 className="text-[32px] sm:text-5xl md:text-[56px] font-bold text-[#161514] tracking-[-0.035em] leading-[1.04]">
                 Aditya Rathore
               </h1>
               <p className="text-base sm:text-lg md:text-xl font-medium text-[#57534E] tracking-[-0.015em]">
                 Full-Stack Developer &amp; Creative Engineer
+              </p>
+              <p className="flex items-start gap-2 text-[13px] sm:text-sm font-normal text-[#57534E]">
+                <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-600 mt-[7px]" aria-hidden="true" />
+                <span>Available for freelance and <span className="whitespace-nowrap">full-time</span> roles</span>
               </p>
             </div>
 
@@ -86,18 +90,16 @@ export default function Hero({ onExploreClick }) {
 
           {/* Manifesto / Hook */}
           <p 
-            className="mt-6 sm:mt-7 max-w-lg text-[15px] sm:text-[16.5px] leading-[1.7] text-[#57534E] font-normal animate-fade-in-up"
-            style={{ animationDelay: '140ms' }}
+            className="mt-6 sm:mt-7 max-w-lg text-[15px] sm:text-[16.5px] leading-[1.7] text-[#57534E] font-normal"
           >
-            Obsessed with building scalable web products, developer utilities, and high-craft interfaces with relentless attention to speed, feel, and simplicity.
+            I build developer tools, web interfaces and video edits — mostly the kind of work where speed and feel decide whether it is any good.
           </p>
 
           {/* ACTIONS & SOCIALS: Fixed-size Morphing Contact Button */}
           <div 
-            className="mt-8 sm:mt-10 flex flex-wrap items-center gap-3 animate-fade-in-up"
-            style={{ animationDelay: '200ms' }}
+            className="mt-8 sm:mt-10 flex flex-wrap items-center gap-3"
           >
-            {/* Interactive Deal Handshake Button with Hover Meme Thumbnail */}
+            {/* Primary action */}
             <ContactDealButton />
 
             {/* Social Icons Strip (Height matched to h-11) */}
@@ -115,6 +117,21 @@ export default function Hero({ onExploreClick }) {
                 </a>
               ))}
             </div>
+
+            {/* Secondary door for the video-editing audience */}
+            <a
+              href="/interests/video-editing/"
+              onClick={(e) => {
+                if (onNavigate) {
+                  e.preventDefault();
+                  onNavigate('/interests/video-editing/');
+                }
+              }}
+              className="pressable group h-11 inline-flex items-center gap-1.5 px-3.5 rounded-full bg-white/80 backdrop-blur-md border border-[rgba(22,21,20,0.08)] text-[13px] sm:text-sm font-medium text-[#161514] hover:border-[rgba(22,21,20,0.2)] transition-colors"
+            >
+              <span>Video commissions</span>
+              <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
           </div>
 
           {/* Core Technical Capabilities Shelf */}
@@ -123,8 +140,7 @@ export default function Hero({ onExploreClick }) {
 
         {/* RIGHT COLUMN: Desktop Museum-Grade Tactile Portrait Plate (Uplifted & Compact) */}
         <div 
-          className="hidden md:block relative shrink-0 pt-1 md:pt-1.5 animate-fade-in-up"
-          style={{ animationDelay: '180ms' }}
+          className="hidden md:block relative shrink-0 pt-1 md:pt-1.5"
         >
           <HeroPortraitCard />
         </div>
@@ -132,23 +148,22 @@ export default function Hero({ onExploreClick }) {
       </div>
 
       {/* BOTTOM FOOTER CUE */}
-      <footer className="relative z-10 w-full flex items-center justify-between text-xs text-[#8C867E] font-mono border-t border-[rgba(22,21,20,0.06)] pt-4 animate-fade-in-up" style={{ animationDelay: '300ms' }}>
+      <div className="relative z-10 w-full flex items-center justify-between text-xs text-[#6B6660] font-mono border-t border-[rgba(22,21,20,0.06)] pt-4">
         <span className="flex items-center gap-1.5">
-          <Sparkles className="w-3.5 h-3.5 text-amber-500/80" />
-          <span>17 months of shipping</span>
+          <span>India · IST (UTC+5:30)</span>
         </span>
 
         {onExploreClick && (
           <button
             type="button"
             onClick={onExploreClick}
-            className="pressable group inline-flex items-center gap-1 text-[#57534E] hover:text-[#161514] cursor-pointer"
+            className="pressable group inline-flex items-center gap-1 py-1.5 -my-1 text-[#57534E] hover:text-[#161514] cursor-pointer"
           >
-            <span>Selected Works</span>
+            <span>Jump to work</span>
             <ChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-y-0.5" />
           </button>
         )}
-      </footer>
+      </div>
     </section>
   );
 }

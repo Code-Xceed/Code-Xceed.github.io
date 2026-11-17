@@ -1,10 +1,9 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { 
   ArrowUpRight, 
   BookOpen, 
   Briefcase,
-  Sparkles,
-  ChevronDown
+  Sparkles
 } from 'lucide-react';
 
 /**
@@ -57,6 +56,22 @@ export default function InterestsExperience({ onNavigate }) {
   const mcVideoRef = useRef(null);
   const editVideoRef = useRef(null);
 
+  // Respect the OS motion preference: no preview plays on its own.
+  const [reduceMotion, setReduceMotion] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    setReduceMotion(mq.matches);
+    const onChange = () => setReduceMotion(mq.matches);
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
+
+  useEffect(() => {
+    if (!reduceMotion) return;
+    mcVideoRef.current?.pause();
+    editVideoRef.current?.pause();
+  }, [reduceMotion]);
+
   return (
     <section 
       id="interests-experience" 
@@ -66,42 +81,36 @@ export default function InterestsExperience({ onNavigate }) {
       {/* ======================================================== */}
       {/* SECTION DIVIDER HEADER (Craft, Play, Trajectory & Exp)    */}
       {/* ======================================================== */}
-      <header className="w-full flex items-center justify-between text-[11px] sm:text-xs text-[#8C867E] font-mono border-t border-[rgba(22,21,20,0.08)] pt-4 mb-7 sm:mb-9 select-none">
-        <span className="flex items-center gap-1.5 shrink-0">
+      <header className="w-full flex items-center text-[11px] sm:text-xs text-[#6B6660] font-mono border-t border-[rgba(22,21,20,0.08)] pt-4 mb-7 sm:mb-9 select-none">
+        <h2 className="flex items-center gap-1.5 shrink-0">
           <Sparkles className="w-3.5 h-3.5 text-amber-500/80 shrink-0" />
           <span className="text-[#161514] font-medium">Creative Pursuits</span>
           <span className="hidden sm:inline text-stone-500 font-normal"> &amp; Trajectory</span>
-        </span>
-
-        <div className="inline-flex items-center gap-1 text-[#57534E] text-[11px] sm:text-xs">
-          <span>Interests</span>
-          <span className="hidden sm:inline"> &amp; Experience</span>
-          <ChevronDown className="w-3.5 h-3.5 opacity-60" />
-        </div>
+        </h2>
       </header>
 
       {/* ======================================================== */}
       {/* 2-COLUMN VIEWPORT SPREAD (Balanced center space / Ma)     */}
       {/* ======================================================== */}
-      <div className="flex flex-col md:flex-row justify-between items-stretch gap-10 md:gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-10 md:gap-8 lg:gap-12">
         
         {/* ======================================================== */}
         {/* LEFT COLUMN: PURE CANVAS SECTIONS (Full width mobile, compact desktop) */}
         {/* ======================================================== */}
-        <div className="flex flex-col justify-between pt-0.5 w-full md:w-[360px] lg:w-[370px] shrink-0">
+        <div className="flex flex-col justify-between pt-0.5 w-full min-w-0">
           
           {/* Top Block: Minecraft & Competitive Esports */}
           <section aria-labelledby="gaming-heading">
             {/* Header with Divider Line & Explore More Button */}
             <div className="flex items-center gap-2 mb-2 group/header">
-              <span id="gaming-heading" className="text-xs font-mono font-bold text-[#161514] tracking-tight group-hover/header:text-black transition-colors duration-150 shrink-0">
+              <h3 id="gaming-heading" className="text-xs font-mono font-bold text-[#161514] tracking-tight group-hover/header:text-black transition-colors duration-150 shrink-0">
                 # Minecraft Speedrunner
-              </span>
+              </h3>
               <div className="flex-1 h-[1px] bg-stone-200/80 group-hover/header:bg-stone-300 transition-colors duration-200" />
               <button
                 type="button"
                 onClick={() => onNavigate && onNavigate('/interests/minecraft/')}
-                className="pressable group/btn inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-mono text-stone-400 hover:text-[#161514] hover:bg-black/[0.04] transition-all duration-150 cursor-pointer shrink-0 select-none whitespace-nowrap"
+                className="pressable group/btn inline-flex items-center gap-1 px-1.5 py-1.5 rounded text-[11px] font-mono text-[#6B6660] hover:text-[#161514] hover:bg-black/[0.04] transition-all duration-150 cursor-pointer shrink-0 select-none whitespace-nowrap"
                 aria-label="Explore more about Minecraft Speedrunner"
               >
                 <span>explore more</span>
@@ -129,20 +138,19 @@ export default function InterestsExperience({ onNavigate }) {
             >
               <video 
                 ref={mcVideoRef}
-                src="/gallery/videos/GixelMC.mp4" 
+                src="/gallery/videos/GixelMC-card.mp4" 
                 poster="/gallery/videos/GixelMC-poster.webp"
-                autoPlay
                 loop 
                 muted 
                 playsInline 
-                preload="metadata"
+                preload="none"
                 className="w-full h-full object-cover opacity-90 group-hover/video:opacity-100 transition-opacity duration-300 ease-out"
               />
             </div>
 
             {/* Sub-thumbnail Details: TWO SEPARATE ROWS (Pro App + Extra Apps) */}
             <div className="pt-2 border-t border-stone-200/60 flex flex-col gap-1.5">
-              {/* Row 1: Pro in Minecraft */}
+              {/* Row 1: Minecraft & Modding */}
               <div className="flex items-center">
                 <div className="group/pro inline-flex items-center gap-1.5 cursor-default select-none">
                   <img 
@@ -151,20 +159,20 @@ export default function InterestsExperience({ onNavigate }) {
                     className="w-3.5 h-3.5 object-contain group-hover/pro:scale-110 transition-transform duration-150" 
                   />
                   <span className="text-[11.5px] font-semibold text-[#161514] group-hover/pro:text-black tracking-tight transition-colors duration-150">
-                    Pro in Minecraft
+                    Minecraft &amp; Modding
                   </span>
                 </div>
               </div>
 
               {/* Row 2: Extra Games (Also plays) */}
               <div className="flex items-baseline gap-2 pt-0.5">
-                <span className="text-[9.5px] font-mono text-stone-400 uppercase tracking-wider shrink-0 select-none mt-1">
+                <span className="text-[11px] font-mono text-[#6B6660] uppercase tracking-wider shrink-0 select-none mt-1">
                   Also:
                 </span>
                 <div className="flex items-center gap-1.5 flex-wrap">
                   <div 
                     title="PlayerUnknown's Battlegrounds"
-                    className="group/pill inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-stone-100/70 border border-stone-200/70 text-[10px] font-medium text-stone-700 hover:text-black hover:border-stone-400 hover:bg-stone-50 hover:-translate-y-0.5 active:scale-[0.96] transition-all duration-150 ease-out cursor-default select-none shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+                    className="group/pill inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-stone-100/70 border border-stone-200/70 text-[11px] font-medium text-stone-700 hover:text-black hover:border-stone-400 hover:bg-stone-50 hover:-translate-y-0.5 active:scale-[0.96] transition-all duration-150 ease-out cursor-default select-none shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
                   >
                     <img src="/icons/pubg.svg" alt="PUBG" className="w-3.5 h-2.5 object-contain group-hover/pill:scale-110 transition-transform duration-150" />
                     <span>PUBG</span>
@@ -172,7 +180,7 @@ export default function InterestsExperience({ onNavigate }) {
 
                   <div 
                     title="Chess.com"
-                    className="group/pill inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-stone-100/70 border border-stone-200/70 text-[10px] font-medium text-stone-700 hover:text-black hover:border-stone-400 hover:bg-stone-50 hover:-translate-y-0.5 active:scale-[0.96] transition-all duration-150 ease-out cursor-default select-none shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+                    className="group/pill inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-stone-100/70 border border-stone-200/70 text-[11px] font-medium text-stone-700 hover:text-black hover:border-stone-400 hover:bg-stone-50 hover:-translate-y-0.5 active:scale-[0.96] transition-all duration-150 ease-out cursor-default select-none shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
                   >
                     <img src="/icons/chesscom.svg" alt="Chess.com" className="w-3 h-3 object-contain group-hover/pill:scale-110 transition-transform duration-150" />
                     <span>Chess.com</span>
@@ -186,14 +194,14 @@ export default function InterestsExperience({ onNavigate }) {
           <section aria-labelledby="video-heading" className="pt-5 sm:pt-6">
             {/* Header with Divider Line & Explore More Button */}
             <div className="flex items-center gap-2 mb-2 group/header">
-              <span id="video-heading" className="text-[11px] sm:text-xs font-mono font-bold text-[#161514] tracking-tight group-hover/header:text-black transition-colors duration-150 shrink-0 whitespace-nowrap">
+              <h3 id="video-heading" className="text-[11px] sm:text-xs font-mono font-bold text-[#161514] tracking-tight group-hover/header:text-black transition-colors duration-150 shrink-0 whitespace-nowrap">
                 # Video Editing &amp; Motion Design
-              </span>
+              </h3>
               <div className="flex-1 h-[1px] bg-stone-200/80 group-hover/header:bg-stone-300 transition-colors duration-200" />
               <button
                 type="button"
                 onClick={() => onNavigate && onNavigate('/interests/video-editing/')}
-                className="pressable group/btn inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-mono text-stone-400 hover:text-[#161514] hover:bg-black/[0.04] transition-all duration-150 cursor-pointer shrink-0 select-none whitespace-nowrap"
+                className="pressable group/btn inline-flex items-center gap-1 px-1.5 py-1.5 rounded text-[11px] font-mono text-[#6B6660] hover:text-[#161514] hover:bg-black/[0.04] transition-all duration-150 cursor-pointer shrink-0 select-none whitespace-nowrap"
                 aria-label="Explore more about Video Editing and Motion Design"
               >
                 <span>explore more</span>
@@ -223,18 +231,17 @@ export default function InterestsExperience({ onNavigate }) {
                 ref={editVideoRef}
                 src="/gallery/videos/Showcase-2.mp4" 
                 poster="/gallery/videos/Showcase-2-poster.webp"
-                autoPlay
                 loop 
                 muted 
                 playsInline 
-                preload="metadata"
+                preload="none"
                 className="w-full h-full object-cover opacity-90 group-hover/video:opacity-100 transition-opacity duration-300 ease-out"
               />
             </div>
 
             {/* Sub-thumbnail Details: TWO SEPARATE ROWS (Pro Tool + Extra Tools) */}
             <div className="pt-2 border-t border-stone-200/60 flex flex-col gap-1.5">
-              {/* Row 1: Good at DaVinci Resolve */}
+              {/* Row 1: DaVinci Resolve */}
               <div className="flex items-center">
                 <div className="group/pro inline-flex items-center gap-1.5 cursor-default select-none">
                   <img 
@@ -243,20 +250,20 @@ export default function InterestsExperience({ onNavigate }) {
                     className="w-3.5 h-3.5 object-contain group-hover/pro:rotate-45 group-hover/pro:scale-110 transition-transform duration-300 ease-out" 
                   />
                   <span className="text-[11.5px] font-semibold text-[#161514] group-hover/pro:text-black tracking-tight transition-colors duration-150">
-                    Good at DaVinci Resolve
+                    DaVinci Resolve
                   </span>
                 </div>
               </div>
 
               {/* Row 2: Extra Tools (Also uses - Blender replaced with Mine-imator Vexel Build) */}
               <div className="flex items-baseline gap-2 pt-0.5">
-                <span className="text-[9.5px] font-mono text-stone-400 uppercase tracking-wider shrink-0 select-none mt-1">
+                <span className="text-[11px] font-mono text-[#6B6660] uppercase tracking-wider shrink-0 select-none mt-1">
                   Also:
                 </span>
                 <div className="flex items-center gap-1.5 flex-wrap">
                   <div 
                     title="Adobe Premiere Pro"
-                    className="group/pill inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-stone-100/70 border border-stone-200/70 text-[10px] font-medium text-stone-700 hover:text-black hover:border-stone-400 hover:bg-stone-50 hover:-translate-y-0.5 active:scale-[0.96] transition-all duration-150 ease-out cursor-default select-none shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+                    className="group/pill inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-stone-100/70 border border-stone-200/70 text-[11px] font-medium text-stone-700 hover:text-black hover:border-stone-400 hover:bg-stone-50 hover:-translate-y-0.5 active:scale-[0.96] transition-all duration-150 ease-out cursor-default select-none shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
                   >
                     <img src="/icons/premiere.svg" alt="Premiere Pro" className="w-3 h-3 object-contain group-hover/pill:scale-110 transition-transform duration-150" />
                     <span>Premiere</span>
@@ -264,7 +271,7 @@ export default function InterestsExperience({ onNavigate }) {
 
                   <div 
                     title="Adobe After Effects"
-                    className="group/pill inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-stone-100/70 border border-stone-200/70 text-[10px] font-medium text-stone-700 hover:text-black hover:border-stone-400 hover:bg-stone-50 hover:-translate-y-0.5 active:scale-[0.96] transition-all duration-150 ease-out cursor-default select-none shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+                    className="group/pill inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-stone-100/70 border border-stone-200/70 text-[11px] font-medium text-stone-700 hover:text-black hover:border-stone-400 hover:bg-stone-50 hover:-translate-y-0.5 active:scale-[0.96] transition-all duration-150 ease-out cursor-default select-none shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
                   >
                     <img src="/icons/aftereffects.svg" alt="After Effects" className="w-3 h-3 object-contain group-hover/pill:scale-110 transition-transform duration-150" />
                     <span>AE</span>
@@ -272,7 +279,7 @@ export default function InterestsExperience({ onNavigate }) {
 
                   <div 
                     title="Mine-imator (Vexel Build)"
-                    className="group/pill inline-flex items-center gap-1.5 px-1.5 py-0.5 rounded-md bg-stone-100/70 border border-stone-200/70 text-[10px] font-medium text-stone-700 hover:text-black hover:border-stone-400 hover:bg-stone-50 hover:-translate-y-0.5 active:scale-[0.96] transition-all duration-150 ease-out cursor-default select-none shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+                    className="group/pill inline-flex items-center gap-1.5 px-1.5 py-0.5 rounded-md bg-stone-100/70 border border-stone-200/70 text-[11px] font-medium text-stone-700 hover:text-black hover:border-stone-400 hover:bg-stone-50 hover:-translate-y-0.5 active:scale-[0.96] transition-all duration-150 ease-out cursor-default select-none shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
                   >
                     <img 
                       src="/icons/mineimator.webp" 
@@ -280,7 +287,7 @@ export default function InterestsExperience({ onNavigate }) {
                       className="w-3.5 h-3.5 object-contain group-hover/pill:scale-110 transition-transform duration-150" 
                     />
                     <span>Mine-imator</span>
-                    <span className="text-[7.5px] font-mono text-orange-700/90 bg-orange-500/10 px-1 py-[0.5px] rounded font-semibold tracking-tight border border-orange-500/20 uppercase">
+                    <span className="text-[11px] font-mono text-orange-700/90 bg-orange-500/10 px-1 py-[0.5px] rounded font-semibold tracking-tight border border-orange-500/20 uppercase">
                       vexel
                     </span>
                   </div>
@@ -295,18 +302,18 @@ export default function InterestsExperience({ onNavigate }) {
         {/* RIGHT COLUMN: PURE TEXT & LINEWORK DIRECTLY ON CANVAS    */}
         {/* (Blogs & Experience, no footer as requested)            */}
         {/* ======================================================== */}
-        <div className="flex flex-col justify-between pt-0.5 w-full md:w-[350px] lg:w-[365px] shrink-0">
+        <div className="flex flex-col justify-between pt-0.5 w-full min-w-0">
           
           {/* Top Block: Curated Blogs (Exact user request: # Blogs) */}
           <section aria-labelledby="blogs-heading">
             {/* Header with Divider Line */}
             <div className="flex items-center gap-2.5 mb-2.5 group/header">
-              <span id="blogs-heading" className="text-xs font-mono font-bold text-[#161514] tracking-tight flex items-center gap-1.5 group-hover/header:text-black transition-colors duration-150">
+              <h3 id="blogs-heading" className="text-xs font-mono font-bold text-[#161514] tracking-tight flex items-center gap-1.5 group-hover/header:text-black transition-colors duration-150">
                 <BookOpen className="w-3.5 h-3.5 text-stone-500 group-hover/header:text-stone-700 group-hover/header:-rotate-6 transition-all duration-200 ease-out" />
                 <span># Blogs</span>
-              </span>
+              </h3>
               <div className="flex-1 h-[1px] bg-stone-200/80 group-hover/header:bg-stone-300 transition-colors duration-200" />
-              <span className="text-[10px] font-mono text-stone-400 group-hover/header:text-stone-500 font-medium transition-colors duration-150">2 notes</span>
+              <span className="text-[11px] font-mono text-[#6B6660] group-hover/header:text-stone-600 font-medium transition-colors duration-150">2 notes</span>
             </div>
 
             {/* Cleaner Note Entries (Only title, arrow icon, date below it, with smooth microanimations) */}
@@ -328,7 +335,7 @@ export default function InterestsExperience({ onNavigate }) {
                       <h4 className="text-[13px] sm:text-[13.5px] font-semibold text-[#161514] group-hover/item:text-black tracking-tight transition-colors duration-150">
                         {blog.title}
                       </h4>
-                      <div className="text-[11px] font-mono text-stone-400 group-hover/item:text-stone-500 mt-0.5 transition-colors duration-150">
+                      <div className="text-[11px] font-mono text-stone-500 group-hover/item:text-stone-600 mt-0.5 transition-colors duration-150">
                         {blog.date}
                       </div>
                     </div>
@@ -345,12 +352,11 @@ export default function InterestsExperience({ onNavigate }) {
           <section aria-labelledby="experience-heading" className="pt-6 sm:pt-7">
             {/* Header with Divider Line */}
             <div className="flex items-center gap-2.5 mb-2.5">
-              <span id="experience-heading" className="text-xs font-mono font-bold text-[#161514] tracking-tight flex items-center gap-1.5">
+              <h3 id="experience-heading" className="text-xs font-mono font-bold text-[#161514] tracking-tight flex items-center gap-1.5">
                 <Briefcase className="w-3.5 h-3.5 text-stone-500" />
                 <span># Experience</span>
-              </span>
+              </h3>
               <div className="flex-1 h-[1px] bg-stone-200/80" />
-              <span className="text-[10px] font-mono text-stone-400 font-medium">2 years</span>
             </div>
 
             {/* Experience Rows: Pure Static Plain Text (No hover, no animations) */}
@@ -365,9 +371,9 @@ export default function InterestsExperience({ onNavigate }) {
                     <span className="font-semibold text-[#161514] text-[13px] sm:text-[13.5px] tracking-tight">
                       {exp.role}
                     </span>
-                    <div className="flex items-center gap-1.5 text-[10.5px] sm:text-[11px] font-mono text-[#8C867E] shrink-0">
+                    <div className="flex items-center gap-1.5 text-[11px] sm:text-[11px] font-mono text-[#6B6660] shrink-0">
                       <span>{exp.period}</span>
-                      <span className={`text-[9px] select-none inline-block ${
+                      <span className={`text-[11px] select-none inline-block ${
                         exp.status === 'current' 
                           ? 'text-emerald-500 font-bold' 
                           : 'text-stone-300'
@@ -380,7 +386,7 @@ export default function InterestsExperience({ onNavigate }) {
                   {/* Bottom Line: Company Name */}
                   {exp.company && (
                     <div className="text-[11.5px] text-[#78716C] mt-0.5 flex items-center gap-1">
-                      <span className="text-[#A8A29E] text-[11px] select-none">at</span>
+                      <span className="text-[#6B6660] text-[11px] select-none">at</span>
                       <span className="font-medium text-[#44403C]">{exp.company}</span>
                     </div>
                   )}

@@ -32,9 +32,8 @@ const PROJECTS = [
   {
     id: 'resolve-aiedit',
     index: '01',
-    kanji: '壱',
-    status: 'active',
-    statusType: 'active',
+    status: 'maintained',
+    statusType: 'maintained',
     title: 'Resolve-AIEdit',
     theme: {
       accent: '#F59E0B',
@@ -59,9 +58,8 @@ const PROJECTS = [
   {
     id: 'winpreview',
     index: '02',
-    kanji: '弐',
-    status: 'active',
-    statusType: 'active',
+    status: 'maintained',
+    statusType: 'maintained',
     title: 'WinPreview',
     theme: {
       accent: '#0284C7',
@@ -71,7 +69,7 @@ const PROJECTS = [
       ambientGradient: 'from-[#0284C7]/12 via-[#38BDF8]/4 to-transparent',
       plateBorder: 'border-[#0284C7]/15',
     },
-    description: 'Ultra-fast native C++20 QuickLook & Apple Preview for Windows featuring <35ms cold launches, <20MB RAM, and pure Direct2D/Direct3D 11 hardware rendering.',
+    description: 'Native C++20 QuickLook & Apple Preview for Windows: ~40 ms warm launch, ~150 ms cold start to first preview, 25-40 MB private memory, Direct2D/Direct3D 11 rendering.',
     link: 'https://github.com/Code-Xceed/WinPreview',
     github: 'https://github.com/Code-Xceed/WinPreview',
     logo: '/projects/winpreview-logo.webp',
@@ -79,13 +77,11 @@ const PROJECTS = [
       { name: 'C++20', icon: '/icons/cpp.svg' },
       { name: 'Direct2D / 3D', icon: '/icons/windows.svg' },
       { name: 'Win32 API', icon: '/icons/windows.svg' },
-      { name: 'CMake', icon: '/icons/cmake.svg' },
     ],
   },
   {
     id: 'codex-client',
     index: '03',
-    kanji: '参',
     status: 'archived',
     statusType: 'archived',
     title: 'CodeX Client',
@@ -97,8 +93,8 @@ const PROJECTS = [
       ambientGradient: 'from-[#059669]/12 via-[#10B981]/4 to-transparent',
       plateBorder: 'border-[#059669]/15',
     },
-    description: 'High-performance Fabric utility client for Minecraft 1.21.4 featuring custom rendering pipeline, event bus architecture, modular cheat engine, and modern HUD.',
-    link: 'https://codexclient.netlify.app',
+    description: 'Fabric utility client for Minecraft 1.21.4 with a custom rendering pipeline, event bus architecture, and modern HUD.',
+    link: 'https://github.com/Code-Xceed/CodeX-Client-src',
     github: 'https://github.com/Code-Xceed/CodeX-Client-src',
     logo: '/projects/codex-logo.webp',
     skills: [
@@ -262,12 +258,6 @@ function EditorialProjectCard({ project }) {
       onMouseLeave={handleMouseLeave}
       className="group relative w-full rounded-2xl bg-white border border-[rgba(22,21,20,0.08)] shadow-[0_1px_3px_rgba(22,21,20,0.02)] p-4 sm:p-5 flex flex-col md:flex-row gap-5 sm:gap-6 overflow-hidden"
     >
-      {/* Corner Technical Registration Crosshairs (+) */}
-      <span className="absolute top-2 left-2 text-[9px] font-mono text-stone-200 group-hover:text-stone-400 transition-colors select-none pointer-events-none z-10">+</span>
-      <span className="absolute top-2 right-2 text-[9px] font-mono text-stone-200 group-hover:text-stone-400 transition-colors select-none pointer-events-none z-10">+</span>
-      <span className="absolute bottom-2 left-2 text-[9px] font-mono text-stone-200 group-hover:text-stone-400 transition-colors select-none pointer-events-none z-10">+</span>
-      <span className="absolute bottom-2 right-2 text-[9px] font-mono text-stone-200 group-hover:text-stone-400 transition-colors select-none pointer-events-none z-10">+</span>
-
       {/* ======================================================== */}
       {/* LEFT: CALM JAPANESE COASTAL THUMBNAIL PLATE             */}
       {/* ======================================================== */}
@@ -370,18 +360,6 @@ function EditorialProjectCard({ project }) {
           aria-hidden="true"
         />
 
-        {/* Subtle Architectural Blueprint Grid */}
-        <div
-          className="absolute inset-0 pointer-events-none opacity-30"
-          style={{
-            backgroundImage: `
-              repeating-linear-gradient(0deg, rgba(22, 21, 20, 0.05) 0px, rgba(22, 21, 20, 0.05) 1px, transparent 1px, transparent 16px),
-              repeating-linear-gradient(90deg, rgba(22, 21, 20, 0.05) 0px, rgba(22, 21, 20, 0.05) 1px, transparent 1px, transparent 16px)
-            `,
-          }}
-          aria-hidden="true"
-        />
-
         {/* Japanese Seigaiha Line Art Accent */}
         <div 
           className="absolute -right-3 -bottom-3 w-28 h-16 pointer-events-none text-current"
@@ -393,16 +371,16 @@ function EditorialProjectCard({ project }) {
 
         {/* Plate Top Bar: Minimal Status Text (Zero Pill - Clean Colored Text with Underline) */}
         <div className="relative z-10 flex items-center justify-end">
-          {project.statusType === 'active' ? (
-            <span className="font-mono text-[10px] font-medium tracking-wide text-emerald-600 border-b-[1.5px] border-emerald-500/80 pb-0.5 select-none">
-              active
+          {project.statusType === 'maintained' ? (
+            <span className="font-mono text-[11px] font-medium tracking-wide text-emerald-700 border-b-[1.5px] border-emerald-600/80 pb-0.5 select-none">
+              maintained
             </span>
           ) : project.statusType === 'archived' ? (
-            <span className="font-mono text-[10px] font-medium tracking-wide text-stone-500 border-b-[1.5px] border-stone-400/80 pb-0.5 select-none">
+            <span className="font-mono text-[11px] font-medium tracking-wide text-stone-500 border-b-[1.5px] border-stone-400/80 pb-0.5 select-none">
               archived
             </span>
           ) : (
-            <span className="font-mono text-[10px] font-medium tracking-wide bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent border-b-[1.5px] border-orange-400/90 pb-0.5 select-none">
+            <span className="font-mono text-[11px] font-medium tracking-wide bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent border-b-[1.5px] border-orange-400/90 pb-0.5 select-none">
               building
             </span>
           )}
@@ -454,7 +432,7 @@ function EditorialProjectCard({ project }) {
                 rel="noopener noreferrer"
                 className="pressable group/btn relative overflow-hidden px-3.5 py-1.5 rounded-lg bg-[#161514] hover:bg-black text-white text-[11.5px] font-medium flex items-center gap-1.5 transition-all duration-150 active:scale-95 shadow-2xs"
               >
-                <span>{project.id === 'codex-client' ? 'Visit' : 'View Code'}</span>
+                <span>View Code</span>
                 <ArrowUpRight className="w-3 h-3 transition-transform duration-150 ease-out group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
               </a>
             </div>
@@ -509,6 +487,12 @@ export default function SelectedWorks() {
       className="relative z-10 w-full max-w-3xl mx-auto px-6 sm:px-8 pt-4 sm:pt-6 pb-6 sm:pb-8 scroll-mt-8 sm:scroll-mt-12 animate-fade-in-up"
       style={{ animationDelay: '340ms' }}
     >
+      {/* SECTION LABEL: gives the document a real H2 stop before the cards */}
+      <header className="w-full flex items-center justify-between text-[11px] sm:text-xs text-[#6B6660] font-mono border-t border-[rgba(22,21,20,0.08)] pt-4 mb-6 sm:mb-7 select-none">
+        <h2 className="text-[#161514] font-medium">Selected Works</h2>
+        <span className="text-[11px]">{PROJECTS.length} projects</span>
+      </header>
+
       {/* PROJECTS LIST: Structured Editorial Spec Stack */}
       <div className="flex flex-col gap-4 sm:gap-5">
         {PROJECTS.map((project) => (

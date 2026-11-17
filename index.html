@@ -7,7 +7,7 @@
     <title>Aditya Rathore — Full-Stack Developer &amp; Creative Engineer</title>
     <meta
       name="description"
-      content="Portfolio of Aditya Rathore — Full-stack developer and creative engineer building scalable web products, developer tools, spatial audio experiences, and high-craft interfaces."
+      content="Portfolio of Aditya Rathore — full-stack developer and creative engineer. Developer tools, web interfaces and video editing work, with source links for each project."
     />
     <meta
       name="keywords"
@@ -53,10 +53,10 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Core Visual Assets Preload (Eliminates first-paint layout shifts and asset popping) -->
-    <link rel="preload" as="image" href="/japanese-left.webp" type="image/webp" />
-    <link rel="preload" as="image" href="/japanese-right.webp" type="image/webp" />
-    <link rel="preload" as="image" href="/japanese-right-lower.webp" type="image/webp" />
-    <link rel="preload" as="image" href="/profile-placeholder.svg" />
+    <link rel="preload" as="image" type="image/webp" imagesrcset="/japanese-left-320.webp 320w, /japanese-left.webp 720w" imagesizes="(max-width: 639px) 112px, 288px" />
+    <link rel="preload" as="image" type="image/webp" imagesrcset="/japanese-right-320.webp 320w, /japanese-right.webp 720w" imagesizes="(max-width: 639px) 112px, 240px" />
+    <link rel="preload" as="image" type="image/webp" media="(min-width: 640px)" href="/japanese-right-lower.webp" />
+    <link rel="preload" as="image" href="/profile-328.webp" type="image/webp" imagesrcset="/profile-328.webp 1x, /profile-656.webp 2x" />
 
     <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -96,7 +96,7 @@
             "alternateName": ["CodeX", "Code-Xceed"],
             "jobTitle": "Full-Stack Developer & Creative Engineer",
             "url": "https://codex.is-a.dev/",
-            "image": "https://codex.is-a.dev/profile-placeholder.svg",
+            "image": "https://codex.is-a.dev/profile-656.webp",
             "sameAs": [
               "https://github.com/Code-Xceed",
               "https://www.linkedin.com/in/aditya-rathore-110125385",
@@ -129,13 +129,7 @@
         ]
       }
     </script>
-    <!-- Preload blog background artwork for 0ms decode latency -->
-    <link rel="prefetch" href="/blogs/blog-1-bg.webp" as="image" type="image/webp" />
-    <link rel="prefetch" href="/blogs/blog-2-bg.webp" as="image" type="image/webp" />
-    <link rel="prefetch" href="/blogs/blog-1-mobile.webp" as="image" type="image/webp" />
-    <link rel="prefetch" href="/blogs/blog-2-mobile.webp" as="image" type="image/webp" />
-    <link rel="prefetch" href="/minecraft-bg.webp" as="image" type="image/webp" />
-    <link rel="prefetch" href="/videoeditor-bg.webp" as="image" type="image/webp" />
+    <!-- Route artwork is warmed on intent (see App.jsx), not at parse time -->
   </head>
   <body class="bg-[#FAFAF8] text-[#161514] antialiased selection:bg-[#EAE5D9] selection:text-[#161514]">
     <div id="root">
@@ -159,13 +153,13 @@
             </li>
             <li>
               <h3 class="font-semibold text-base">WinPreview</h3>
-              <p class="text-sm text-[#57534E]">Ultra-fast native C++20 QuickLook &amp; Apple Preview for Windows featuring &lt;35ms cold launches, &lt;20MB RAM, and pure Direct2D/Direct3D 11 hardware rendering.</p>
+              <p class="text-sm text-[#57534E]">Native C++20 QuickLook &amp; Apple Preview for Windows: ~40 ms warm launch, ~150 ms cold start to first preview, 25-40 MB private memory, Direct2D/Direct3D 11 rendering.</p>
               <a href="https://github.com/Code-Xceed/WinPreview" target="_blank" rel="noopener noreferrer" class="text-xs font-mono underline text-[#161514]">View WinPreview on GitHub &rarr;</a>
             </li>
             <li>
               <h3 class="font-semibold text-base">CodeX Client</h3>
-              <p class="text-sm text-[#57534E]">High-performance Fabric utility client for Minecraft 1.21.4 featuring custom rendering pipeline, event bus architecture, modular cheat engine, and modern HUD.</p>
-              <a href="https://codexclient.netlify.app" target="_blank" rel="noopener noreferrer" class="text-xs font-mono underline text-[#161514]">Visit CodeX Client &rarr;</a>
+              <p class="text-sm text-[#57534E]">Fabric utility client for Minecraft 1.21.4 with a custom rendering pipeline, event bus architecture, and modern HUD.</p>
+              <a href="https://github.com/Code-Xceed/CodeX-Client-src" target="_blank" rel="noopener noreferrer" class="text-xs font-mono underline text-[#161514]">View CodeX Client on GitHub &rarr;</a>
             </li>
           </ul>
         </section>

@@ -33,11 +33,10 @@ export default async function handler(req, res) {
     const audienceId = process.env.RESEND_AUDIENCE_ID || '19edb32d-5a5d-4a09-9b6b-6de9106e78e5';
 
     if (!apiKey) {
-      console.warn('RESEND_API_KEY is not configured in environment.');
-      // Return 200 with notice so the frontend stays graceful
-      return res.status(200).json({
-        success: true,
-        message: 'Saved locally. Configure RESEND_API_KEY in your hosting environment.',
+      console.error('RESEND_API_KEY is not configured in hosting environment.');
+      // Fail honestly: the client must not report a subscription that did not happen.
+      return res.status(503).json({
+        error: 'Subscription is not available right now.',
       });
     }
 

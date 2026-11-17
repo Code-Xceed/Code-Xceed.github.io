@@ -94,13 +94,16 @@ export default function HeroPortraitCard({ compact = false }) {
         <div className="relative w-20 sm:w-24 aspect-[4/5] p-1.5 rounded-xl bg-white/95 backdrop-blur-md border border-[rgba(22,21,20,0.08)] shadow-[0_6px_20px_rgba(22,21,20,0.04)] rotate-[-1deg] group-hover:rotate-0 group-hover:scale-105 transition-all duration-300 ease-out">
           <div className="relative w-full h-[calc(100%-14px)] rounded-lg overflow-hidden bg-[#F4EFE6] border border-[rgba(22,21,20,0.05)]">
             <img
-              src="/profile-placeholder.svg"
+              src="/profile-328.webp"
+              srcSet="/profile-328.webp 1x, /profile-656.webp 2x"
+              width="328"
+              height="410"
               alt="Aditya Rathore - 2D Anime Avatar"
               className="w-full h-full object-cover object-top transition-transform duration-400 group-hover:scale-105"
             />
             <div className="absolute inset-0 pointer-events-none paper-texture opacity-40 mix-blend-multiply" aria-hidden="true" />
           </div>
-          <div className="h-3.5 flex items-center justify-between px-0.5 pt-0.5 font-mono text-[7px] text-[#78716C] tracking-tight">
+          <div className="h-3.5 flex items-center justify-between px-0.5 pt-0.5 font-mono text-[11px] text-[#78716C] tracking-tight">
             <span className="font-semibold text-[#57534E]">ADITYA · 16</span>
             <span className="font-semibold text-[#161514]">INDIA</span>
           </div>
@@ -189,15 +192,18 @@ export default function HeroPortraitCard({ compact = false }) {
       <div className="relative w-36 md:w-[164px] aspect-[4/5] p-2 rounded-2xl bg-white/95 backdrop-blur-md border border-[rgba(22,21,20,0.08)] shadow-[0_8px_24px_rgba(22,21,20,0.035),0_1px_2px_rgba(22,21,20,0.02)] rotate-[-1.2deg] group-hover:rotate-0 group-hover:scale-[1.025] group-hover:shadow-[0_16px_36px_rgba(22,21,20,0.07)] transition-all duration-300 ease-out">
         
         {/* Corner Precision Hairlines */}
-        <span className="absolute top-1.5 left-1.5 text-[8px] font-mono text-[#8C867E]/40 leading-none">⌜</span>
-        <span className="absolute top-1.5 right-1.5 text-[8px] font-mono text-[#8C867E]/40 leading-none">⌝</span>
-        <span className="absolute bottom-5 left-1.5 text-[8px] font-mono text-[#8C867E]/40 leading-none">⌞</span>
-        <span className="absolute bottom-5 right-1.5 text-[8px] font-mono text-[#8C867E]/40 leading-none">⌟</span>
+        <span className="absolute top-1.5 left-1.5 text-[11px] font-mono text-[#8C867E]/40 leading-none">⌜</span>
+        <span className="absolute top-1.5 right-1.5 text-[11px] font-mono text-[#8C867E]/40 leading-none">⌝</span>
+        <span className="absolute bottom-5 left-1.5 text-[11px] font-mono text-[#8C867E]/40 leading-none">⌞</span>
+        <span className="absolute bottom-5 right-1.5 text-[11px] font-mono text-[#8C867E]/40 leading-none">⌟</span>
 
         {/* Inner Image Plate with 2D Anime Artwork */}
         <div className="relative w-full h-[calc(100%-18px)] rounded-xl overflow-hidden bg-[#F4EFE6] border border-[rgba(22,21,20,0.05)]">
           <img
-            src="/profile-placeholder.svg"
+            src="/profile-328.webp"
+            srcSet="/profile-328.webp 1x, /profile-656.webp 2x"
+            width="328"
+            height="410"
             alt="Aditya Rathore 2D Anime Portrait Plate"
             className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
           />
@@ -210,7 +216,7 @@ export default function HeroPortraitCard({ compact = false }) {
         </div>
 
         {/* Bottom Archival Label Strip: ADITYA · 16        INDIA */}
-        <div className="h-4.5 flex items-center justify-between px-0.5 pt-1 font-mono text-[8.5px] text-[#78716C]">
+        <div className="h-4.5 flex items-center justify-between px-0.5 pt-1 font-mono text-[11px] text-[#78716C]">
           <span className="tracking-wider font-semibold text-[#57534E]">ADITYA · 16</span>
           <span className="tracking-wider font-semibold text-[#161514]">INDIA</span>
         </div>

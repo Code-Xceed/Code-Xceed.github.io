@@ -1,0 +1,5637 @@
+{
+  "/": {
+    "desktop": {
+      "docWidth": [
+        1430,
+        1440
+      ],
+      "textSamples": [
+        {
+          "text": "vexel",
+          "size": 7.5,
+          "weight": "600",
+          "color": "oklab(0.553 0.152816 0.121129 / 0.9)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "14",
+          "size": 9.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.05,
+          "aa": 4.5
+        },
+        {
+          "text": "archived",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.06,
+          "aa": 4.5
+        },
+        {
+          "text": "PUBG",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "INDIA",
+          "size": 8.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 1.15,
+          "aa": 4.5
+        },
+        {
+          "text": "active",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.596 0.145 163.225)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.53,
+          "aa": 4.5
+        },
+        {
+          "text": "at",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(168, 162, 158)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 2.41,
+          "aa": 4.5
+        },
+        {
+          "text": "ADITYA · 16",
+          "size": 8.5,
+          "weight": "600",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 2.75,
+          "aa": 4.5
+        },
+        {
+          "text": "17 months of shipping",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Sept '26 – Present",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(120, 113, 108)",
+          "bg": "rgb(0.999994,0.0000455677,0.0000200868)",
+          "contrast": 4.37,
+          "aa": 4.5
+        },
+        {
+          "text": "Full-Stack Developer & Creative Engineer",
+          "size": 20,
+          "weight": "500",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Obsessed with building scalable web products, ",
+          "size": 16.5,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Selected Works",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Production MCP server for DaVinci Resolve Stud",
+          "size": 13.5,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 7.63,
+          "aa": 4.5
+        },
+        {
+          "text": "Big Brothers Media Agency",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(68, 64, 60)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 9.83,
+          "aa": 4.5
+        },
+        {
+          "text": "Aditya Rathore",
+          "size": 56,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 3
+        },
+        {
+          "text": "Get in touch",
+          "size": 14,
+          "weight": "500",
+          "color": "rgb(250, 250, 248)",
+          "bg": "rgb(22,21,20)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Open for work",
+          "size": 12.5,
+          "weight": "800",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative Pursuits",
+          "size": 12,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Pro in Minecraft",
+          "size": 11.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "How I Started",
+          "size": 13.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Aditya Rathore",
+          "size": 13,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Web & Full-Stack",
+          "size": 11.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "TypeScript",
+          "size": 12.5,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "Resolve-AIEdit",
+          "size": 21,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 3
+        },
+        {
+          "text": "View Code",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(22,21,20)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "DaVinci Resolve",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "& Trajectory",
+          "size": 12,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.92,
+          "aa": 4.5
+        },
+        {
+          "text": "explore more",
+          "size": 10,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        },
+        {
+          "text": "Also:",
+          "size": 9.5,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        },
+        {
+          "text": "Nov '26",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        }
+      ],
+      "smallTextCount": 18,
+      "failingCount": 11,
+      "failing": [
+        {
+          "text": "14",
+          "size": 9.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.05,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(120, 113, 108)",
+          "bg": "rgb(0.999994,0.0000455677,0.0000200868)",
+          "contrast": 4.37,
+          "aa": 4.5
+        },
+        {
+          "text": "ADITYA · 16",
+          "size": 8.5,
+          "weight": "600",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 2.75,
+          "aa": 4.5
+        },
+        {
+          "text": "INDIA",
+          "size": 8.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 1.15,
+          "aa": 4.5
+        },
+        {
+          "text": "17 months of shipping",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "active",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.596 0.145 163.225)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.53,
+          "aa": 4.5
+        },
+        {
+          "text": "archived",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.06,
+          "aa": 4.5
+        },
+        {
+          "text": "PUBG",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "vexel",
+          "size": 7.5,
+          "weight": "600",
+          "color": "oklab(0.553 0.152816 0.121129 / 0.9)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "Sept '26 – Present",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "at",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(168, 162, 158)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 2.41,
+          "aa": 4.5
+        }
+      ],
+      "smallTargets": [
+        {
+          "label": "Selected Works",
+          "w": 119,
+          "h": 16,
+          "tag": "button"
+        },
+        {
+          "label": "Explore more about Minecraft Speedrunner",
+          "w": 100,
+          "h": 19,
+          "tag": "button"
+        },
+        {
+          "label": "Explore more about Video Editing and Mot",
+          "w": 100,
+          "h": 19,
+          "tag": "button"
+        },
+        {
+          "label": "Blogs",
+          "w": 64,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "GitHub",
+          "w": 71,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "LinkedIn",
+          "w": 86,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "Scroll to top of page",
+          "w": 50,
+          "h": 20,
+          "tag": "button"
+        }
+      ],
+      "targetCount": 25,
+      "smallTargetCount": 7,
+      "overflow": [
+        {
+          "tag": "div",
+          "cls": "absolute -bottom-20 -right-20 w-72 h-72 flex items-center justify-cent",
+          "right": 1510,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute w-48 h-48 rounded-full border border-[#C28838]/[0.05] animate",
+          "right": 1462,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute w-64 h-64 rounded-full border border-[#C28838]/[0.03] animate",
+          "right": 1494,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -top-8 -right-8 w-36 sm:w-48 h-36 sm:h-48 rounded-full bg-rad",
+          "right": 1462,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -bottom-8 -right-8 w-40 sm:w-52 h-40 sm:h-52 rounded-full bg-",
+          "right": 1462,
+          "text": ""
+        }
+      ],
+      "headings": [
+        "H1: Aditya Rathore",
+        "H3: Resolve-AIEdit",
+        "H3: WinPreview",
+        "H3: CodeX Client",
+        "H4: How I Started",
+        "H4: How I Got My First Client"
+      ],
+      "h1Lines": 1,
+      "imgs": [
+        {
+          "src": "japanese-left.webp",
+          "alt": "",
+          "w": 288
+        },
+        {
+          "src": "japanese-right.webp",
+          "alt": "",
+          "w": 272
+        },
+        {
+          "src": "japanese-right-lower.webp",
+          "alt": "",
+          "w": 256
+        },
+        {
+          "src": "profile-placeholder.svg",
+          "alt": "Aditya Rathore - 2D Anime Avatar",
+          "w": 0
+        },
+        {
+          "src": "cat-handshake-thumb.png",
+          "alt": "Handshake Thumbnail",
+          "w": 129
+        },
+        {
+          "src": "typescript.svg",
+          "alt": "TypeScript logo",
+          "w": 15
+        },
+        {
+          "src": "python.svg",
+          "alt": "Python logo",
+          "w": 15
+        },
+        {
+          "src": "javascript.svg",
+          "alt": "JavaScript logo",
+          "w": 15
+        },
+        {
+          "src": "postgresql.svg",
+          "alt": "PostgreSQL logo",
+          "w": 15
+        },
+        {
+          "src": "react.svg",
+          "alt": "React logo",
+          "w": 15
+        },
+        {
+          "src": "nextjs.svg",
+          "alt": "Next.js logo",
+          "w": 15
+        },
+        {
+          "src": "bun.svg",
+          "alt": "Bun logo",
+          "w": 15
+        },
+        {
+          "src": "tailwindcss.svg",
+          "alt": "Tailwind logo",
+          "w": 15
+        },
+        {
+          "src": "motion.svg",
+          "alt": "Motion logo",
+          "w": 15
+        },
+        {
+          "src": "git.svg",
+          "alt": "Git logo",
+          "w": 15
+        },
+        {
+          "src": "github.svg",
+          "alt": "Github logo",
+          "w": 15
+        },
+        {
+          "src": "docker.svg",
+          "alt": "Docker logo",
+          "w": 15
+        },
+        {
+          "src": "nodejs.svg",
+          "alt": "Node.js logo",
+          "w": 15
+        },
+        {
+          "src": "threejs.svg",
+          "alt": "Three.js logo",
+          "w": 15
+        },
+        {
+          "src": "profile-placeholder.svg",
+          "alt": "Aditya Rathore 2D Anime Portrait Plate",
+          "w": 147
+        },
+        {
+          "src": "resolve-aiedit-logo.webp",
+          "alt": "Resolve-AIEdit logo",
+          "w": 82
+        },
+        {
+          "src": "davinci.svg",
+          "alt": "DaVinci Resolve icon",
+          "w": 12
+        },
+        {
+          "src": "ai.svg",
+          "alt": "Model Context Protocol icon",
+          "w": 12
+        },
+        {
+          "src": "typescript.svg",
+          "alt": "TypeScript icon",
+          "w": 12
+        },
+        {
+          "src": "python.svg",
+          "alt": "Python icon",
+          "w": 12
+        },
+        {
+          "src": "nodejs.svg",
+          "alt": "Node.js icon",
+          "w": 12
+        },
+        {
+          "src": "winpreview-logo.webp",
+          "alt": "WinPreview logo",
+          "w": 82
+        },
+        {
+          "src": "cpp.svg",
+          "alt": "C++20 icon",
+          "w": 12
+        },
+        {
+          "src": "windows.svg",
+          "alt": "Direct2D / 3D icon",
+          "w": 12
+        },
+        {
+          "src": "windows.svg",
+          "alt": "Win32 API icon",
+          "w": 12
+        },
+        {
+          "src": "cmake.svg",
+          "alt": "CMake icon",
+          "w": 12
+        },
+        {
+          "src": "codex-logo.webp",
+          "alt": "CodeX Client logo",
+          "w": 82
+        },
+        {
+          "src": "java.svg",
+          "alt": "Java 21 icon",
+          "w": 12
+        },
+        {
+          "src": "fabric.svg",
+          "alt": "Fabric Loader icon",
+          "w": 12
+        },
+        {
+          "src": "minecraft-brand.svg",
+          "alt": "Minecraft 1.21.4 icon",
+          "w": 12
+        },
+        {
+          "src": "opengl.svg",
+          "alt": "OpenGL icon",
+          "w": 12
+        },
+        {
+          "src": "gradle.svg",
+          "alt": "Gradle icon",
+          "w": 12
+        },
+        {
+          "src": "minecraft-brand.svg",
+          "alt": "Minecraft",
+          "w": 14
+        },
+        {
+          "src": "pubg.svg",
+          "alt": "PUBG",
+          "w": 14
+        },
+        {
+          "src": "chesscom.svg",
+          "alt": "Chess.com",
+          "w": 12
+        },
+        {
+          "src": "davinci.svg",
+          "alt": "DaVinci Resolve",
+          "w": 14
+        },
+        {
+          "src": "premiere.svg",
+          "alt": "Premiere Pro",
+          "w": 12
+        },
+        {
+          "src": "aftereffects.svg",
+          "alt": "After Effects",
+          "w": 12
+        },
+        {
+          "src": "mineimator.webp",
+          "alt": "Mine-imator (Vexel Build)",
+          "w": 14
+        }
+      ],
+      "landmarks": {
+        "header": 1,
+        "nav": 0,
+        "main": 1,
+        "footer": 2
+      }
+    },
+    "mobile": {
+      "docWidth": [
+        380,
+        390
+      ],
+      "textSamples": [
+        {
+          "text": "vexel",
+          "size": 7.5,
+          "weight": "600",
+          "color": "oklab(0.553 0.152816 0.121129 / 0.9)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "14",
+          "size": 9.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.05,
+          "aa": 4.5
+        },
+        {
+          "text": "archived",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.06,
+          "aa": 4.5
+        },
+        {
+          "text": "PUBG",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "INDIA",
+          "size": 7,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 1.15,
+          "aa": 4.5
+        },
+        {
+          "text": "active",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.596 0.145 163.225)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.53,
+          "aa": 4.5
+        },
+        {
+          "text": "at",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(168, 162, 158)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 2.41,
+          "aa": 4.5
+        },
+        {
+          "text": "ADITYA · 16",
+          "size": 7,
+          "weight": "600",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 2.75,
+          "aa": 4.5
+        },
+        {
+          "text": "17 months of shipping",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Sept '26 – Present",
+          "size": 10.5,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(120, 113, 108)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 4.37,
+          "aa": 4.5
+        },
+        {
+          "text": "Full-Stack Developer & Creative Engineer",
+          "size": 16,
+          "weight": "500",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Obsessed with building scalable web products, ",
+          "size": 15,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Selected Works",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Interests",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Production MCP server for DaVinci Resolve Stud",
+          "size": 13,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 7.63,
+          "aa": 4.5
+        },
+        {
+          "text": "Big Brothers Media Agency",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(68, 64, 60)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 9.83,
+          "aa": 4.5
+        },
+        {
+          "text": "Aditya Rathore",
+          "size": 38,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 3
+        },
+        {
+          "text": "Open for work",
+          "size": 10,
+          "weight": "800",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Get in touch",
+          "size": 14,
+          "weight": "500",
+          "color": "rgb(250, 250, 248)",
+          "bg": "rgb(22,21,20)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative Pursuits",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "# Minecraft Speedrunner",
+          "size": 12,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Pro in Minecraft",
+          "size": 11.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "How I Started",
+          "size": 13,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Aditya Rathore",
+          "size": 12,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Web",
+          "size": 11,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "TypeScript",
+          "size": 12,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "Resolve-AIEdit",
+          "size": 20,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 3
+        },
+        {
+          "text": "View Code",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(22,21,20)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "Built with Vibe & Code",
+          "size": 10.5,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.92,
+          "aa": 4.5
+        },
+        {
+          "text": "Blogs",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.92,
+          "aa": 4.5
+        },
+        {
+          "text": "explore more",
+          "size": 10,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        },
+        {
+          "text": "Also:",
+          "size": 9.5,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        },
+        {
+          "text": "Nov '26",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        }
+      ],
+      "smallTextCount": 22,
+      "failingCount": 11,
+      "failing": [
+        {
+          "text": "ADITYA · 16",
+          "size": 7,
+          "weight": "600",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 2.75,
+          "aa": 4.5
+        },
+        {
+          "text": "INDIA",
+          "size": 7,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 1.15,
+          "aa": 4.5
+        },
+        {
+          "text": "14",
+          "size": 9.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.05,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(120, 113, 108)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 4.37,
+          "aa": 4.5
+        },
+        {
+          "text": "17 months of shipping",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "active",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.596 0.145 163.225)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.53,
+          "aa": 4.5
+        },
+        {
+          "text": "archived",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.06,
+          "aa": 4.5
+        },
+        {
+          "text": "PUBG",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "vexel",
+          "size": 7.5,
+          "weight": "600",
+          "color": "oklab(0.553 0.152816 0.121129 / 0.9)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "Sept '26 – Present",
+          "size": 10.5,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "at",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(168, 162, 158)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 2.41,
+          "aa": 4.5
+        }
+      ],
+      "smallTargets": [
+        {
+          "label": "Selected Works",
+          "w": 119,
+          "h": 16,
+          "tag": "button"
+        },
+        {
+          "label": "Explore more about Minecraft Speedrunner",
+          "w": 100,
+          "h": 19,
+          "tag": "button"
+        },
+        {
+          "label": "Explore more about Video Editing and Mot",
+          "w": 100,
+          "h": 19,
+          "tag": "button"
+        },
+        {
+          "label": "Blogs",
+          "w": 49,
+          "h": 21,
+          "tag": "a"
+        },
+        {
+          "label": "GitHub",
+          "w": 56,
+          "h": 21,
+          "tag": "a"
+        },
+        {
+          "label": "LinkedIn",
+          "w": 69,
+          "h": 21,
+          "tag": "a"
+        },
+        {
+          "label": "Scroll to top of page",
+          "w": 36,
+          "h": 21,
+          "tag": "button"
+        }
+      ],
+      "targetCount": 26,
+      "smallTargetCount": 7,
+      "overflow": [
+        {
+          "tag": "div",
+          "cls": "absolute -bottom-20 -right-20 w-72 h-72 flex items-center justify-cent",
+          "right": 460,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute w-48 h-48 rounded-full border border-[#C28838]/[0.05] animate",
+          "right": 412,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute w-64 h-64 rounded-full border border-[#C28838]/[0.03] animate",
+          "right": 444,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -right-8 sm:right-0 -top-4 sm:top-0 pointer-events-none",
+          "right": 412,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "relative animate-foliage-right",
+          "right": 412,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -top-8 -right-8 w-36 sm:w-48 h-36 sm:h-48 rounded-full bg-rad",
+          "right": 444,
+          "text": ""
+        },
+        {
+          "tag": "img",
+          "cls": "w-28 sm:w-48 md:w-60 lg:w-68 h-auto object-contain opacity-30 sm:opaci",
+          "right": 412,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -right-6 sm:right-0 bottom-[6%] sm:bottom-[10%] pointer-event",
+          "right": 404,
+          "text": ""
+        }
+      ],
+      "headings": [
+        "H1: Aditya Rathore",
+        "H3: Resolve-AIEdit",
+        "H3: WinPreview",
+        "H3: CodeX Client",
+        "H4: How I Started",
+        "H4: How I Got My First Client"
+      ],
+      "h1Lines": 2,
+      "imgs": [
+        {
+          "src": "japanese-left.webp",
+          "alt": "",
+          "w": 112
+        },
+        {
+          "src": "japanese-right.webp",
+          "alt": "",
+          "w": 112
+        },
+        {
+          "src": "japanese-right-lower.webp",
+          "alt": "",
+          "w": 112
+        },
+        {
+          "src": "profile-placeholder.svg",
+          "alt": "Aditya Rathore - 2D Anime Avatar",
+          "w": 65
+        },
+        {
+          "src": "cat-handshake-thumb.png",
+          "alt": "Handshake Thumbnail",
+          "w": 114
+        },
+        {
+          "src": "typescript.svg",
+          "alt": "TypeScript logo",
+          "w": 14
+        },
+        {
+          "src": "python.svg",
+          "alt": "Python logo",
+          "w": 14
+        },
+        {
+          "src": "javascript.svg",
+          "alt": "JavaScript logo",
+          "w": 14
+        },
+        {
+          "src": "postgresql.svg",
+          "alt": "PostgreSQL logo",
+          "w": 14
+        },
+        {
+          "src": "react.svg",
+          "alt": "React logo",
+          "w": 14
+        },
+        {
+          "src": "nextjs.svg",
+          "alt": "Next.js logo",
+          "w": 14
+        },
+        {
+          "src": "bun.svg",
+          "alt": "Bun logo",
+          "w": 14
+        },
+        {
+          "src": "tailwindcss.svg",
+          "alt": "Tailwind logo",
+          "w": 14
+        },
+        {
+          "src": "motion.svg",
+          "alt": "Motion logo",
+          "w": 14
+        },
+        {
+          "src": "git.svg",
+          "alt": "Git logo",
+          "w": 14
+        },
+        {
+          "src": "github.svg",
+          "alt": "Github logo",
+          "w": 14
+        },
+        {
+          "src": "docker.svg",
+          "alt": "Docker logo",
+          "w": 14
+        },
+        {
+          "src": "nodejs.svg",
+          "alt": "Node.js logo",
+          "w": 14
+        },
+        {
+          "src": "threejs.svg",
+          "alt": "Three.js logo",
+          "w": 14
+        },
+        {
+          "src": "profile-placeholder.svg",
+          "alt": "Aditya Rathore 2D Anime Portrait Plate",
+          "w": 0
+        },
+        {
+          "src": "resolve-aiedit-logo.webp",
+          "alt": "Resolve-AIEdit logo",
+          "w": 72
+        },
+        {
+          "src": "davinci.svg",
+          "alt": "DaVinci Resolve icon",
+          "w": 12
+        },
+        {
+          "src": "ai.svg",
+          "alt": "Model Context Protocol icon",
+          "w": 12
+        },
+        {
+          "src": "typescript.svg",
+          "alt": "TypeScript icon",
+          "w": 12
+        },
+        {
+          "src": "python.svg",
+          "alt": "Python icon",
+          "w": 12
+        },
+        {
+          "src": "nodejs.svg",
+          "alt": "Node.js icon",
+          "w": 12
+        },
+        {
+          "src": "winpreview-logo.webp",
+          "alt": "WinPreview logo",
+          "w": 72
+        },
+        {
+          "src": "cpp.svg",
+          "alt": "C++20 icon",
+          "w": 12
+        },
+        {
+          "src": "windows.svg",
+          "alt": "Direct2D / 3D icon",
+          "w": 12
+        },
+        {
+          "src": "windows.svg",
+          "alt": "Win32 API icon",
+          "w": 12
+        },
+        {
+          "src": "cmake.svg",
+          "alt": "CMake icon",
+          "w": 12
+        },
+        {
+          "src": "codex-logo.webp",
+          "alt": "CodeX Client logo",
+          "w": 72
+        },
+        {
+          "src": "java.svg",
+          "alt": "Java 21 icon",
+          "w": 12
+        },
+        {
+          "src": "fabric.svg",
+          "alt": "Fabric Loader icon",
+          "w": 12
+        },
+        {
+          "src": "minecraft-brand.svg",
+          "alt": "Minecraft 1.21.4 icon",
+          "w": 12
+        },
+        {
+          "src": "opengl.svg",
+          "alt": "OpenGL icon",
+          "w": 12
+        },
+        {
+          "src": "gradle.svg",
+          "alt": "Gradle icon",
+          "w": 12
+        },
+        {
+          "src": "minecraft-brand.svg",
+          "alt": "Minecraft",
+          "w": 14
+        },
+        {
+          "src": "pubg.svg",
+          "alt": "PUBG",
+          "w": 14
+        },
+        {
+          "src": "chesscom.svg",
+          "alt": "Chess.com",
+          "w": 12
+        },
+        {
+          "src": "davinci.svg",
+          "alt": "DaVinci Resolve",
+          "w": 14
+        },
+        {
+          "src": "premiere.svg",
+          "alt": "Premiere Pro",
+          "w": 12
+        },
+        {
+          "src": "aftereffects.svg",
+          "alt": "After Effects",
+          "w": 12
+        },
+        {
+          "src": "mineimator.webp",
+          "alt": "Mine-imator (Vexel Build)",
+          "w": 14
+        }
+      ],
+      "landmarks": {
+        "header": 1,
+        "nav": 0,
+        "main": 1,
+        "footer": 2
+      }
+    }
+  },
+  "/interests/video-editing/": {
+    "desktop": {
+      "docWidth": [
+        1430,
+        1440
+      ],
+      "textSamples": [
+        {
+          "text": "vexel",
+          "size": 7.5,
+          "weight": "600",
+          "color": "oklab(0.553 0.152816 0.121129 / 0.9)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "DaVinci Resolve Studio",
+          "size": 11,
+          "weight": "600",
+          "color": "oklch(0.268 0.007 34.298)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.02,
+          "aa": 4.5
+        },
+        {
+          "text": "14",
+          "size": 9.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.05,
+          "aa": 4.5
+        },
+        {
+          "text": "archived",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.06,
+          "aa": 4.5
+        },
+        {
+          "text": "PUBG",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "Premiere Pro",
+          "size": 11,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "Motion & Cinematic",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.1,
+          "aa": 4.5
+        },
+        {
+          "text": "1:00 Preview",
+          "size": 10.5,
+          "weight": "500",
+          "color": "oklch(0.555 0.163 48.998)",
+          "bg": "rgb(0.987,0.022,95.277)",
+          "contrast": 1.12,
+          "aa": 4.5
+        },
+        {
+          "text": "DaVinci Resolve Studio",
+          "size": 10.5,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.14,
+          "aa": 4.5
+        },
+        {
+          "text": "INDIA",
+          "size": 8.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 1.15,
+          "aa": 4.5
+        },
+        {
+          "text": "active",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.596 0.145 163.225)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.53,
+          "aa": 4.5
+        },
+        {
+          "text": "at",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(168, 162, 158)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 2.41,
+          "aa": 4.5
+        },
+        {
+          "text": "ADITYA · 16",
+          "size": 8.5,
+          "weight": "600",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 2.75,
+          "aa": 4.5
+        },
+        {
+          "text": "17 months of shipping",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Sept '26 – Present",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(120, 113, 108)",
+          "bg": "rgb(0.999994,0.0000455677,0.0000200868)",
+          "contrast": 4.37,
+          "aa": 4.5
+        },
+        {
+          "text": "Back",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 6.9,
+          "aa": 4.5
+        },
+        {
+          "text": "Full-Stack Developer & Creative Engineer",
+          "size": 20,
+          "weight": "500",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Obsessed with building scalable web products, ",
+          "size": 16.5,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Selected Works",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Production MCP server for DaVinci Resolve Stud",
+          "size": 13.5,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 7.63,
+          "aa": 4.5
+        },
+        {
+          "text": "Big Brothers Media Agency",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(68, 64, 60)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 9.83,
+          "aa": 4.5
+        },
+        {
+          "text": "# Video Editing & Motion Design",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "The Credit Card Game Is Starting To Break",
+          "size": 16,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "# Creative Identity",
+          "size": 12,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "Video Editor & Motion Designer",
+          "size": 18,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "YouTube retention edits, real estate architect",
+          "size": 12,
+          "weight": "400",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.28,
+          "aa": 4.5
+        },
+        {
+          "text": "YouTube Videos",
+          "size": 10.5,
+          "weight": "500",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.28,
+          "aa": 4.5
+        },
+        {
+          "text": "Aditya Rathore",
+          "size": 56,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 3
+        },
+        {
+          "text": "Get in touch",
+          "size": 14,
+          "weight": "500",
+          "color": "rgb(250, 250, 248)",
+          "bg": "rgb(22,21,20)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Open for work",
+          "size": 12.5,
+          "weight": "800",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative Pursuits",
+          "size": 12,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Pro in Minecraft",
+          "size": 11.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "How I Started",
+          "size": 13.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Aditya Rathore",
+          "size": 13,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Real Estate Reels",
+          "size": 12,
+          "weight": "600",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.88,
+          "aa": 4.5
+        },
+        {
+          "text": "On-Demand",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.88,
+          "aa": 4.5
+        },
+        {
+          "text": "Suite:",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.94,
+          "aa": 4.5
+        },
+        {
+          "text": "WhatsApp",
+          "size": 10,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.94,
+          "aa": 4.5
+        },
+        {
+          "text": "Web & Full-Stack",
+          "size": 11.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "TypeScript",
+          "size": 12.5,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "Resolve-AIEdit",
+          "size": 21,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 3
+        },
+        {
+          "text": "View Code",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(22,21,20)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "DaVinci Resolve",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "YouTube Long-Form",
+          "size": 12,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "& Trajectory",
+          "size": 12,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.92,
+          "aa": 4.5
+        },
+        {
+          "text": "explore more",
+          "size": 10,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        },
+        {
+          "text": "Also:",
+          "size": 9.5,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        },
+        {
+          "text": "Nov '26",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        }
+      ],
+      "smallTextCount": 28,
+      "failingCount": 16,
+      "failing": [
+        {
+          "text": "14",
+          "size": 9.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.05,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(120, 113, 108)",
+          "bg": "rgb(0.999994,0.0000455677,0.0000200868)",
+          "contrast": 4.37,
+          "aa": 4.5
+        },
+        {
+          "text": "ADITYA · 16",
+          "size": 8.5,
+          "weight": "600",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 2.75,
+          "aa": 4.5
+        },
+        {
+          "text": "INDIA",
+          "size": 8.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 1.15,
+          "aa": 4.5
+        },
+        {
+          "text": "17 months of shipping",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "active",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.596 0.145 163.225)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.53,
+          "aa": 4.5
+        },
+        {
+          "text": "archived",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.06,
+          "aa": 4.5
+        },
+        {
+          "text": "PUBG",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "vexel",
+          "size": 7.5,
+          "weight": "600",
+          "color": "oklab(0.553 0.152816 0.121129 / 0.9)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "Sept '26 – Present",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "at",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(168, 162, 158)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 2.41,
+          "aa": 4.5
+        },
+        {
+          "text": "DaVinci Resolve Studio",
+          "size": 10.5,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.14,
+          "aa": 4.5
+        },
+        {
+          "text": "1:00 Preview",
+          "size": 10.5,
+          "weight": "500",
+          "color": "oklch(0.555 0.163 48.998)",
+          "bg": "rgb(0.987,0.022,95.277)",
+          "contrast": 1.12,
+          "aa": 4.5
+        },
+        {
+          "text": "Motion & Cinematic",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.1,
+          "aa": 4.5
+        }
+      ],
+      "smallTargets": [
+        {
+          "label": "Selected Works",
+          "w": 117,
+          "h": 16,
+          "tag": "button"
+        },
+        {
+          "label": "Explore more about Minecraft Speedrunner",
+          "w": 99,
+          "h": 19,
+          "tag": "button"
+        },
+        {
+          "label": "Explore more about Video Editing and Mot",
+          "w": 99,
+          "h": 19,
+          "tag": "button"
+        },
+        {
+          "label": "Blogs",
+          "w": 63,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "GitHub",
+          "w": 70,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "LinkedIn",
+          "w": 84,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "Scroll to top of page",
+          "w": 49,
+          "h": 20,
+          "tag": "button"
+        }
+      ],
+      "targetCount": 38,
+      "smallTargetCount": 7,
+      "overflow": [
+        {
+          "tag": "div",
+          "cls": "absolute -bottom-20 -right-20 w-72 h-72 flex items-center justify-cent",
+          "right": 1510,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute w-48 h-48 rounded-full border border-[#C28838]/[0.05] animate",
+          "right": 1462,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute w-64 h-64 rounded-full border border-[#C28838]/[0.03] animate",
+          "right": 1494,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -top-8 -right-8 w-36 sm:w-48 h-36 sm:h-48 rounded-full bg-rad",
+          "right": 1462,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -bottom-8 -right-8 w-40 sm:w-52 h-40 sm:h-52 rounded-full bg-",
+          "right": 1462,
+          "text": ""
+        }
+      ],
+      "headings": [
+        "H1: Aditya Rathore",
+        "H3: Resolve-AIEdit",
+        "H3: WinPreview",
+        "H3: CodeX Client",
+        "H4: How I Started",
+        "H4: How I Got My First Client",
+        "H3: The Credit Card Game Is Starting To Break",
+        "H1: Video Editor & Motion Designer",
+        "H2: Video Commissions"
+      ],
+      "h1Lines": 1,
+      "imgs": [
+        {
+          "src": "japanese-left.webp",
+          "alt": "",
+          "w": 288
+        },
+        {
+          "src": "japanese-right.webp",
+          "alt": "",
+          "w": 272
+        },
+        {
+          "src": "japanese-right-lower.webp",
+          "alt": "",
+          "w": 256
+        },
+        {
+          "src": "profile-placeholder.svg",
+          "alt": "Aditya Rathore - 2D Anime Avatar",
+          "w": 0
+        },
+        {
+          "src": "cat-handshake-thumb.png",
+          "alt": "Handshake Thumbnail",
+          "w": 127
+        },
+        {
+          "src": "typescript.svg",
+          "alt": "TypeScript logo",
+          "w": 15
+        },
+        {
+          "src": "python.svg",
+          "alt": "Python logo",
+          "w": 15
+        },
+        {
+          "src": "javascript.svg",
+          "alt": "JavaScript logo",
+          "w": 15
+        },
+        {
+          "src": "postgresql.svg",
+          "alt": "PostgreSQL logo",
+          "w": 15
+        },
+        {
+          "src": "react.svg",
+          "alt": "React logo",
+          "w": 15
+        },
+        {
+          "src": "nextjs.svg",
+          "alt": "Next.js logo",
+          "w": 15
+        },
+        {
+          "src": "bun.svg",
+          "alt": "Bun logo",
+          "w": 15
+        },
+        {
+          "src": "tailwindcss.svg",
+          "alt": "Tailwind logo",
+          "w": 15
+        },
+        {
+          "src": "motion.svg",
+          "alt": "Motion logo",
+          "w": 15
+        },
+        {
+          "src": "git.svg",
+          "alt": "Git logo",
+          "w": 15
+        },
+        {
+          "src": "github.svg",
+          "alt": "Github logo",
+          "w": 15
+        },
+        {
+          "src": "docker.svg",
+          "alt": "Docker logo",
+          "w": 15
+        },
+        {
+          "src": "nodejs.svg",
+          "alt": "Node.js logo",
+          "w": 15
+        },
+        {
+          "src": "threejs.svg",
+          "alt": "Three.js logo",
+          "w": 15
+        },
+        {
+          "src": "profile-placeholder.svg",
+          "alt": "Aditya Rathore 2D Anime Portrait Plate",
+          "w": 145
+        },
+        {
+          "src": "resolve-aiedit-logo.webp",
+          "alt": "Resolve-AIEdit logo",
+          "w": 81
+        },
+        {
+          "src": "davinci.svg",
+          "alt": "DaVinci Resolve icon",
+          "w": 12
+        },
+        {
+          "src": "ai.svg",
+          "alt": "Model Context Protocol icon",
+          "w": 12
+        },
+        {
+          "src": "typescript.svg",
+          "alt": "TypeScript icon",
+          "w": 12
+        },
+        {
+          "src": "python.svg",
+          "alt": "Python icon",
+          "w": 12
+        },
+        {
+          "src": "nodejs.svg",
+          "alt": "Node.js icon",
+          "w": 12
+        },
+        {
+          "src": "winpreview-logo.webp",
+          "alt": "WinPreview logo",
+          "w": 81
+        },
+        {
+          "src": "cpp.svg",
+          "alt": "C++20 icon",
+          "w": 12
+        },
+        {
+          "src": "windows.svg",
+          "alt": "Direct2D / 3D icon",
+          "w": 12
+        },
+        {
+          "src": "windows.svg",
+          "alt": "Win32 API icon",
+          "w": 12
+        },
+        {
+          "src": "cmake.svg",
+          "alt": "CMake icon",
+          "w": 12
+        },
+        {
+          "src": "codex-logo.webp",
+          "alt": "CodeX Client logo",
+          "w": 81
+        },
+        {
+          "src": "java.svg",
+          "alt": "Java 21 icon",
+          "w": 12
+        },
+        {
+          "src": "fabric.svg",
+          "alt": "Fabric Loader icon",
+          "w": 12
+        },
+        {
+          "src": "minecraft-brand.svg",
+          "alt": "Minecraft 1.21.4 icon",
+          "w": 12
+        },
+        {
+          "src": "opengl.svg",
+          "alt": "OpenGL icon",
+          "w": 12
+        },
+        {
+          "src": "gradle.svg",
+          "alt": "Gradle icon",
+          "w": 12
+        },
+        {
+          "src": "minecraft-brand.svg",
+          "alt": "Minecraft",
+          "w": 14
+        },
+        {
+          "src": "pubg.svg",
+          "alt": "PUBG",
+          "w": 14
+        },
+        {
+          "src": "chesscom.svg",
+          "alt": "Chess.com",
+          "w": 12
+        },
+        {
+          "src": "davinci.svg",
+          "alt": "DaVinci Resolve",
+          "w": 14
+        },
+        {
+          "src": "premiere.svg",
+          "alt": "Premiere Pro",
+          "w": 12
+        },
+        {
+          "src": "aftereffects.svg",
+          "alt": "After Effects",
+          "w": 12
+        },
+        {
+          "src": "mineimator.webp",
+          "alt": "Mine-imator (Vexel Build)",
+          "w": 14
+        },
+        {
+          "src": "videoeditor-bg.webp",
+          "alt": "",
+          "w": 1430
+        },
+        {
+          "src": "youtube.svg",
+          "alt": "",
+          "w": 14
+        },
+        {
+          "src": "davinci.svg",
+          "alt": "DaVinci",
+          "w": 14
+        },
+        {
+          "src": "premiere.svg",
+          "alt": "Premiere",
+          "w": 12
+        },
+        {
+          "src": "aftereffects.svg",
+          "alt": "AE",
+          "w": 12
+        },
+        {
+          "src": "whatsapp.svg",
+          "alt": "WhatsApp",
+          "w": 16
+        },
+        {
+          "src": "discord.svg",
+          "alt": "Discord",
+          "w": 16
+        },
+        {
+          "src": "youtube.svg",
+          "alt": "",
+          "w": 14
+        }
+      ],
+      "landmarks": {
+        "header": 2,
+        "nav": 0,
+        "main": 2,
+        "footer": 2
+      }
+    },
+    "mobile": {
+      "docWidth": [
+        380,
+        390
+      ],
+      "textSamples": [
+        {
+          "text": "vexel",
+          "size": 7.5,
+          "weight": "600",
+          "color": "oklab(0.553 0.152816 0.121129 / 0.9)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "DaVinci Resolve Studio",
+          "size": 11,
+          "weight": "600",
+          "color": "oklch(0.268 0.007 34.298)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.02,
+          "aa": 4.5
+        },
+        {
+          "text": "14",
+          "size": 9.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.05,
+          "aa": 4.5
+        },
+        {
+          "text": "archived",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.06,
+          "aa": 4.5
+        },
+        {
+          "text": "PUBG",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "Premiere Pro",
+          "size": 11,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "Motion & Cinematic",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.1,
+          "aa": 4.5
+        },
+        {
+          "text": "1:00 Preview",
+          "size": 10.5,
+          "weight": "500",
+          "color": "oklch(0.555 0.163 48.998)",
+          "bg": "rgb(0.987,0.022,95.277)",
+          "contrast": 1.12,
+          "aa": 4.5
+        },
+        {
+          "text": "DaVinci Resolve Studio",
+          "size": 10.5,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.14,
+          "aa": 4.5
+        },
+        {
+          "text": "INDIA",
+          "size": 7,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 1.15,
+          "aa": 4.5
+        },
+        {
+          "text": "active",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.596 0.145 163.225)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.53,
+          "aa": 4.5
+        },
+        {
+          "text": "at",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(168, 162, 158)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 2.41,
+          "aa": 4.5
+        },
+        {
+          "text": "ADITYA · 16",
+          "size": 7,
+          "weight": "600",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 2.75,
+          "aa": 4.5
+        },
+        {
+          "text": "17 months of shipping",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Sept '26 – Present",
+          "size": 10.5,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(120, 113, 108)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 4.37,
+          "aa": 4.5
+        },
+        {
+          "text": "Back",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 6.9,
+          "aa": 4.5
+        },
+        {
+          "text": "Full-Stack Developer & Creative Engineer",
+          "size": 16,
+          "weight": "500",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Obsessed with building scalable web products, ",
+          "size": 15,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Selected Works",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Interests",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Production MCP server for DaVinci Resolve Stud",
+          "size": 13,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 7.63,
+          "aa": 4.5
+        },
+        {
+          "text": "Big Brothers Media Agency",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(68, 64, 60)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 9.83,
+          "aa": 4.5
+        },
+        {
+          "text": "# Video Editing",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "The Credit Card Game Is Starting To Break",
+          "size": 14,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "# Creative Identity",
+          "size": 12,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "Video Editor & Motion Designer",
+          "size": 16,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "YouTube retention edits, real estate architect",
+          "size": 12,
+          "weight": "400",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.28,
+          "aa": 4.5
+        },
+        {
+          "text": "YouTube Videos",
+          "size": 10.5,
+          "weight": "500",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.28,
+          "aa": 4.5
+        },
+        {
+          "text": "Aditya Rathore",
+          "size": 38,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 3
+        },
+        {
+          "text": "Open for work",
+          "size": 10,
+          "weight": "800",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Get in touch",
+          "size": 14,
+          "weight": "500",
+          "color": "rgb(250, 250, 248)",
+          "bg": "rgb(22,21,20)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative Pursuits",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "# Minecraft Speedrunner",
+          "size": 12,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Pro in Minecraft",
+          "size": 11.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "How I Started",
+          "size": 13,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Aditya Rathore",
+          "size": 12,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Real Estate",
+          "size": 12,
+          "weight": "600",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.88,
+          "aa": 4.5
+        },
+        {
+          "text": "On-Demand",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.88,
+          "aa": 4.5
+        },
+        {
+          "text": "Suite:",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.94,
+          "aa": 4.5
+        },
+        {
+          "text": "WhatsApp",
+          "size": 10,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.94,
+          "aa": 4.5
+        },
+        {
+          "text": "Web",
+          "size": 11,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "TypeScript",
+          "size": 12,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "Resolve-AIEdit",
+          "size": 20,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 3
+        },
+        {
+          "text": "View Code",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(22,21,20)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "YouTube",
+          "size": 12,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "Built with Vibe & Code",
+          "size": 10.5,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.92,
+          "aa": 4.5
+        },
+        {
+          "text": "Blogs",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.92,
+          "aa": 4.5
+        },
+        {
+          "text": "explore more",
+          "size": 10,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        },
+        {
+          "text": "Also:",
+          "size": 9.5,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        },
+        {
+          "text": "Nov '26",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        }
+      ],
+      "smallTextCount": 32,
+      "failingCount": 16,
+      "failing": [
+        {
+          "text": "ADITYA · 16",
+          "size": 7,
+          "weight": "600",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 2.75,
+          "aa": 4.5
+        },
+        {
+          "text": "INDIA",
+          "size": 7,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 1.15,
+          "aa": 4.5
+        },
+        {
+          "text": "14",
+          "size": 9.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.05,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(120, 113, 108)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 4.37,
+          "aa": 4.5
+        },
+        {
+          "text": "17 months of shipping",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "active",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.596 0.145 163.225)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.53,
+          "aa": 4.5
+        },
+        {
+          "text": "archived",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.06,
+          "aa": 4.5
+        },
+        {
+          "text": "PUBG",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "vexel",
+          "size": 7.5,
+          "weight": "600",
+          "color": "oklab(0.553 0.152816 0.121129 / 0.9)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "Sept '26 – Present",
+          "size": 10.5,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "at",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(168, 162, 158)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 2.41,
+          "aa": 4.5
+        },
+        {
+          "text": "DaVinci Resolve Studio",
+          "size": 10.5,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.14,
+          "aa": 4.5
+        },
+        {
+          "text": "1:00 Preview",
+          "size": 10.5,
+          "weight": "500",
+          "color": "oklch(0.555 0.163 48.998)",
+          "bg": "rgb(0.987,0.022,95.277)",
+          "contrast": 1.12,
+          "aa": 4.5
+        },
+        {
+          "text": "Motion & Cinematic",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.1,
+          "aa": 4.5
+        }
+      ],
+      "smallTargets": [
+        {
+          "label": "Selected Works",
+          "w": 117,
+          "h": 16,
+          "tag": "button"
+        },
+        {
+          "label": "Explore more about Minecraft Speedrunner",
+          "w": 99,
+          "h": 19,
+          "tag": "button"
+        },
+        {
+          "label": "Explore more about Video Editing and Mot",
+          "w": 99,
+          "h": 19,
+          "tag": "button"
+        },
+        {
+          "label": "Blogs",
+          "w": 48,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "GitHub",
+          "w": 55,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "LinkedIn",
+          "w": 68,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "Scroll to top of page",
+          "w": 35,
+          "h": 20,
+          "tag": "button"
+        }
+      ],
+      "targetCount": 39,
+      "smallTargetCount": 7,
+      "overflow": [
+        {
+          "tag": "div",
+          "cls": "absolute -bottom-20 -right-20 w-72 h-72 flex items-center justify-cent",
+          "right": 460,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute w-48 h-48 rounded-full border border-[#C28838]/[0.05] animate",
+          "right": 412,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute w-64 h-64 rounded-full border border-[#C28838]/[0.03] animate",
+          "right": 444,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -right-8 sm:right-0 -top-4 sm:top-0 pointer-events-none",
+          "right": 412,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "relative animate-foliage-right",
+          "right": 412,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -top-8 -right-8 w-36 sm:w-48 h-36 sm:h-48 rounded-full bg-rad",
+          "right": 444,
+          "text": ""
+        },
+        {
+          "tag": "img",
+          "cls": "w-28 sm:w-48 md:w-60 lg:w-68 h-auto object-contain opacity-30 sm:opaci",
+          "right": 412,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -right-6 sm:right-0 bottom-[6%] sm:bottom-[10%] pointer-event",
+          "right": 404,
+          "text": ""
+        }
+      ],
+      "headings": [
+        "H1: Aditya Rathore",
+        "H3: Resolve-AIEdit",
+        "H3: WinPreview",
+        "H3: CodeX Client",
+        "H4: How I Started",
+        "H4: How I Got My First Client",
+        "H3: The Credit Card Game Is Starting To Break",
+        "H1: Video Editor & Motion Designer",
+        "H2: Video Commissions"
+      ],
+      "h1Lines": 2,
+      "imgs": [
+        {
+          "src": "japanese-left.webp",
+          "alt": "",
+          "w": 112
+        },
+        {
+          "src": "japanese-right.webp",
+          "alt": "",
+          "w": 112
+        },
+        {
+          "src": "japanese-right-lower.webp",
+          "alt": "",
+          "w": 112
+        },
+        {
+          "src": "profile-placeholder.svg",
+          "alt": "Aditya Rathore - 2D Anime Avatar",
+          "w": 64
+        },
+        {
+          "src": "cat-handshake-thumb.png",
+          "alt": "Handshake Thumbnail",
+          "w": 112
+        },
+        {
+          "src": "typescript.svg",
+          "alt": "TypeScript logo",
+          "w": 14
+        },
+        {
+          "src": "python.svg",
+          "alt": "Python logo",
+          "w": 14
+        },
+        {
+          "src": "javascript.svg",
+          "alt": "JavaScript logo",
+          "w": 14
+        },
+        {
+          "src": "postgresql.svg",
+          "alt": "PostgreSQL logo",
+          "w": 14
+        },
+        {
+          "src": "react.svg",
+          "alt": "React logo",
+          "w": 14
+        },
+        {
+          "src": "nextjs.svg",
+          "alt": "Next.js logo",
+          "w": 14
+        },
+        {
+          "src": "bun.svg",
+          "alt": "Bun logo",
+          "w": 14
+        },
+        {
+          "src": "tailwindcss.svg",
+          "alt": "Tailwind logo",
+          "w": 14
+        },
+        {
+          "src": "motion.svg",
+          "alt": "Motion logo",
+          "w": 14
+        },
+        {
+          "src": "git.svg",
+          "alt": "Git logo",
+          "w": 14
+        },
+        {
+          "src": "github.svg",
+          "alt": "Github logo",
+          "w": 14
+        },
+        {
+          "src": "docker.svg",
+          "alt": "Docker logo",
+          "w": 14
+        },
+        {
+          "src": "nodejs.svg",
+          "alt": "Node.js logo",
+          "w": 14
+        },
+        {
+          "src": "threejs.svg",
+          "alt": "Three.js logo",
+          "w": 14
+        },
+        {
+          "src": "profile-placeholder.svg",
+          "alt": "Aditya Rathore 2D Anime Portrait Plate",
+          "w": 0
+        },
+        {
+          "src": "resolve-aiedit-logo.webp",
+          "alt": "Resolve-AIEdit logo",
+          "w": 71
+        },
+        {
+          "src": "davinci.svg",
+          "alt": "DaVinci Resolve icon",
+          "w": 12
+        },
+        {
+          "src": "ai.svg",
+          "alt": "Model Context Protocol icon",
+          "w": 12
+        },
+        {
+          "src": "typescript.svg",
+          "alt": "TypeScript icon",
+          "w": 12
+        },
+        {
+          "src": "python.svg",
+          "alt": "Python icon",
+          "w": 12
+        },
+        {
+          "src": "nodejs.svg",
+          "alt": "Node.js icon",
+          "w": 12
+        },
+        {
+          "src": "winpreview-logo.webp",
+          "alt": "WinPreview logo",
+          "w": 71
+        },
+        {
+          "src": "cpp.svg",
+          "alt": "C++20 icon",
+          "w": 12
+        },
+        {
+          "src": "windows.svg",
+          "alt": "Direct2D / 3D icon",
+          "w": 12
+        },
+        {
+          "src": "windows.svg",
+          "alt": "Win32 API icon",
+          "w": 12
+        },
+        {
+          "src": "cmake.svg",
+          "alt": "CMake icon",
+          "w": 12
+        },
+        {
+          "src": "codex-logo.webp",
+          "alt": "CodeX Client logo",
+          "w": 71
+        },
+        {
+          "src": "java.svg",
+          "alt": "Java 21 icon",
+          "w": 12
+        },
+        {
+          "src": "fabric.svg",
+          "alt": "Fabric Loader icon",
+          "w": 12
+        },
+        {
+          "src": "minecraft-brand.svg",
+          "alt": "Minecraft 1.21.4 icon",
+          "w": 12
+        },
+        {
+          "src": "opengl.svg",
+          "alt": "OpenGL icon",
+          "w": 12
+        },
+        {
+          "src": "gradle.svg",
+          "alt": "Gradle icon",
+          "w": 12
+        },
+        {
+          "src": "minecraft-brand.svg",
+          "alt": "Minecraft",
+          "w": 14
+        },
+        {
+          "src": "pubg.svg",
+          "alt": "PUBG",
+          "w": 14
+        },
+        {
+          "src": "chesscom.svg",
+          "alt": "Chess.com",
+          "w": 12
+        },
+        {
+          "src": "davinci.svg",
+          "alt": "DaVinci Resolve",
+          "w": 14
+        },
+        {
+          "src": "premiere.svg",
+          "alt": "Premiere Pro",
+          "w": 12
+        },
+        {
+          "src": "aftereffects.svg",
+          "alt": "After Effects",
+          "w": 12
+        },
+        {
+          "src": "mineimator.webp",
+          "alt": "Mine-imator (Vexel Build)",
+          "w": 14
+        },
+        {
+          "src": "videoeditor-bg.webp",
+          "alt": "",
+          "w": 380
+        },
+        {
+          "src": "youtube.svg",
+          "alt": "",
+          "w": 14
+        },
+        {
+          "src": "davinci.svg",
+          "alt": "DaVinci",
+          "w": 14
+        },
+        {
+          "src": "premiere.svg",
+          "alt": "Premiere",
+          "w": 12
+        },
+        {
+          "src": "aftereffects.svg",
+          "alt": "AE",
+          "w": 12
+        },
+        {
+          "src": "whatsapp.svg",
+          "alt": "WhatsApp",
+          "w": 16
+        },
+        {
+          "src": "discord.svg",
+          "alt": "Discord",
+          "w": 16
+        },
+        {
+          "src": "youtube.svg",
+          "alt": "",
+          "w": 14
+        }
+      ],
+      "landmarks": {
+        "header": 2,
+        "nav": 0,
+        "main": 2,
+        "footer": 2
+      }
+    }
+  },
+  "/interests/minecraft/": {
+    "desktop": {
+      "docWidth": [
+        1430,
+        1440
+      ],
+      "textSamples": [
+        {
+          "text": "vexel",
+          "size": 7.5,
+          "weight": "600",
+          "color": "oklab(0.553 0.152816 0.121129 / 0.9)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "MCSR Clip",
+          "size": 10,
+          "weight": "600",
+          "color": "oklch(0.508 0.118 165.612)",
+          "bg": "rgb(0.979,0.021,166.113)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "1.16.1",
+          "size": 11,
+          "weight": "500",
+          "color": "oklch(0.268 0.007 34.298)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.02,
+          "aa": 4.5
+        },
+        {
+          "text": "14",
+          "size": 9.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.05,
+          "aa": 4.5
+        },
+        {
+          "text": "archived",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.06,
+          "aa": 4.5
+        },
+        {
+          "text": "PUBG",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "OnlyCodeX",
+          "size": 12,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "Competitive",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.1,
+          "aa": 4.5
+        },
+        {
+          "text": "INDIA",
+          "size": 8.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 1.15,
+          "aa": 4.5
+        },
+        {
+          "text": "active",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.596 0.145 163.225)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.53,
+          "aa": 4.5
+        },
+        {
+          "text": "at",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(168, 162, 158)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 2.41,
+          "aa": 4.5
+        },
+        {
+          "text": "ADITYA · 16",
+          "size": 8.5,
+          "weight": "600",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 2.75,
+          "aa": 4.5
+        },
+        {
+          "text": "17 months of shipping",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Sept '26 – Present",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(120, 113, 108)",
+          "bg": "rgb(0.999994,0.0000455677,0.0000200868)",
+          "contrast": 4.37,
+          "aa": 4.5
+        },
+        {
+          "text": "Back",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 6.9,
+          "aa": 4.5
+        },
+        {
+          "text": "Full-Stack Developer & Creative Engineer",
+          "size": 20,
+          "weight": "500",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Obsessed with building scalable web products, ",
+          "size": 16.5,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Selected Works",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Production MCP server for DaVinci Resolve Stud",
+          "size": 13.5,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 7.63,
+          "aa": 4.5
+        },
+        {
+          "text": "Big Brothers Media Agency",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(68, 64, 60)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 9.83,
+          "aa": 4.5
+        },
+        {
+          "text": "Casual · Rapid/Blitz",
+          "size": 9.5,
+          "weight": "600",
+          "color": "oklch(0.508 0.118 165.612)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 12.26,
+          "aa": 4.5
+        },
+        {
+          "text": "# Minecraft Speedrunner",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "Minecraft Speedrunning Ranked Record",
+          "size": 14,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "# MCSR Speedrunner",
+          "size": 12,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "I'm a MCSR Speedrunner",
+          "size": 20,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 3
+        },
+        {
+          "text": "Mods, Plugins & Modpacks",
+          "size": 16,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "Custom mechanics, server utilities & optimizat",
+          "size": 12,
+          "weight": "400",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.28,
+          "aa": 4.5
+        },
+        {
+          "text": "Aditya Rathore",
+          "size": 56,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 3
+        },
+        {
+          "text": "Get in touch",
+          "size": 14,
+          "weight": "500",
+          "color": "rgb(250, 250, 248)",
+          "bg": "rgb(22,21,20)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Open for work",
+          "size": 12.5,
+          "weight": "800",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative Pursuits",
+          "size": 12,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Pro in Minecraft",
+          "size": 11.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "How I Started",
+          "size": 13.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Aditya Rathore",
+          "size": 13,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "IGN: BGMHACKER112",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.88,
+          "aa": 4.5
+        },
+        {
+          "text": "OnlyCodeX • 1080p60",
+          "size": 10,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.94,
+          "aa": 4.5
+        },
+        {
+          "text": "Mostly plays:",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.94,
+          "aa": 4.5
+        },
+        {
+          "text": "· casual",
+          "size": 9.5,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.94,
+          "aa": 4.5
+        },
+        {
+          "text": "Web & Full-Stack",
+          "size": 11.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "TypeScript",
+          "size": 12.5,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "Resolve-AIEdit",
+          "size": 21,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 3
+        },
+        {
+          "text": "View Code",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(22,21,20)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "DaVinci Resolve",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "& Trajectory",
+          "size": 12,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.92,
+          "aa": 4.5
+        },
+        {
+          "text": "explore more",
+          "size": 10,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        },
+        {
+          "text": "Also:",
+          "size": 9.5,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        },
+        {
+          "text": "Nov '26",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        }
+      ],
+      "smallTextCount": 27,
+      "failingCount": 15,
+      "failing": [
+        {
+          "text": "14",
+          "size": 9.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.05,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(120, 113, 108)",
+          "bg": "rgb(0.999994,0.0000455677,0.0000200868)",
+          "contrast": 4.37,
+          "aa": 4.5
+        },
+        {
+          "text": "ADITYA · 16",
+          "size": 8.5,
+          "weight": "600",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 2.75,
+          "aa": 4.5
+        },
+        {
+          "text": "INDIA",
+          "size": 8.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 1.15,
+          "aa": 4.5
+        },
+        {
+          "text": "17 months of shipping",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "active",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.596 0.145 163.225)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.53,
+          "aa": 4.5
+        },
+        {
+          "text": "archived",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.06,
+          "aa": 4.5
+        },
+        {
+          "text": "PUBG",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "vexel",
+          "size": 7.5,
+          "weight": "600",
+          "color": "oklab(0.553 0.152816 0.121129 / 0.9)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "Sept '26 – Present",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "at",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(168, 162, 158)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 2.41,
+          "aa": 4.5
+        },
+        {
+          "text": "MCSR Clip",
+          "size": 10,
+          "weight": "600",
+          "color": "oklch(0.508 0.118 165.612)",
+          "bg": "rgb(0.979,0.021,166.113)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "Competitive",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.1,
+          "aa": 4.5
+        },
+        {
+          "text": "1.16.1",
+          "size": 11,
+          "weight": "500",
+          "color": "oklch(0.268 0.007 34.298)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.02,
+          "aa": 4.5
+        }
+      ],
+      "smallTargets": [
+        {
+          "label": "Selected Works",
+          "w": 117,
+          "h": 16,
+          "tag": "button"
+        },
+        {
+          "label": "Explore more about Minecraft Speedrunner",
+          "w": 99,
+          "h": 19,
+          "tag": "button"
+        },
+        {
+          "label": "Explore more about Video Editing and Mot",
+          "w": 99,
+          "h": 19,
+          "tag": "button"
+        },
+        {
+          "label": "Blogs",
+          "w": 63,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "GitHub",
+          "w": 70,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "LinkedIn",
+          "w": 84,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "Scroll to top of page",
+          "w": 49,
+          "h": 20,
+          "tag": "button"
+        },
+        {
+          "label": "View OnlyCodeX stats on MCSR Ranked",
+          "w": 100,
+          "h": 21,
+          "tag": "a"
+        }
+      ],
+      "targetCount": 40,
+      "smallTargetCount": 8,
+      "overflow": [
+        {
+          "tag": "div",
+          "cls": "absolute -bottom-20 -right-20 w-72 h-72 flex items-center justify-cent",
+          "right": 1510,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute w-48 h-48 rounded-full border border-[#C28838]/[0.05] animate",
+          "right": 1462,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute w-64 h-64 rounded-full border border-[#C28838]/[0.03] animate",
+          "right": 1494,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -top-8 -right-8 w-36 sm:w-48 h-36 sm:h-48 rounded-full bg-rad",
+          "right": 1462,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -bottom-8 -right-8 w-40 sm:w-52 h-40 sm:h-52 rounded-full bg-",
+          "right": 1462,
+          "text": ""
+        }
+      ],
+      "headings": [
+        "H1: Aditya Rathore",
+        "H3: Resolve-AIEdit",
+        "H3: WinPreview",
+        "H3: CodeX Client",
+        "H4: How I Started",
+        "H4: How I Got My First Client",
+        "H3: Minecraft Speedrunning Ranked Record",
+        "H1: I'm a MCSR Speedrunner",
+        "H2: Mods, Plugins & Modpacks"
+      ],
+      "h1Lines": 1,
+      "imgs": [
+        {
+          "src": "japanese-left.webp",
+          "alt": "",
+          "w": 288
+        },
+        {
+          "src": "japanese-right.webp",
+          "alt": "",
+          "w": 272
+        },
+        {
+          "src": "japanese-right-lower.webp",
+          "alt": "",
+          "w": 256
+        },
+        {
+          "src": "profile-placeholder.svg",
+          "alt": "Aditya Rathore - 2D Anime Avatar",
+          "w": 0
+        },
+        {
+          "src": "cat-handshake-thumb.png",
+          "alt": "Handshake Thumbnail",
+          "w": 127
+        },
+        {
+          "src": "typescript.svg",
+          "alt": "TypeScript logo",
+          "w": 15
+        },
+        {
+          "src": "python.svg",
+          "alt": "Python logo",
+          "w": 15
+        },
+        {
+          "src": "javascript.svg",
+          "alt": "JavaScript logo",
+          "w": 15
+        },
+        {
+          "src": "postgresql.svg",
+          "alt": "PostgreSQL logo",
+          "w": 15
+        },
+        {
+          "src": "react.svg",
+          "alt": "React logo",
+          "w": 15
+        },
+        {
+          "src": "nextjs.svg",
+          "alt": "Next.js logo",
+          "w": 15
+        },
+        {
+          "src": "bun.svg",
+          "alt": "Bun logo",
+          "w": 15
+        },
+        {
+          "src": "tailwindcss.svg",
+          "alt": "Tailwind logo",
+          "w": 15
+        },
+        {
+          "src": "motion.svg",
+          "alt": "Motion logo",
+          "w": 15
+        },
+        {
+          "src": "git.svg",
+          "alt": "Git logo",
+          "w": 15
+        },
+        {
+          "src": "github.svg",
+          "alt": "Github logo",
+          "w": 15
+        },
+        {
+          "src": "docker.svg",
+          "alt": "Docker logo",
+          "w": 15
+        },
+        {
+          "src": "nodejs.svg",
+          "alt": "Node.js logo",
+          "w": 15
+        },
+        {
+          "src": "threejs.svg",
+          "alt": "Three.js logo",
+          "w": 15
+        },
+        {
+          "src": "profile-placeholder.svg",
+          "alt": "Aditya Rathore 2D Anime Portrait Plate",
+          "w": 145
+        },
+        {
+          "src": "resolve-aiedit-logo.webp",
+          "alt": "Resolve-AIEdit logo",
+          "w": 81
+        },
+        {
+          "src": "davinci.svg",
+          "alt": "DaVinci Resolve icon",
+          "w": 12
+        },
+        {
+          "src": "ai.svg",
+          "alt": "Model Context Protocol icon",
+          "w": 12
+        },
+        {
+          "src": "typescript.svg",
+          "alt": "TypeScript icon",
+          "w": 12
+        },
+        {
+          "src": "python.svg",
+          "alt": "Python icon",
+          "w": 12
+        },
+        {
+          "src": "nodejs.svg",
+          "alt": "Node.js icon",
+          "w": 12
+        },
+        {
+          "src": "winpreview-logo.webp",
+          "alt": "WinPreview logo",
+          "w": 81
+        },
+        {
+          "src": "cpp.svg",
+          "alt": "C++20 icon",
+          "w": 12
+        },
+        {
+          "src": "windows.svg",
+          "alt": "Direct2D / 3D icon",
+          "w": 12
+        },
+        {
+          "src": "windows.svg",
+          "alt": "Win32 API icon",
+          "w": 12
+        },
+        {
+          "src": "cmake.svg",
+          "alt": "CMake icon",
+          "w": 12
+        },
+        {
+          "src": "codex-logo.webp",
+          "alt": "CodeX Client logo",
+          "w": 81
+        },
+        {
+          "src": "java.svg",
+          "alt": "Java 21 icon",
+          "w": 12
+        },
+        {
+          "src": "fabric.svg",
+          "alt": "Fabric Loader icon",
+          "w": 12
+        },
+        {
+          "src": "minecraft-brand.svg",
+          "alt": "Minecraft 1.21.4 icon",
+          "w": 12
+        },
+        {
+          "src": "opengl.svg",
+          "alt": "OpenGL icon",
+          "w": 12
+        },
+        {
+          "src": "gradle.svg",
+          "alt": "Gradle icon",
+          "w": 12
+        },
+        {
+          "src": "minecraft-brand.svg",
+          "alt": "Minecraft",
+          "w": 14
+        },
+        {
+          "src": "pubg.svg",
+          "alt": "PUBG",
+          "w": 14
+        },
+        {
+          "src": "chesscom.svg",
+          "alt": "Chess.com",
+          "w": 12
+        },
+        {
+          "src": "davinci.svg",
+          "alt": "DaVinci Resolve",
+          "w": 14
+        },
+        {
+          "src": "premiere.svg",
+          "alt": "Premiere Pro",
+          "w": 12
+        },
+        {
+          "src": "aftereffects.svg",
+          "alt": "After Effects",
+          "w": 12
+        },
+        {
+          "src": "mineimator.webp",
+          "alt": "Mine-imator (Vexel Build)",
+          "w": 14
+        },
+        {
+          "src": "minecraft-bg.webp",
+          "alt": "",
+          "w": 1430
+        },
+        {
+          "src": "minecraft-brand.svg",
+          "alt": "Minecraft",
+          "w": 14
+        },
+        {
+          "src": "mcsr.svg",
+          "alt": "MCSR Ranked",
+          "w": 48
+        },
+        {
+          "src": "modrinth.svg",
+          "alt": "Modrinth",
+          "w": 16
+        },
+        {
+          "src": "discord.svg",
+          "alt": "Discord",
+          "w": 16
+        },
+        {
+          "src": "pubg.svg",
+          "alt": "BGMI",
+          "w": 16
+        },
+        {
+          "src": "chesscom.svg",
+          "alt": "Chess.com",
+          "w": 16
+        }
+      ],
+      "landmarks": {
+        "header": 2,
+        "nav": 0,
+        "main": 2,
+        "footer": 2
+      }
+    },
+    "mobile": {
+      "docWidth": [
+        380,
+        390
+      ],
+      "textSamples": [
+        {
+          "text": "vexel",
+          "size": 7.5,
+          "weight": "600",
+          "color": "oklab(0.553 0.152816 0.121129 / 0.9)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "MCSR Clip",
+          "size": 10,
+          "weight": "600",
+          "color": "oklch(0.508 0.118 165.612)",
+          "bg": "rgb(0.979,0.021,166.113)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "1.16.1",
+          "size": 11,
+          "weight": "500",
+          "color": "oklch(0.268 0.007 34.298)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.02,
+          "aa": 4.5
+        },
+        {
+          "text": "14",
+          "size": 9.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.05,
+          "aa": 4.5
+        },
+        {
+          "text": "archived",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.06,
+          "aa": 4.5
+        },
+        {
+          "text": "PUBG",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "OnlyCodeX",
+          "size": 12,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "Competitive",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.1,
+          "aa": 4.5
+        },
+        {
+          "text": "INDIA",
+          "size": 7,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 1.15,
+          "aa": 4.5
+        },
+        {
+          "text": "active",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.596 0.145 163.225)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.53,
+          "aa": 4.5
+        },
+        {
+          "text": "at",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(168, 162, 158)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 2.41,
+          "aa": 4.5
+        },
+        {
+          "text": "ADITYA · 16",
+          "size": 7,
+          "weight": "600",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 2.75,
+          "aa": 4.5
+        },
+        {
+          "text": "17 months of shipping",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Sept '26 – Present",
+          "size": 10.5,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(120, 113, 108)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 4.37,
+          "aa": 4.5
+        },
+        {
+          "text": "Back",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 6.9,
+          "aa": 4.5
+        },
+        {
+          "text": "Full-Stack Developer & Creative Engineer",
+          "size": 16,
+          "weight": "500",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Obsessed with building scalable web products, ",
+          "size": 15,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Selected Works",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Interests",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 7.3,
+          "aa": 4.5
+        },
+        {
+          "text": "Production MCP server for DaVinci Resolve Stud",
+          "size": 13,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 7.63,
+          "aa": 4.5
+        },
+        {
+          "text": "Big Brothers Media Agency",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(68, 64, 60)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 9.83,
+          "aa": 4.5
+        },
+        {
+          "text": "Casual · Rapid/Blitz",
+          "size": 9.5,
+          "weight": "600",
+          "color": "oklch(0.508 0.118 165.612)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 12.26,
+          "aa": 4.5
+        },
+        {
+          "text": "# Minecraft",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "Minecraft Speedrunning Ranked Record",
+          "size": 12,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "# MCSR Speedrunner",
+          "size": 12,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "I'm a MCSR Speedrunner",
+          "size": 18,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "Mods, Plugins & Modpacks",
+          "size": 14,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 16.49,
+          "aa": 4.5
+        },
+        {
+          "text": "Custom mechanics, server utilities & optimizat",
+          "size": 12,
+          "weight": "400",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.28,
+          "aa": 4.5
+        },
+        {
+          "text": "Aditya Rathore",
+          "size": 38,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 3
+        },
+        {
+          "text": "Open for work",
+          "size": 10,
+          "weight": "800",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Get in touch",
+          "size": 14,
+          "weight": "500",
+          "color": "rgb(250, 250, 248)",
+          "bg": "rgb(22,21,20)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative Pursuits",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "# Minecraft Speedrunner",
+          "size": 12,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Pro in Minecraft",
+          "size": 11.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "How I Started",
+          "size": 13,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "Aditya Rathore",
+          "size": 12,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 17.45,
+          "aa": 4.5
+        },
+        {
+          "text": "IGN: BGMHACKER112",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.88,
+          "aa": 4.5
+        },
+        {
+          "text": "OnlyCodeX • 1080p60",
+          "size": 10,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.94,
+          "aa": 4.5
+        },
+        {
+          "text": "Mostly plays:",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.94,
+          "aa": 4.5
+        },
+        {
+          "text": "· casual",
+          "size": 9.5,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(247,243,236)",
+          "contrast": 17.94,
+          "aa": 4.5
+        },
+        {
+          "text": "Web",
+          "size": 11,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "TypeScript",
+          "size": 12,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "Resolve-AIEdit",
+          "size": 20,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 3
+        },
+        {
+          "text": "View Code",
+          "size": 11.5,
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(22,21,20)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "Built with Vibe & Code",
+          "size": 10.5,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.92,
+          "aa": 4.5
+        },
+        {
+          "text": "Blogs",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.92,
+          "aa": 4.5
+        },
+        {
+          "text": "explore more",
+          "size": 10,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        },
+        {
+          "text": "Also:",
+          "size": 9.5,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        },
+        {
+          "text": "Nov '26",
+          "size": 11,
+          "weight": "400",
+          "color": "oklch(0.709 0.01 56.259)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 18.98,
+          "aa": 4.5
+        }
+      ],
+      "smallTextCount": 31,
+      "failingCount": 15,
+      "failing": [
+        {
+          "text": "ADITYA · 16",
+          "size": 7,
+          "weight": "600",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 2.75,
+          "aa": 4.5
+        },
+        {
+          "text": "INDIA",
+          "size": 7,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.999994,0.0000455678,0.0000200868)",
+          "contrast": 1.15,
+          "aa": 4.5
+        },
+        {
+          "text": "14",
+          "size": 9.5,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(0.97,0.001,106.424)",
+          "contrast": 1.05,
+          "aa": 4.5
+        },
+        {
+          "text": "Creative",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(120, 113, 108)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 4.37,
+          "aa": 4.5
+        },
+        {
+          "text": "17 months of shipping",
+          "size": 12,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "active",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.596 0.145 163.225)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.53,
+          "aa": 4.5
+        },
+        {
+          "text": "archived",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.553 0.013 58.071)",
+          "bg": "rgb(0.985,0.000282726,0.000959201)",
+          "contrast": 1.06,
+          "aa": 4.5
+        },
+        {
+          "text": "PUBG",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.374 0.01 67.558)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.08,
+          "aa": 4.5
+        },
+        {
+          "text": "vexel",
+          "size": 7.5,
+          "weight": "600",
+          "color": "oklab(0.553 0.152816 0.121129 / 0.9)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "Sept '26 – Present",
+          "size": 10.5,
+          "weight": "400",
+          "color": "rgb(140, 134, 126)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 3.45,
+          "aa": 4.5
+        },
+        {
+          "text": "at",
+          "size": 11,
+          "weight": "400",
+          "color": "rgb(168, 162, 158)",
+          "bg": "rgb(250,250,248)",
+          "contrast": 2.41,
+          "aa": 4.5
+        },
+        {
+          "text": "MCSR Clip",
+          "size": 10,
+          "weight": "600",
+          "color": "oklch(0.508 0.118 165.612)",
+          "bg": "rgb(0.979,0.021,166.113)",
+          "contrast": 1,
+          "aa": 4.5
+        },
+        {
+          "text": "Competitive",
+          "size": 10,
+          "weight": "500",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.1,
+          "aa": 4.5
+        },
+        {
+          "text": "1.16.1",
+          "size": 11,
+          "weight": "500",
+          "color": "oklch(0.268 0.007 34.298)",
+          "bg": "rgb(0.97,0.000282743,0.000959196)",
+          "contrast": 1.02,
+          "aa": 4.5
+        }
+      ],
+      "smallTargets": [
+        {
+          "label": "Selected Works",
+          "w": 117,
+          "h": 16,
+          "tag": "button"
+        },
+        {
+          "label": "Explore more about Minecraft Speedrunner",
+          "w": 99,
+          "h": 19,
+          "tag": "button"
+        },
+        {
+          "label": "Explore more about Video Editing and Mot",
+          "w": 99,
+          "h": 19,
+          "tag": "button"
+        },
+        {
+          "label": "Blogs",
+          "w": 48,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "GitHub",
+          "w": 55,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "LinkedIn",
+          "w": 68,
+          "h": 20,
+          "tag": "a"
+        },
+        {
+          "label": "Scroll to top of page",
+          "w": 35,
+          "h": 20,
+          "tag": "button"
+        },
+        {
+          "label": "View OnlyCodeX stats on MCSR Ranked",
+          "w": 100,
+          "h": 21,
+          "tag": "a"
+        }
+      ],
+      "targetCount": 41,
+      "smallTargetCount": 8,
+      "overflow": [
+        {
+          "tag": "div",
+          "cls": "absolute -bottom-20 -right-20 w-72 h-72 flex items-center justify-cent",
+          "right": 460,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute w-48 h-48 rounded-full border border-[#C28838]/[0.05] animate",
+          "right": 412,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute w-64 h-64 rounded-full border border-[#C28838]/[0.03] animate",
+          "right": 444,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -right-8 sm:right-0 -top-4 sm:top-0 pointer-events-none",
+          "right": 412,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "relative animate-foliage-right",
+          "right": 412,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -top-8 -right-8 w-36 sm:w-48 h-36 sm:h-48 rounded-full bg-rad",
+          "right": 444,
+          "text": ""
+        },
+        {
+          "tag": "img",
+          "cls": "w-28 sm:w-48 md:w-60 lg:w-68 h-auto object-contain opacity-30 sm:opaci",
+          "right": 412,
+          "text": ""
+        },
+        {
+          "tag": "div",
+          "cls": "absolute -right-6 sm:right-0 bottom-[6%] sm:bottom-[10%] pointer-event",
+          "right": 404,
+          "text": ""
+        }
+      ],
+      "headings": [
+        "H1: Aditya Rathore",
+        "H3: Resolve-AIEdit",
+        "H3: WinPreview",
+        "H3: CodeX Client",
+        "H4: How I Started",
+        "H4: How I Got My First Client",
+        "H3: Minecraft Speedrunning Ranked Record",
+        "H1: I'm a MCSR Speedrunner",
+        "H2: Mods, Plugins & Modpacks"
+      ],
+      "h1Lines": 2,
+      "imgs": [
+        {
+          "src": "japanese-left.webp",
+          "alt": "",
+          "w": 112
+        },
+        {
+          "src": "japanese-right.webp",
+          "alt": "",
+          "w": 112
+        },
+        {
+          "src": "japanese-right-lower.webp",
+          "alt": "",
+          "w": 112
+        },
+        {
+          "src": "profile-placeholder.svg",
+          "alt": "Aditya Rathore - 2D Anime Avatar",
+          "w": 64
+        },
+        {
+          "src": "cat-handshake-thumb.png",
+          "alt": "Handshake Thumbnail",
+          "w": 112
+        },
+        {
+          "src": "typescript.svg",
+          "alt": "TypeScript logo",
+          "w": 14
+        },
+        {
+          "src": "python.svg",
+          "alt": "Python logo",
+          "w": 14
+        },
+        {
+          "src": "javascript.svg",
+          "alt": "JavaScript logo",
+          "w": 14
+        },
+        {
+          "src": "postgresql.svg",
+          "alt": "PostgreSQL logo",
+          "w": 14
+        },
+        {
+          "src": "react.svg",
+          "alt": "React logo",
+          "w": 14
+        },
+        {
+          "src": "nextjs.svg",
+          "alt": "Next.js logo",
+          "w": 14
+        },
+        {
+          "src": "bun.svg",
+          "alt": "Bun logo",
+          "w": 14
+        },
+        {
+          "src": "tailwindcss.svg",
+          "alt": "Tailwind logo",
+          "w": 14
+        },
+        {
+          "src": "motion.svg",
+          "alt": "Motion logo",
+          "w": 14
+        },
+        {
+          "src": "git.svg",
+          "alt": "Git logo",
+          "w": 14
+        },
+        {
+          "src": "github.svg",
+          "alt": "Github logo",
+          "w": 14
+        },
+        {
+          "src": "docker.svg",
+          "alt": "Docker logo",
+          "w": 14
+        },
+        {
+          "src": "nodejs.svg",
+          "alt": "Node.js logo",
+          "w": 14
+        },
+        {
+          "src": "threejs.svg",
+          "alt": "Three.js logo",
+          "w": 14
+        },
+        {
+          "src": "profile-placeholder.svg",
+          "alt": "Aditya Rathore 2D Anime Portrait Plate",
+          "w": 0
+        },
+        {
+          "src": "resolve-aiedit-logo.webp",
+          "alt": "Resolve-AIEdit logo",
+          "w": 71
+        },
+        {
+          "src": "davinci.svg",
+          "alt": "DaVinci Resolve icon",
+          "w": 12
+        },
+        {
+          "src": "ai.svg",
+          "alt": "Model Context Protocol icon",
+          "w": 12
+        },
+        {
+          "src": "typescript.svg",
+          "alt": "TypeScript icon",
+          "w": 12
+        },
+        {
+          "src": "python.svg",
+          "alt": "Python icon",
+          "w": 12
+        },
+        {
+          "src": "nodejs.svg",
+          "alt": "Node.js icon",
+          "w": 12
+        },
+        {
+          "src": "winpreview-logo.webp",
+          "alt": "WinPreview logo",
+          "w": 71
+        },
+        {
+          "src": "cpp.svg",
+          "alt": "C++20 icon",
+          "w": 12
+        },
+        {
+          "src": "windows.svg",
+          "alt": "Direct2D / 3D icon",
+          "w": 12
+        },
+        {
+          "src": "windows.svg",
+          "alt": "Win32 API icon",
+          "w": 12
+        },
+        {
+          "src": "cmake.svg",
+          "alt": "CMake icon",
+          "w": 12
+        },
+        {
+          "src": "codex-logo.webp",
+          "alt": "CodeX Client logo",
+          "w": 71
+        },
+        {
+          "src": "java.svg",
+          "alt": "Java 21 icon",
+          "w": 12
+        },
+        {
+          "src": "fabric.svg",
+          "alt": "Fabric Loader icon",
+          "w": 12
+        },
+        {
+          "src": "minecraft-brand.svg",
+          "alt": "Minecraft 1.21.4 icon",
+          "w": 12
+        },
+        {
+          "src": "opengl.svg",
+          "alt": "OpenGL icon",
+          "w": 12
+        },
+        {
+          "src": "gradle.svg",
+          "alt": "Gradle icon",
+          "w": 12
+        },
+        {
+          "src": "minecraft-brand.svg",
+          "alt": "Minecraft",
+          "w": 14
+        },
+        {
+          "src": "pubg.svg",
+          "alt": "PUBG",
+          "w": 14
+        },
+        {
+          "src": "chesscom.svg",
+          "alt": "Chess.com",
+          "w": 12
+        },
+        {
+          "src": "davinci.svg",
+          "alt": "DaVinci Resolve",
+          "w": 14
+        },
+        {
+          "src": "premiere.svg",
+          "alt": "Premiere Pro",
+          "w": 12
+        },
+        {
+          "src": "aftereffects.svg",
+          "alt": "After Effects",
+          "w": 12
+        },
+        {
+          "src": "mineimator.webp",
+          "alt": "Mine-imator (Vexel Build)",
+          "w": 14
+        },
+        {
+          "src": "minecraft-bg.webp",
+          "alt": "",
+          "w": 380
+        },
+        {
+          "src": "minecraft-brand.svg",
+          "alt": "Minecraft",
+          "w": 14
+        },
+        {
+          "src": "mcsr.svg",
+          "alt": "MCSR Ranked",
+          "w": 44
+        },
+        {
+          "src": "modrinth.svg",
+          "alt": "Modrinth",
+          "w": 16
+        },
+        {
+          "src": "discord.svg",
+          "alt": "Discord",
+          "w": 16
+        },
+        {
+          "src": "pubg.svg",
+          "alt": "BGMI",
+          "w": 16
+        },
+        {
+          "src": "chesscom.svg",
+          "alt": "Chess.com",
+          "w": 16
+        }
+      ],
+      "landmarks": {
+        "header": 2,
+        "nav": 0,
+        "main": 2,
+        "footer": 2
+      }
+    }
+  },
+  "/blogs/how-i-started/": {
+    "desktop": {
+      "docWidth": [
+        1430,
+        1440
+      ],
+      "textSamples": [
+        {
+          "text": "Connect with me on Discord",
+          "size": 13.5,
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(88,101,242)",
+          "contrast": 4.61,
+          "aa": 4.5
+        },
+        {
+          "text": "blog#2",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(99, 94, 87)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 5.56,
+          "aa": 4.5
+        },
+        {
+          "text": "Back",
+          "size": 12,
+          "weight": "500",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 6.6,
+          "aa": 4.5
+        },
+        {
+          "text": "Now, how did I get that knowledge?",
+          "size": 16,
+          "weight": "500",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 6.6,
+          "aa": 4.5
+        },
+        {
+          "text": "Get notified directly in your inbox whenever I",
+          "size": 13.5,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 6.6,
+          "aa": 4.5
+        },
+        {
+          "text": "When I was a kid, I just had an interest in bu",
+          "size": 16,
+          "weight": "400",
+          "color": "rgb(43, 41, 39)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 12.54,
+          "aa": 4.5
+        },
+        {
+          "text": "I don't wanna make this something like those m",
+          "size": 16.5,
+          "weight": "400",
+          "color": "rgb(30, 29, 27)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 14.58,
+          "aa": 4.5
+        },
+        {
+          "text": "How I Started",
+          "size": 36,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 15.78,
+          "aa": 3
+        },
+        {
+          "text": "“Ever since I was a kid, I was always curious ",
+          "size": 16.5,
+          "weight": "400",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 15.78,
+          "aa": 4.5
+        },
+        {
+          "text": "Nah, that's not my story.",
+          "size": 16,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 15.78,
+          "aa": 4.5
+        },
+        {
+          "text": "Check out my Tic Tac Toe game",
+          "size": 13,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 15.78,
+          "aa": 4.5
+        },
+        {
+          "text": "Btw, that laptop had some Intel Pentium proces",
+          "size": 13.5,
+          "weight": "400",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 16.54,
+          "aa": 4.5
+        },
+        {
+          "text": "I still play Minecraft, btw.",
+          "size": 16,
+          "weight": "400",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 16.54,
+          "aa": 4.5
+        },
+        {
+          "text": "blog#1",
+          "size": 11,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "Subscribe",
+          "size": 13,
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(22,21,20)",
+          "contrast": 18.24,
+          "aa": 4.5
+        }
+      ],
+      "smallTextCount": 2,
+      "failingCount": 0,
+      "failing": [],
+      "smallTargets": [
+        {
+          "label": "blog#1",
+          "w": 60,
+          "h": 23,
+          "tag": "button"
+        },
+        {
+          "label": "blog#2",
+          "w": 60,
+          "h": 23,
+          "tag": "button"
+        }
+      ],
+      "targetCount": 8,
+      "smallTargetCount": 2,
+      "overflow": [],
+      "headings": [
+        "H1: How I Started",
+        "H3: Subscribe to future notes"
+      ],
+      "h1Lines": 1,
+      "imgs": [
+        {
+          "src": "blog-1-bg.webp",
+          "alt": "",
+          "w": 1430
+        },
+        {
+          "src": "blog-2-bg.webp",
+          "alt": "",
+          "w": 1430
+        }
+      ],
+      "landmarks": {
+        "header": 1,
+        "nav": 0,
+        "main": 1,
+        "footer": 0
+      }
+    },
+    "mobile": {
+      "docWidth": [
+        380,
+        390
+      ],
+      "textSamples": [
+        {
+          "text": "Connect with me on Discord",
+          "size": 13.5,
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(88,101,242)",
+          "contrast": 4.61,
+          "aa": 4.5
+        },
+        {
+          "text": "blog#2",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(99, 94, 87)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 5.56,
+          "aa": 4.5
+        },
+        {
+          "text": "Back",
+          "size": 11,
+          "weight": "500",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 6.6,
+          "aa": 4.5
+        },
+        {
+          "text": "Now, how did I get that knowledge?",
+          "size": 15,
+          "weight": "500",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 6.6,
+          "aa": 4.5
+        },
+        {
+          "text": "Get notified directly in your inbox whenever I",
+          "size": 13,
+          "weight": "400",
+          "color": "rgb(87, 83, 78)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 6.6,
+          "aa": 4.5
+        },
+        {
+          "text": "When I was a kid, I just had an interest in bu",
+          "size": 15,
+          "weight": "400",
+          "color": "rgb(43, 41, 39)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 12.54,
+          "aa": 4.5
+        },
+        {
+          "text": "I don't wanna make this something like those m",
+          "size": 15.5,
+          "weight": "400",
+          "color": "rgb(30, 29, 27)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 14.58,
+          "aa": 4.5
+        },
+        {
+          "text": "How I Started",
+          "size": 24,
+          "weight": "700",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 15.78,
+          "aa": 3
+        },
+        {
+          "text": "“Ever since I was a kid, I was always curious ",
+          "size": 15.5,
+          "weight": "400",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 15.78,
+          "aa": 4.5
+        },
+        {
+          "text": "Nah, that's not my story.",
+          "size": 15,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 15.78,
+          "aa": 4.5
+        },
+        {
+          "text": "Check out my Tic Tac Toe game",
+          "size": 13,
+          "weight": "500",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 15.78,
+          "aa": 4.5
+        },
+        {
+          "text": "Btw, that laptop had some Intel Pentium proces",
+          "size": 13.5,
+          "weight": "400",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 16.54,
+          "aa": 4.5
+        },
+        {
+          "text": "I still play Minecraft, btw.",
+          "size": 15,
+          "weight": "400",
+          "color": "oklch(0.444 0.011 73.639)",
+          "bg": "rgb(246,237,230)",
+          "contrast": 16.54,
+          "aa": 4.5
+        },
+        {
+          "text": "blog#1",
+          "size": 11,
+          "weight": "600",
+          "color": "rgb(22, 21, 20)",
+          "bg": "rgb(255,255,255)",
+          "contrast": 18.24,
+          "aa": 4.5
+        },
+        {
+          "text": "Subscribe",
+          "size": 13,
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(22,21,20)",
+          "contrast": 18.24,
+          "aa": 4.5
+        }
+      ],
+      "smallTextCount": 3,
+      "failingCount": 0,
+      "failing": [],
+      "smallTargets": [],
+      "targetCount": 8,
+      "smallTargetCount": 0,
+      "overflow": [],
+      "headings": [
+        "H1: How I Started",
+        "H3: Subscribe to future notes"
+      ],
+      "h1Lines": 1,
+      "imgs": [
+        {
+          "src": "blog-1-mobile.webp",
+          "alt": "",
+          "w": 380
+        },
+        {
+          "src": "blog-2-mobile.webp",
+          "alt": "",
+          "w": 380
+        }
+      ],
+      "landmarks": {
+        "header": 1,
+        "nav": 0,
+        "main": 1,
+        "footer": 0
+      }
+    }
+  }
+}

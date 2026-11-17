@@ -17,7 +17,7 @@ export default function Footer({ onScrollToTop, onNavigate }) {
         
         {/* DESKTOP & TABLET VIEW (sm and up): Expansive single-row task bar with wide center Ma */}
         <div className="hidden sm:flex items-center justify-between text-xs font-mono text-[#8C867E]">
-          {/* Left: Identity – Built with Vibe & Code (No green dot as requested) */}
+          {/* Left: Identity and stack */}
           <div className="flex items-center gap-2 select-none shrink-0">
             {/* Identity */}
             <span className="font-sans font-medium text-[#161514] tracking-tight text-[12.5px] sm:text-[13px]">
@@ -28,7 +28,7 @@ export default function Footer({ onScrollToTop, onNavigate }) {
 
             {/* Philosophy mark */}
             <span className="text-stone-500 tracking-tight font-mono text-[11.5px] sm:text-[12px]">
-              Built with Vibe &amp; Code
+              React · TypeScript · DaVinci Resolve
             </span>
           </div>
 
@@ -44,7 +44,7 @@ export default function Footer({ onScrollToTop, onNavigate }) {
                   onNavigate('/blogs/how-i-started/');
                 }
               }}
-              className="group/link pressable inline-flex items-center gap-1 px-1.5 py-0.5 rounded hover:text-[#161514] hover:bg-black/[0.035] transition-all duration-150 cursor-pointer"
+              className="group/link pressable inline-flex items-center gap-1 px-1.5 py-1.5 rounded hover:text-[#161514] hover:bg-black/[0.035] transition-all duration-150 cursor-pointer"
               title="Blogs"
             >
               <span>Blogs</span>
@@ -55,7 +55,7 @@ export default function Footer({ onScrollToTop, onNavigate }) {
               href="https://github.com/Code-Xceed"
               target="_blank"
               rel="noopener noreferrer"
-              className="group/link pressable inline-flex items-center gap-1 px-1.5 py-0.5 rounded hover:text-[#161514] hover:bg-black/[0.035] transition-all duration-150"
+              className="group/link pressable inline-flex items-center gap-1 px-1.5 py-1.5 rounded hover:text-[#161514] hover:bg-black/[0.035] transition-all duration-150"
               title="GitHub profile"
             >
               <span>GitHub</span>
@@ -66,7 +66,7 @@ export default function Footer({ onScrollToTop, onNavigate }) {
               href="https://www.linkedin.com/in/aditya-rathore-110125385"
               target="_blank"
               rel="noopener noreferrer"
-              className="group/link pressable inline-flex items-center gap-1 px-1.5 py-0.5 rounded hover:text-[#161514] hover:bg-black/[0.035] transition-all duration-150"
+              className="group/link pressable inline-flex items-center gap-1 px-1.5 py-1.5 rounded hover:text-[#161514] hover:bg-black/[0.035] transition-all duration-150"
               title="LinkedIn profile"
             >
               <span>LinkedIn</span>
@@ -77,7 +77,7 @@ export default function Footer({ onScrollToTop, onNavigate }) {
               <button
                 type="button"
                 onClick={onScrollToTop}
-                className="group/top pressable inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[#57534E] hover:text-[#161514] hover:bg-black/[0.035] transition-all duration-150 cursor-pointer active:scale-95"
+                className="group/top pressable inline-flex items-center gap-1 px-1.5 py-1.5 rounded text-[#57534E] hover:text-[#161514] hover:bg-black/[0.035] transition-all duration-150 cursor-pointer active:scale-95"
                 aria-label="Scroll to top of page"
               >
                 <span>Top</span>
@@ -89,15 +89,15 @@ export default function Footer({ onScrollToTop, onNavigate }) {
 
         {/* MOBILE VIEW (< sm): Perfectly balanced, never squished or clipped */}
         <div className="flex sm:hidden flex-col gap-2.5 text-[11px] font-mono text-[#8C867E]">
-          {/* Mobile Top Row: Identity – Built with Vibe & Code (No green dot) */}
+          {/* Mobile Top Row: Identity and stack */}
           <div className="flex items-center justify-between select-none">
             <div className="flex items-center gap-1.5 min-w-0">
               <span className="font-sans font-medium text-[#161514] tracking-tight text-[12px] truncate">
                 Aditya Rathore
               </span>
               <span className="text-stone-300 font-normal select-none">–</span>
-              <span className="text-stone-500 tracking-tight text-[10.5px] truncate">
-                Built with Vibe &amp; Code
+              <span className="text-stone-500 tracking-tight text-[11px] truncate">
+                React · TypeScript · DaVinci Resolve
               </span>
             </div>
           </div>
@@ -113,7 +113,7 @@ export default function Footer({ onScrollToTop, onNavigate }) {
                     onNavigate('/blogs/how-i-started/');
                   }
                 }}
-                className="group/link inline-flex items-center gap-1 py-0.5 hover:text-[#161514] transition-colors duration-150 active:scale-95 cursor-pointer"
+                className="group/link inline-flex items-center gap-1 py-1.5 hover:text-[#161514] transition-colors duration-150 active:scale-95 cursor-pointer"
               >
                 <span>Blogs</span>
                 <ArrowUpRight className="w-3 h-3 opacity-50" />
@@ -122,7 +122,7 @@ export default function Footer({ onScrollToTop, onNavigate }) {
                 href="https://github.com/Code-Xceed"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group/link inline-flex items-center gap-1 py-0.5 hover:text-[#161514] transition-colors duration-150 active:scale-95"
+                className="group/link inline-flex items-center gap-1 py-1.5 hover:text-[#161514] transition-colors duration-150 active:scale-95"
               >
                 <span>GitHub</span>
                 <ArrowUpRight className="w-3 h-3 opacity-50" />
@@ -131,7 +131,7 @@ export default function Footer({ onScrollToTop, onNavigate }) {
                 href="https://www.linkedin.com/in/aditya-rathore-110125385"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group/link inline-flex items-center gap-1 py-0.5 hover:text-[#161514] transition-colors duration-150 active:scale-95"
+                className="group/link inline-flex items-center gap-1 py-1.5 hover:text-[#161514] transition-colors duration-150 active:scale-95"
               >
                 <span>LinkedIn</span>
                 <ArrowUpRight className="w-3 h-3 opacity-50" />
@@ -142,7 +142,7 @@ export default function Footer({ onScrollToTop, onNavigate }) {
               <button
                 type="button"
                 onClick={onScrollToTop}
-                className="group/top inline-flex items-center gap-1 py-0.5 text-[#57534E] hover:text-[#161514] transition-colors duration-150 active:scale-95 cursor-pointer"
+                className="group/top inline-flex items-center gap-1 py-1.5 text-[#57534E] hover:text-[#161514] transition-colors duration-150 active:scale-95 cursor-pointer"
                 aria-label="Scroll to top of page"
               >
                 <span>Top</span>

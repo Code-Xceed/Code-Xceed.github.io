@@ -182,7 +182,6 @@
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  will-change: transform, opacity;
   box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.08);
 }
 
@@ -256,7 +255,6 @@
 
 .animate-fade-in {
   animation: fadeIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
-  will-change: opacity;
 }
 
 /* Smooth Fade In Stagger Keyframes (Strictly both fill-mode to eliminate initial load flicker) */
@@ -273,7 +271,6 @@
 
 .animate-fade-in-up {
   animation: fadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
-  will-change: transform, opacity;
 }
 
 @keyframes subtlePulse {

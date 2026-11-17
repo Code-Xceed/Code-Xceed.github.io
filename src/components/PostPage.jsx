@@ -140,6 +140,22 @@ export default function PostPage({ post, onNavigate }) {
               <span>Back</span>
             </a>
 
+            <nav aria-label="Primary" className="flex items-center gap-3 sm:gap-4 text-[11px] sm:text-xs text-[#57534E]">
+              <button type="button" onClick={handleBack} className="py-1.5 hover:text-[#161514] transition-colors">
+                Work
+              </button>
+              <button
+                type="button"
+                onClick={(e) => handleSelectPost('/interests/video-editing/', e)}
+                className="py-1.5 hover:text-[#161514] transition-colors"
+              >
+                Video
+              </button>
+              <a href="mailto:aditya.rathore10101@gmail.com" className="py-1.5 hover:text-[#161514] transition-colors">
+                Contact
+              </a>
+            </nav>
+
             {/* Discreet Blog Switcher: Refined Segmented Control */}
             <div className="inline-flex items-center gap-1 p-1 rounded-lg bg-black/[0.04] backdrop-blur-xs">
               {POSTS.map((item) => {
@@ -149,7 +165,7 @@ export default function PostPage({ post, onNavigate }) {
                     key={item.id}
                     type="button"
                     onClick={(e) => handleSelectPost(item.href, e)}
-                    className={`pressable px-2.5 py-1 rounded-md text-[11px] font-mono transition-all duration-200 cursor-pointer select-none touch-manipulation ${
+                    className={`pressable px-2.5 py-1.5 rounded-md text-[11px] font-mono transition-all duration-200 cursor-pointer select-none touch-manipulation ${
                       isActive
                         ? 'bg-white text-[#161514] font-semibold shadow-[0_1px_3px_rgba(0,0,0,0.08)]'
                         : 'text-[#635E57] hover:text-[#161514] hover:bg-white/40'

@@ -4,6 +4,7 @@ import SelectedWorks from './components/SelectedWorks';
 import InterestsExperience from './components/InterestsExperience';
 import Footer from './components/Footer';
 import BotanicalBorders from './components/BotanicalBorders';
+import Nav from './components/Nav';
 import JapaneseZenEffects from './components/JapaneseZenEffects';
 import PostPage from './components/PostPage';
 import MinecraftExplorePage from './components/MinecraftExplorePage';
@@ -52,9 +53,9 @@ export default function App() {
   const [activeRoute, setActiveRoute] = useState(() => initialRoute);
   const [sheetState, setSheetState] = useState(() => (initialRoute ? 'active' : 'idle'));
   const [isSheetMounted, setIsSheetMounted] = useState(() => Boolean(initialRoute));
-  const [isPageMounted, setIsPageMounted] = useState(false);
   const sheetContainerRef = useRef(null);
   const closeTimerRef = useRef(null);
+  const lastFocusedRef = useRef(null);
 
   const clearCloseTimer = () => {
     if (closeTimerRef.current) {
@@ -64,28 +65,31 @@ export default function App() {
   };
 
   useEffect(() => {
-    // Coordinated first-load reveal: ensures DOM, styles, and assets are ready before revealing
-    const rafId = requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        setIsPageMounted(true);
-      });
-    });
-    return () => cancelAnimationFrame(rafId);
+    // Early preload of below-the-fold route art happens after interaction;
+    // nothing here should gate the first paint.
   }, []);
 
-  // Eagerly preload blog and explore backgrounds so there is zero image decode latency or flash
+  // Warm route artwork after the page is interactive, so it never competes
+  // with the first paint or duplicates a parse-time prefetch.
   useEffect(() => {
-    POSTS.forEach((post) => {
-      const img = new Image();
-      img.src = post.art;
-      const mImg = new Image();
-      mImg.src = post.mobileArt;
-    });
-
-    ['/minecraft-bg.webp', '/videoeditor-bg.webp'].forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
+    const warm = () => {
+      POSTS.forEach((post) => {
+        const img = new Image();
+        img.src = post.art;
+        const mImg = new Image();
+        mImg.src = post.mobileArt;
+      });
+      ['/minecraft-bg.webp', '/videoeditor-bg.webp'].forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    };
+    const idle = window.requestIdleCallback;
+    const handle = idle ? idle(warm, { timeout: 3000 }) : window.setTimeout(warm, 2000);
+    return () => {
+      if (idle && window.cancelIdleCallback) window.cancelIdleCallback(handle);
+      else window.clearTimeout(handle);
+    };
   }, []);
 
   // Keyboard navigation: Escape closes open sheet
@@ -106,6 +110,38 @@ export default function App() {
       sheetContainerRef.current.scrollTop = 0;
     }
   }, [activeRoute?.path, isSheetMounted]);
+
+  // Focus management: the sheet is modal, so focus must enter it and come back.
+  useEffect(() => {
+    if (!isSheetMounted) return undefined;
+    lastFocusedRef.current = document.activeElement;
+    const raf = requestAnimationFrame(() => {
+      sheetContainerRef.current?.focus({ preventScroll: true });
+    });
+    return () => {
+      cancelAnimationFrame(raf);
+      const previous = lastFocusedRef.current;
+      if (previous && typeof previous.focus === 'function') {
+        previous.focus({ preventScroll: true });
+      }
+    };
+  }, [isSheetMounted]);
+
+  // Keep the document title in step with the route, including in-app navigation.
+  useEffect(() => {
+    const base = 'Aditya Rathore — Full-Stack Developer & Creative Engineer';
+    if (!activeRoute) {
+      document.title = base;
+      return;
+    }
+    const label =
+      activeRoute.type === 'blog'
+        ? `${activeRoute.post?.title} — Aditya Rathore`
+        : activeRoute.type === 'minecraft'
+          ? 'Minecraft Speedrunning — Aditya Rathore'
+          : 'Video Editing & Motion Design — Aditya Rathore';
+    document.title = label;
+  }, [activeRoute]);
 
   // Lock body scroll when a sheet view is active
   useEffect(() => {
@@ -157,8 +193,10 @@ export default function App() {
       setSheetState('idle');
       closeTimerRef.current = null;
     }, 240);
+    // Replace, never push: pushing '/' leaves the sheet in history, so one Back
+    // press re-opens the page the visitor just closed.
     if (updateHistory && window.location.pathname !== targetHref) {
-      window.history.pushState(null, '', targetHref);
+      window.history.replaceState(null, '', targetHref);
       setCurrentPath(targetHref);
     }
   };
@@ -231,11 +269,16 @@ export default function App() {
       <div 
         className={`w-full flex-1 flex flex-col justify-between ${
           isReceded ? 'home-canvas-receded' : 'home-canvas-resting'
-        } ${isPageMounted ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500 ease-out`}
+        }`}
+        inert={isSheetMounted ? true : undefined}
+        aria-hidden={isSheetMounted ? 'true' : undefined}
       >
         <main className="relative z-10 w-full flex-1 flex flex-col items-center">
+          {/* Step 0: Primary navigation, shared by every entry */}
+          <Nav onNavigate={navigateTo} />
+
           {/* Step 1: Hero Section */}
-          <Hero onExploreClick={handleExploreClick} />
+          <Hero onExploreClick={handleExploreClick} onNavigate={navigateTo} />
 
           {/* Step 2: Selected Works / Projects Section */}
           <SelectedWorks />
@@ -263,7 +306,15 @@ export default function App() {
           }`}
           style={{ backgroundColor: activeRoute.paper }}
           aria-modal="true"
+          aria-label={
+            activeRoute.type === 'blog'
+              ? activeRoute.post?.title
+              : activeRoute.type === 'minecraft'
+                ? 'Minecraft Speedrunning'
+                : 'Video Editing and Motion Design'
+          }
           role="dialog"
+          tabIndex={-1}
         >
           {activeRoute.type === 'blog' && (
             <PostPage post={activeRoute.post} onNavigate={navigateTo} />

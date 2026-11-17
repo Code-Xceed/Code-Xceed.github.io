@@ -41,3 +41,7 @@ test_*.cjs
 /Edit#4_3.mp4
 /Trial-Edit.mp4
 /Versova-4BHK.mp4
+
+# Review captures (large PNGs; keep the scripts and markdown)
+review/shots/
+

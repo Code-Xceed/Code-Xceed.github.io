@@ -299,7 +299,7 @@ export default function HeroSkillsShelf() {
                 <span className="sm:hidden">{cat.shortLabel}</span>
                 <span className="hidden sm:inline">{cat.label}</span>
                 <span 
-                  className={`text-[9.5px] font-mono px-1.5 py-0.2 rounded-md transition-colors ${
+                  className={`text-[11px] font-mono px-1.5 py-0.2 rounded-md transition-colors ${
                     isActive 
                       ? 'bg-stone-100 text-[#161514] font-semibold' 
                       : 'bg-black/[0.03] text-[#A8A29E]'

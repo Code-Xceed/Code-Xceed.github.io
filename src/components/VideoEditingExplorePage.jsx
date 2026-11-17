@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
+import Nav from './Nav';
 import { 
-  ArrowLeft, 
+  ArrowUpRight,
   Play, 
   Pause, 
   Volume2, 
@@ -181,7 +182,17 @@ const CATEGORIES = [
 ];
 
 export default function VideoEditingExplorePage({ onNavigate }) {
-  const [selectedCategoryId, setSelectedCategoryId] = useState('youtube');
+  const [selectedCategoryId, setSelectedCategoryId] = useState('real-estate');
+
+  // Respect the OS motion preference: no video should start on its own.
+  const [reduceMotion, setReduceMotion] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    setReduceMotion(mq.matches);
+    const onChange = () => setReduceMotion(mq.matches);
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
   
   // YouTube player state
   const [ytPlaying, setYtPlaying] = useState(true);
@@ -198,7 +209,29 @@ export default function VideoEditingExplorePage({ onNavigate }) {
 
   const [copiedField, setCopiedField] = useState(null);
 
+  // Changing the autoPlay attribute cannot stop a video that is already
+  // playing, so pause explicitly whenever the preference is active.
+  useEffect(() => {
+    if (!reduceMotion) return;
+    ytVideoRef.current?.pause();
+    Object.values(reelRefs.current || {}).forEach((video) => video?.pause?.());
+  }, [reduceMotion, selectedCategoryId, activeReelIndex]);
+
   const activeCategory = CATEGORIES.find((c) => c.id === selectedCategoryId) || CATEGORIES[0];
+
+  // Roving tabindex for the category tab set: arrows, Home, End.
+  const handleTabKey = (event, index) => {
+    const keys = ['ArrowRight', 'ArrowLeft', 'Home', 'End'];
+    if (!keys.includes(event.key)) return;
+    event.preventDefault();
+    let next = index;
+    if (event.key === 'ArrowRight') next = (index + 1) % CATEGORIES.length;
+    if (event.key === 'ArrowLeft') next = (index - 1 + CATEGORIES.length) % CATEGORIES.length;
+    if (event.key === 'Home') next = 0;
+    if (event.key === 'End') next = CATEGORIES.length - 1;
+    setSelectedCategoryId(CATEGORIES[next].id);
+    requestAnimationFrame(() => document.getElementById(`tab-${CATEGORIES[next].id}`)?.focus());
+  };
 
   // Reset reel active index whenever category changes
   useEffect(() => {
@@ -229,15 +262,6 @@ export default function VideoEditingExplorePage({ onNavigate }) {
       });
     };
   }, []);
-
-  const handleBack = (e) => {
-    e.preventDefault();
-    if (onNavigate) {
-      onNavigate('/');
-    } else {
-      window.location.href = '/';
-    }
-  };
 
   const copyToClipboard = (text, field) => {
     navigator.clipboard.writeText(text);
@@ -356,30 +380,12 @@ export default function VideoEditingExplorePage({ onNavigate }) {
       />
 
       {/* 3. Header Navigation Bar */}
-      <header className="relative z-20 w-full max-w-5xl mx-auto px-5 sm:px-8 pt-4 sm:pt-6 pb-2 safe-top select-none">
-        <div className="flex items-center justify-between pb-3 border-b border-[rgba(22,21,20,0.08)]">
-          <a
-            href="/"
-            onClick={handleBack}
-            className="pressable group inline-flex items-center gap-1.5 px-3 py-1.5 -ml-2 rounded-lg text-xs font-mono text-[#57534E] hover:text-[#161514] hover:bg-black/[0.04] active:scale-95 transition-all duration-150 cursor-pointer touch-manipulation"
-            aria-label="Back to home page"
-          >
-            <ArrowLeft className="w-3.5 h-3.5 text-stone-400 group-hover:-translate-x-0.5 transition-transform duration-150" />
-            <span>Back</span>
-          </a>
-
-          {/* Section Breadcrumb Pill */}
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 rounded-lg bg-black/[0.04] border border-black/[0.06] backdrop-blur-xs select-none">
-            <Film className="w-3.5 h-3.5 text-amber-600 shrink-0" />
-            <span className="text-[11px] font-mono font-medium text-[#161514] sm:hidden">
-              # Video Editing
-            </span>
-            <span className="text-[11px] font-mono font-medium text-[#161514] hidden sm:inline">
-              # Video Editing &amp; Motion Design
-            </span>
-          </div>
-        </div>
-      </header>
+      <Nav
+        back
+        onNavigate={onNavigate}
+        label="# Video Editing & Motion Design"
+        labelIcon={<Film className="w-3.5 h-3.5 text-amber-600 shrink-0" />}
+      />
 
       {/* Main Single-Viewport Layout */}
       <main className="relative z-20 w-full max-w-5xl mx-auto px-5 sm:px-8 py-3 sm:py-4 flex flex-col gap-3.5 sm:gap-4 animate-fade-in" style={{ animationDuration: '280ms' }}>
@@ -387,11 +393,11 @@ export default function VideoEditingExplorePage({ onNavigate }) {
         {/* Full-Width Refined Segmented Control Category Bar (4 Clean Categories) */}
         <div className="w-full">
           <div 
-            className="w-full flex items-center p-1 sm:p-1.5 rounded-2xl bg-black/[0.03] border border-black/[0.06] shadow-[inset_0_1px_2px_rgba(0,0,0,0.02)] backdrop-blur-xs overflow-x-auto no-scrollbar gap-1 sm:gap-1.5 sm:grid sm:grid-cols-4"
+            className="w-full grid grid-cols-2 sm:grid-cols-4 gap-1 sm:gap-1.5 p-1 sm:p-1.5 rounded-2xl bg-black/[0.03] border border-black/[0.06] shadow-[inset_0_1px_2px_rgba(0,0,0,0.02)] backdrop-blur-xs"
             role="tablist"
             aria-label="Filter showcase video category"
           >
-            {CATEGORIES.map((cat) => {
+            {CATEGORIES.map((cat, index) => {
               const isSelected = cat.id === selectedCategoryId;
               const Icon = cat.icon;
               return (
@@ -399,9 +405,13 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                   key={cat.id}
                   type="button"
                   role="tab"
+                  id={`tab-${cat.id}`}
+                  aria-controls="showcase-panel"
+                  tabIndex={isSelected ? 0 : -1}
+                  onKeyDown={(event) => handleTabKey(event, index)}
                   aria-selected={isSelected}
                   onClick={() => setSelectedCategoryId(cat.id)}
-                  className={`pressable group/tab relative flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-2.5 py-2 sm:py-2.5 rounded-xl text-xs font-mono transition-all duration-150 cursor-pointer select-none whitespace-nowrap touch-manipulation shrink-0 sm:shrink min-w-max sm:min-w-0 ${
+                  className={`pressable group/tab relative flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-2.5 py-2 sm:py-2.5 rounded-xl text-xs font-mono transition-all duration-150 cursor-pointer select-none whitespace-nowrap touch-manipulation min-w-0 ${
                     isSelected
                       ? 'bg-white text-[#161514] font-bold shadow-[0_1px_3px_rgba(0,0,0,0.06),0_1px_1px_rgba(0,0,0,0.04)] border border-stone-200/70'
                       : 'text-stone-500 hover:text-[#161514] hover:bg-black/[0.04] active:bg-black/[0.06]'
@@ -421,7 +431,13 @@ export default function VideoEditingExplorePage({ onNavigate }) {
         </div>
 
         {/* 2-Column Responsive Grid (Left 8 cols, Right 4 cols) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-5 items-stretch">
+        <div
+          id="showcase-panel"
+          role="tabpanel"
+          aria-labelledby={`tab-${selectedCategoryId}`}
+          tabIndex={0}
+          className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-5 items-stretch focus:outline-none"
+        >
           
           {/* ======================================================== */}
           {/* LEFT COLUMN (8 cols): Showcase Stage (16:9 or 9:16 Multi-Reels) */}
@@ -437,7 +453,7 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                     ref={ytVideoRef}
                     src={activeCategory.video.src}
                     poster={activeCategory.video.poster}
-                    autoPlay
+                    autoPlay={!reduceMotion}
                     loop
                     muted={ytMuted}
                     playsInline
@@ -496,10 +512,10 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                     </p>
                   </div>
                   <div className="flex items-center gap-2 shrink-0">
-                    <span className="text-[10.5px] font-mono text-stone-500 bg-stone-100 px-2 py-0.5 rounded border border-stone-200/80">
+                    <span className="text-[11px] font-mono text-stone-500 bg-stone-100 px-2 py-0.5 rounded border border-stone-200/80">
                       {activeCategory.video.tool}
                     </span>
-                    <span className="text-[10.5px] font-mono font-medium text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200/80">
+                    <span className="text-[11px] font-mono font-medium text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200/80">
                       {activeCategory.video.duration}
                     </span>
                   </div>
@@ -535,11 +551,11 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                           }}
                           src={reel.src}
                           poster={reel.poster}
-                          autoPlay
+                          autoPlay={!reduceMotion && idx === activeReelIndex}
                           loop
                           muted={isMuted}
                           playsInline
-                          preload="metadata"
+                          preload={idx === activeReelIndex ? 'metadata' : 'none'}
                           className="w-full h-full object-cover"
                           onWaiting={() => setReelLoadingStates((p) => ({ ...p, [idx]: true }))}
                           onPlaying={() => {
@@ -555,7 +571,7 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                           <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-[2px] transition-opacity duration-300 pointer-events-none z-20">
                             <div className="flex flex-col items-center gap-1.5 p-2 rounded-xl bg-black/70 border border-white/10 shadow-lg text-white">
                               <div className="w-4 h-4 rounded-full border-2 border-white/20 border-t-amber-400 animate-spin" />
-                              <span className="text-[9px] font-mono text-white/80 uppercase tracking-wider">Loading</span>
+                              <span className="text-[11px] font-mono text-white/80 uppercase tracking-wider">Loading</span>
                             </div>
                           </div>
                         )}
@@ -598,10 +614,10 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                         <Plus className="w-4 h-4" />
                       </div>
                       <span className="text-xs font-mono font-bold text-stone-700">Reserved Slot</span>
-                      <span className="text-[10px] font-mono text-stone-400 mt-1 max-w-[130px] leading-tight">
+                      <span className="text-[11px] font-mono text-stone-400 mt-1 max-w-[130px] leading-tight">
                         Commercial in post-production
                       </span>
-                      <div className="mt-3 px-2 py-0.5 rounded-md bg-stone-200/60 text-stone-600 text-[9px] font-mono uppercase tracking-wider font-semibold">
+                      <div className="mt-3 px-2 py-0.5 rounded-md bg-stone-200/60 text-stone-600 text-[11px] font-mono uppercase tracking-wider font-semibold">
                         9:16 Reel
                       </div>
                     </div>
@@ -609,17 +625,22 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                 </div>
 
                 {/* Mobile Dot Indicators */}
-                <div className="flex sm:hidden items-center justify-center gap-1.5 py-1">
+                <div className="flex sm:hidden items-center justify-center gap-0 py-1">
                   {activeCategory.reels.map((_, i) => (
                     <button
                       key={i}
                       type="button"
                       onClick={() => handleReelCardClick(i)}
-                      className={`h-1.5 rounded-full transition-all duration-200 cursor-pointer ${
-                        activeReelIndex === i ? 'w-5 bg-amber-500' : 'w-1.5 bg-stone-300'
-                      }`}
+                      className="h-6 w-6 flex items-center justify-center cursor-pointer"
                       aria-label={`Go to reel ${i + 1}`}
-                    />
+                      aria-current={activeReelIndex === i ? 'true' : undefined}
+                    >
+                      <span
+                        className={`h-1.5 rounded-full transition-all duration-200 ${
+                          activeReelIndex === i ? 'w-5 bg-amber-500' : 'w-1.5 bg-stone-300'
+                        }`}
+                      />
+                    </button>
                   ))}
                 </div>
 
@@ -627,7 +648,7 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                 {activeCategory.reels[activeReelIndex] && (
                   <div className="mt-2.5 px-1 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 border-t border-stone-200/70 pt-2">
                     <div className="flex items-baseline gap-2">
-                      <span className="text-[10px] font-mono font-semibold uppercase tracking-wider text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded border border-amber-200/80">
+                      <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded border border-amber-200/80">
                         {activeCategory.reels[activeReelIndex].badge}
                       </span>
                       <h3 className="text-xs sm:text-sm font-bold text-[#161514] tracking-tight">
@@ -638,7 +659,7 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                         {activeCategory.reels[activeReelIndex].subtitle}
                       </p>
                     </div>
-                    <span className="text-[10px] font-mono text-stone-400 shrink-0">
+                    <span className="text-[11px] font-mono text-stone-400 shrink-0">
                       {activeCategory.reels[activeReelIndex].tool} • {activeCategory.reels[activeReelIndex].format}
                     </span>
                   </div>
@@ -654,7 +675,7 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                     # Creative Identity
                   </span>
                   <div className="flex-1 h-[1px] bg-stone-200/80" />
-                  <span className="px-2 py-0.5 rounded-md bg-stone-100/80 text-[10px] font-mono text-stone-600 border border-stone-200/80 font-medium">
+                  <span className="px-2 py-0.5 rounded-md bg-stone-100/80 text-[11px] font-mono text-stone-600 border border-stone-200/80 font-medium">
                     Motion &amp; Cinematic
                   </span>
                 </div>
@@ -701,7 +722,7 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                   # Direct Contact
                 </span>
                 <div className="flex-1 h-[1px] bg-stone-200/80" />
-                <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-stone-100/80 text-[10px] font-mono text-stone-600 border border-stone-200/80 font-medium">
+                <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-stone-100/80 text-[11px] font-mono text-stone-600 border border-stone-200/80 font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                   Available
                 </span>
@@ -712,6 +733,18 @@ export default function VideoEditingExplorePage({ onNavigate }) {
               </h2>
               <p className="text-xs text-stone-600 mt-0.5 leading-relaxed">
                 YouTube retention edits, real estate architectural tours &amp; commercial reels.
+              </p>
+
+              {/* Primary action: a brief that does not require a phone call */}
+              <a
+                href="mailto:aditya.rathore10101@gmail.com?subject=Video%20project%20brief"
+                className="pressable mt-3 flex w-full items-center justify-center gap-1.5 h-10 rounded-xl bg-[#161514] hover:bg-[#2B2927] text-white text-[13px] font-medium transition-colors"
+              >
+                <span>Send a brief</span>
+                <ArrowUpRight className="w-3.5 h-3.5 opacity-80" />
+              </a>
+              <p className="text-[11px] text-stone-500 mt-1.5 leading-relaxed">
+                Tell me the format, length and deadline. I will reply with a quote and a timeline.
               </p>
 
               {/* Flush, Borderless Channel Rows */}
@@ -727,7 +760,7 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                   >
                     <img src="/icons/whatsapp.svg" alt="WhatsApp" className="w-4 h-4 object-contain shrink-0" />
                     <div className="min-w-0">
-                      <div className="text-[10px] font-mono text-stone-400 leading-none">WhatsApp</div>
+                      <div className="text-[11px] font-mono text-stone-400 leading-none">WhatsApp</div>
                       <div className="text-xs font-mono font-semibold text-[#161514] truncate mt-0.5">+91 92618 18621</div>
                     </div>
                   </a>
@@ -770,7 +803,7 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                   >
                     <img src="/icons/discord.svg" alt="Discord" className="w-4 h-4 object-contain shrink-0" />
                     <div className="min-w-0">
-                      <div className="text-[10px] font-mono text-stone-400 leading-none">Discord</div>
+                      <div className="text-[11px] font-mono text-stone-400 leading-none">Discord</div>
                       <div className="text-xs font-mono font-semibold text-[#161514] truncate mt-0.5">@codexceed</div>
                     </div>
                   </a>
@@ -812,7 +845,7 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                   # What Can I Edit?
                 </span>
                 <div className="flex-1 h-[1px] bg-stone-200/80" />
-                <span className="text-[10px] font-mono text-stone-500 font-medium">
+                <span className="text-[11px] font-mono text-stone-500 font-medium">
                   On-Demand
                 </span>
               </div>
@@ -822,7 +855,7 @@ export default function VideoEditingExplorePage({ onNavigate }) {
                 {EDIT_CAPABILITIES.map((cap) => (
                   <div
                     key={cap.label}
-                    className="group/item flex items-center gap-1.5 py-1 px-1.5 -mx-1 rounded-md text-[10.5px] font-mono font-medium text-stone-600 hover:text-black hover:bg-black/[0.03] tracking-tight transition-all duration-150 cursor-default select-none min-w-0"
+                    className="group/item flex items-center gap-1.5 py-1 px-1.5 -mx-1 rounded-md text-[11px] font-mono font-medium text-stone-600 hover:text-black hover:bg-black/[0.03] tracking-tight transition-all duration-150 cursor-default select-none min-w-0"
                   >
                     {cap.iconSrc ? (
                       <img src={cap.iconSrc} alt="" className="w-3.5 h-3.5 object-contain shrink-0 group-hover/item:scale-110 transition-transform duration-150" />
@@ -838,6 +871,26 @@ export default function VideoEditingExplorePage({ onNavigate }) {
           </div>
 
         </div>
+
+        {/* Exit row: every sub-page must lead somewhere */}
+        <footer className="mt-4 border-t border-stone-200/80 pt-4 pb-2 flex flex-wrap items-center justify-between gap-3 text-[11px] font-mono text-[#6B6660]">
+          <span>Aditya Rathore · Video &amp; Motion</span>
+          <div className="flex items-center gap-4">
+            <button
+              type="button"
+              onClick={() => onNavigate && onNavigate('/')}
+              className="py-1 inline-block hover:text-[#161514] transition-colors"
+            >
+              All work
+            </button>
+            <a href="https://github.com/Code-Xceed" target="_blank" rel="noopener noreferrer" className="py-1 inline-block hover:text-[#161514] transition-colors">
+              GitHub
+            </a>
+            <a href="mailto:aditya.rathore10101@gmail.com" className="py-1 inline-block hover:text-[#161514] transition-colors">
+              Email
+            </a>
+          </div>
+        </footer>
 
       </main>
     </div>

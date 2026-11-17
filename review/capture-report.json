@@ -1,0 +1,186 @@
+[
+  {
+    "name": "home",
+    "device": "desktop",
+    "metrics": {
+      "scrollW": 1430,
+      "clientW": 1440,
+      "scrollH": 2389,
+      "h1": [
+        "Aditya Rathore"
+      ],
+      "links": 18,
+      "buttons": 9,
+      "imgsNoAlt": 0,
+      "imgsTotal": 44
+    },
+    "errors": [],
+    "file": "C:\\Users\\CodeX\\Desktop\\New-Portfolio\\review\\shots\\home-desktop.png"
+  },
+  {
+    "name": "home",
+    "device": "mobile",
+    "metrics": {
+      "scrollW": 380,
+      "clientW": 390,
+      "scrollH": 3130,
+      "h1": [
+        "Aditya Rathore"
+      ],
+      "links": 18,
+      "buttons": 9,
+      "imgsNoAlt": 0,
+      "imgsTotal": 44
+    },
+    "errors": [],
+    "file": "C:\\Users\\CodeX\\Desktop\\New-Portfolio\\review\\shots\\home-mobile.png"
+  },
+  {
+    "name": "video-editing",
+    "device": "desktop",
+    "metrics": {
+      "scrollW": 1430,
+      "clientW": 1440,
+      "scrollH": 2389,
+      "h1": [
+        "Aditya Rathore",
+        "Video Editor & Motion Designer"
+      ],
+      "links": 23,
+      "buttons": 17,
+      "imgsNoAlt": 0,
+      "imgsTotal": 52
+    },
+    "errors": [],
+    "file": "C:\\Users\\CodeX\\Desktop\\New-Portfolio\\review\\shots\\video-editing-desktop.png"
+  },
+  {
+    "name": "video-editing",
+    "device": "mobile",
+    "metrics": {
+      "scrollW": 380,
+      "clientW": 390,
+      "scrollH": 3130,
+      "h1": [
+        "Aditya Rathore",
+        "Video Editor & Motion Designer"
+      ],
+      "links": 23,
+      "buttons": 17,
+      "imgsNoAlt": 0,
+      "imgsTotal": 52
+    },
+    "errors": [],
+    "file": "C:\\Users\\CodeX\\Desktop\\New-Portfolio\\review\\shots\\video-editing-mobile.png"
+  },
+  {
+    "name": "minecraft",
+    "device": "desktop",
+    "metrics": {
+      "scrollW": 1430,
+      "clientW": 1440,
+      "scrollH": 2389,
+      "h1": [
+        "Aditya Rathore",
+        "I'm a MCSR Speedrunner"
+      ],
+      "links": 26,
+      "buttons": 16,
+      "imgsNoAlt": 0,
+      "imgsTotal": 51
+    },
+    "errors": [],
+    "file": "C:\\Users\\CodeX\\Desktop\\New-Portfolio\\review\\shots\\minecraft-desktop.png"
+  },
+  {
+    "name": "minecraft",
+    "device": "mobile",
+    "metrics": {
+      "scrollW": 380,
+      "clientW": 390,
+      "scrollH": 3130,
+      "h1": [
+        "Aditya Rathore",
+        "I'm a MCSR Speedrunner"
+      ],
+      "links": 26,
+      "buttons": 16,
+      "imgsNoAlt": 0,
+      "imgsTotal": 51
+    },
+    "errors": [],
+    "file": "C:\\Users\\CodeX\\Desktop\\New-Portfolio\\review\\shots\\minecraft-mobile.png"
+  },
+  {
+    "name": "blog-1",
+    "device": "desktop",
+    "metrics": {
+      "scrollW": 1430,
+      "clientW": 1440,
+      "scrollH": 900,
+      "h1": [
+        "How I Started"
+      ],
+      "links": 4,
+      "buttons": 3,
+      "imgsNoAlt": 0,
+      "imgsTotal": 2
+    },
+    "errors": [],
+    "file": "C:\\Users\\CodeX\\Desktop\\New-Portfolio\\review\\shots\\blog-1-desktop.png"
+  },
+  {
+    "name": "blog-1",
+    "device": "mobile",
+    "metrics": {
+      "scrollW": 380,
+      "clientW": 390,
+      "scrollH": 844,
+      "h1": [
+        "How I Started"
+      ],
+      "links": 4,
+      "buttons": 3,
+      "imgsNoAlt": 0,
+      "imgsTotal": 2
+    },
+    "errors": [],
+    "file": "C:\\Users\\CodeX\\Desktop\\New-Portfolio\\review\\shots\\blog-1-mobile.png"
+  },
+  {
+    "name": "blog-2",
+    "device": "desktop",
+    "metrics": {
+      "scrollW": 1430,
+      "clientW": 1440,
+      "scrollH": 900,
+      "h1": [
+        "How I Got My First Client"
+      ],
+      "links": 5,
+      "buttons": 3,
+      "imgsNoAlt": 0,
+      "imgsTotal": 2
+    },
+    "errors": [],
+    "file": "C:\\Users\\CodeX\\Desktop\\New-Portfolio\\review\\shots\\blog-2-desktop.png"
+  },
+  {
+    "name": "blog-2",
+    "device": "mobile",
+    "metrics": {
+      "scrollW": 380,
+      "clientW": 390,
+      "scrollH": 844,
+      "h1": [
+        "How I Got My First Client"
+      ],
+      "links": 5,
+      "buttons": 3,
+      "imgsNoAlt": 0,
+      "imgsTotal": 2
+    },
+    "errors": [],
+    "file": "C:\\Users\\CodeX\\Desktop\\New-Portfolio\\review\\shots\\blog-2-mobile.png"
+  }
+]
