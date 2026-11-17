@@ -186,5 +186,27 @@ LCP is now set by the botanical artwork (≈894 kB of WebP) plus React hydration
 All static gates passed.
 ```
 
+---
+
+# Final pass — the two dimensions still under 10
+
+## Performance
+
+- Identified the real LCP element on a throttled phone: `japanese-right-lower.webp`, a 165 kB decorative plate drawn at 30% opacity and 112 px wide. The other two plates now ship 320w sources (`<picture>`, 20 kB and 14 kB on mobile), and the heavy third one is hidden below 640 px, where it was indistinguishable at 30% opacity.
+- Removed the 500 ms opacity gate that withheld the whole home canvas until two `requestAnimationFrame` callbacks resolved. Content now paints as soon as React mounts.
+- Removed the staggered entrance animation from the five above-the-fold hero elements. LCP measures the final painted position, so a 650 ms translate was adding to it.
+- Home first load 961 kB → **830 kB**.
+
+Measured LCP at 4× CPU and 4G throttling: **3.6-5.3 s across six runs**, median around 4 s. That is honest but short of the 1.8 s target, and the variance shows the metric is now bound by compositing and hydration rather than bytes. The remaining fix is architectural: pre-render the hero markup outside `#root` so it does not wait for React, or drop the blurred aura layers behind the branches. Neither is a code tweak, so it stays open.
+
+## Accessibility
+
+- Category tabs are a real tab set now: `aria-controls`, one `tabpanel` with `aria-labelledby`, roving `tabindex`, and Left/Right/Home/End handling.
+
+## Dimensions deliberately left below 10
+
+Trust and Craft cannot be closed by code. They need a real photograph, a named client, a price band, caption files, and a decision on the Minecraft route. Inventing any of those would repeat the exact failure this review opened with, so the site states what it can prove and nothing more.
+
+
 
 
