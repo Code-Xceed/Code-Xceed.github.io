@@ -1,0 +1,8 @@
+# Aditya Rathore — Atelier Portfolio
+# https://code-xceed.github.io
+
+User-agent: *
+Allow: /
+
+# Sitemap index
+Sitemap: https://code-xceed.github.io/sitemap.xml

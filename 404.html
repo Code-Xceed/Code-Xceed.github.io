@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page not found — Aditya Rathore</title>
+    <meta name="robots" content="noindex,follow" />
+    <meta name="theme-color" content="#FAFAF8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+    <style>
+      :root { color-scheme: light; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        padding: 2rem 1.5rem;
+        background: #fafaf8;
+        color: #161514;
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      main { width: 100%; max-width: 34rem; }
+      .rule { height: 1px; background: rgba(22, 21, 20, 0.1); margin-bottom: 1.75rem; }
+      p.kicker {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 11px;
+        letter-spacing: 0.04em;
+        color: #6b6660;
+        margin: 0 0 1.25rem;
+      }
+      h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.05; letter-spacing: -0.035em; margin: 0 0 0.75rem; }
+      p.lede { font-size: 1rem; line-height: 1.7; color: #57534e; margin: 0 0 2rem; max-width: 30rem; }
+      nav { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+      a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0.6rem 1rem;
+        border-radius: 999px;
+        border: 1px solid rgba(22, 21, 20, 0.12);
+        color: #161514;
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 500;
+        transition: border-color 150ms ease, background-color 150ms ease;
+      }
+      a:hover { border-color: rgba(22, 21, 20, 0.3); background: #ffffff; }
+      a.primary { background: #161514; color: #fafaf8; border-color: #161514; }
+      a.primary:hover { background: #2b2927; border-color: #2b2927; }
+      footer {
+        margin-top: 2.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(22, 21, 20, 0.08);
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 11px;
+        color: #6b6660;
+      }
+      @media (prefers-reduced-motion: reduce) { a { transition: none; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="rule"></div>
+      <p class="kicker">404 · no page at this address</p>
+      <h1>This one isn’t here.</h1>
+      <p class="lede">
+        The link may be old, or the page may have moved. Everything worth reading is one of these four.
+      </p>
+      <nav aria-label="Recovery links">
+        <a class="primary" href="/">Home</a>
+        <a href="/interests/video-editing/">Video work</a>
+        <a href="/interests/minecraft/">Minecraft</a>
+        <a href="/blogs/how-i-started/">Notes</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aditya.rathore10101%40gmail.com&su=Hello%20Aditya" target="_blank" rel="noopener noreferrer">Email</a>
+      </nav>
+      <footer>Aditya Rathore · full-stack developer and video editor</footer>
+    </main>
+  </body>
+</html>
