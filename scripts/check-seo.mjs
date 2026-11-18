@@ -9,11 +9,11 @@ import path from 'node:path';
 const root = path.resolve(import.meta.dirname, '..');
 
 const PAGES = [
-  { file: 'index.html', url: 'https://codex.is-a.dev/', needs: ['Person', 'ItemList'] },
-  { file: 'interests/video-editing/index.html', url: 'https://codex.is-a.dev/interests/video-editing/', needs: ['CollectionPage', 'BreadcrumbList'] },
-  { file: 'interests/minecraft/index.html', url: 'https://codex.is-a.dev/interests/minecraft/', needs: ['CollectionPage', 'BreadcrumbList'] },
-  { file: 'blogs/how-i-started/index.html', url: 'https://codex.is-a.dev/blogs/how-i-started/', needs: ['BlogPosting', 'BreadcrumbList'] },
-  { file: 'blogs/how-i-got-my-first-client/index.html', url: 'https://codex.is-a.dev/blogs/how-i-got-my-first-client/', needs: ['BlogPosting', 'BreadcrumbList'] },
+  { file: 'index.html', url: 'https://code-xceed.github.io/', needs: ['Person', 'ItemList'] },
+  { file: 'interests/video-editing/index.html', url: 'https://code-xceed.github.io/interests/video-editing/', needs: ['CollectionPage', 'BreadcrumbList'] },
+  { file: 'interests/minecraft/index.html', url: 'https://code-xceed.github.io/interests/minecraft/', needs: ['CollectionPage', 'BreadcrumbList'] },
+  { file: 'blogs/how-i-started/index.html', url: 'https://code-xceed.github.io/blogs/how-i-started/', needs: ['BlogPosting', 'BreadcrumbList'] },
+  { file: 'blogs/how-i-got-my-first-client/index.html', url: 'https://code-xceed.github.io/blogs/how-i-got-my-first-client/', needs: ['BlogPosting', 'BreadcrumbList'] },
 ];
 
 const failures = [];
@@ -80,7 +80,7 @@ if (!/rel="alternate"[^>]*application\/rss\+xml/.test(home)) fail('index.html: n
 
 // robots and sitemap must exist and agree
 const robots = fs.readFileSync(path.join(root, 'public/robots.txt'), 'utf8');
-if (!/Sitemap:\s*https:\/\/codex\.is-a\.dev\/sitemap\.xml/.test(robots)) fail('robots.txt: sitemap line missing or wrong');
+if (!/Sitemap:\s*https:\/\/code-xceed\.github\.io\/sitemap\.xml/.test(robots)) fail('robots.txt: sitemap line missing or wrong');
 const sitemap = fs.readFileSync(path.join(root, 'public/sitemap.xml'), 'utf8');
 for (const page of PAGES) {
   if (!sitemap.includes(`<loc>${page.url}</loc>`)) fail(`sitemap.xml: missing ${page.url}`);

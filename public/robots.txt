@@ -1,8 +1,8 @@
 # Aditya Rathore — Atelier Portfolio
-# https://codex.is-a.dev
+# https://code-xceed.github.io
 
 User-agent: *
 Allow: /
 
 # Sitemap index
-Sitemap: https://codex.is-a.dev/sitemap.xml
+Sitemap: https://code-xceed.github.io/sitemap.xml
